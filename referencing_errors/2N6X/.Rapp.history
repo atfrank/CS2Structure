@@ -1,0 +1,6 @@
+load("/Users/atfrank/Documents/GitSoftware/global_quality_assessment/reference_errors/2N6X/accuracy_larmord.RData")
+ls()
+accuracy
+load("/Users/atfrank/Documents/GitSoftware/global_quality_assessment/reference_errors/2N6X/referencing_errors_ramsey.RData")
+ls()
+reference

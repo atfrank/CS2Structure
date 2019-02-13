@@ -1,0 +1,220 @@
+data_2rvo
+
+save_entry_information
+# 
+_Entry.Sf_category        entry_information 
+_Entry.ID                 2RVO 
+_Entry.Assigned_BMRB_ID   11607 
+# 
+loop_
+_Audit.Revision_ID 
+_Audit.Creation_date 
+_Audit.Update_record 
+_Audit.Creation_method 
+_Audit.Entry_ID 
+1 2016-02-19 'Nomenclature checked and updated'                 . 2RVO 
+2 2016-02-19 'Preliminary version'                              . 2RVO 
+3 2016-03-16 'Replace coords, Nomenclature checked and updated' . 2RVO 
+4 2016-03-17 'Chemical shifts checked and updated'              . 2RVO 
+5 2017-02-08 'Initial release'                                  . 2RVO 
+stop_
+save_
+save_chemical_shift_reference_1
+# 
+_Chem_shift_reference.Sf_category    chem_shift_reference 
+_Chem_shift_reference.Sf_framecode   chemical_shift_reference_1 
+_Chem_shift_reference.Entry_ID       2RVO 
+_Chem_shift_reference.ID             1 
+# 
+loop_
+_Chem_shift_ref.Atom_type 
+_Chem_shift_ref.Atom_isotope_number 
+_Chem_shift_ref.Mol_common_name 
+_Chem_shift_ref.Atom_group 
+_Chem_shift_ref.Concentration_val 
+_Chem_shift_ref.Concentration_units 
+_Chem_shift_ref.Solvent 
+_Chem_shift_ref.Rank 
+_Chem_shift_ref.Chem_shift_units 
+_Chem_shift_ref.Chem_shift_val 
+_Chem_shift_ref.Ref_method 
+_Chem_shift_ref.Ref_type 
+_Chem_shift_ref.Indirect_shift_ratio 
+_Chem_shift_ref.Entry_ID 
+_Chem_shift_ref.Chem_shift_reference_ID 
+H 1  DSS 'methyl protons' ? ? ? ? ppm 0 na direct   1           2RVO 1 
+C 13 DSS 'methyl protons' ? ? ? ? ppm 0 na indirect 0.251449530 2RVO 1 
+stop_
+save_
+save_assigned_chem_shift_list_1
+# 
+_Assigned_chem_shift_list.Sf_category                assigned_chemical_shifts 
+_Assigned_chem_shift_list.Sf_framecode               assigned_chem_shift_list_1 
+_Assigned_chem_shift_list.Entry_ID                   2RVO 
+_Assigned_chem_shift_list.ID                         1 
+_Assigned_chem_shift_list.Data_file_name             chemical_shift_ZfL2-1-34_1let.txt 
+_Assigned_chem_shift_list.Sample_condition_list_ID   1 
+_Assigned_chem_shift_list.Chem_shift_reference_ID    1 
+_Assigned_chem_shift_list.Chem_shift_1H_err          0.01 
+_Assigned_chem_shift_list.Chem_shift_13C_err         0.16 
+# 
+loop_
+_Atom_chem_shift.ID 
+_Atom_chem_shift.Entity_assembly_ID 
+_Atom_chem_shift.Entity_ID 
+_Atom_chem_shift.Comp_index_ID 
+_Atom_chem_shift.Seq_ID 
+_Atom_chem_shift.Comp_ID 
+_Atom_chem_shift.Atom_ID 
+_Atom_chem_shift.Atom_type 
+_Atom_chem_shift.Atom_isotope_number 
+_Atom_chem_shift.Val 
+_Atom_chem_shift.Val_err 
+_Atom_chem_shift.Assign_fig_of_merit 
+_Atom_chem_shift.Ambiguity_code 
+_Atom_chem_shift.Occupancy 
+_Atom_chem_shift.Resonance_ID 
+_Atom_chem_shift.Auth_entity_assembly_ID 
+_Atom_chem_shift.Auth_asym_ID 
+_Atom_chem_shift.Auth_seq_ID 
+_Atom_chem_shift.Auth_comp_ID 
+_Atom_chem_shift.Auth_atom_ID 
+_Atom_chem_shift.Original_PDB_strand_ID 
+_Atom_chem_shift.Original_PDB_residue_no 
+_Atom_chem_shift.Original_PDB_residue_name 
+_Atom_chem_shift.Original_PDB_atom_name 
+_Atom_chem_shift.Details 
+_Atom_chem_shift.Entry_ID 
+_Atom_chem_shift.Assigned_chem_shift_list_ID 
+1   1 1 1  1  G "H1'" H 1  5.85   0.01 ? 1 ? ? . A 1  G "H1'" A 1  G "H1'" . 2RVO ? 
+2   1 1 1  1  G "H2'" H 1  4.98   0.01 ? 1 ? ? . A 1  G "H2'" A 1  G "H2'" . 2RVO ? 
+3   1 1 1  1  G H8    H 1  8.19   0.01 ? 1 ? ? . A 1  G H8    A 1  G H8    . 2RVO ? 
+4   1 1 1  1  G C8    C 13 136.42 0.16 ? 1 ? ? . A 1  G C8    A 1  G C8    . 2RVO ? 
+5   1 1 2  2  G "H1'" H 1  5.96   0.01 ? 1 ? ? . A 2  G "H1'" A 2  G "H1'" . 2RVO ? 
+6   1 1 2  2  G H8    H 1  7.68   0.01 ? 1 ? ? . A 2  G H8    A 2  G H8    . 2RVO ? 
+7   1 1 2  2  G C8    C 13 133.95 0.16 ? 1 ? ? . A 2  G C8    A 2  G C8    . 2RVO ? 
+8   1 1 3  3  C "H1'" H 1  5.59   0.01 ? 1 ? ? . A 3  C "H1'" A 3  C "H1'" . 2RVO ? 
+9   1 1 3  3  C H5    H 1  5.28   0.01 ? 1 ? ? . A 3  C H5    A 3  C H5    . 2RVO ? 
+10  1 1 3  3  C H6    H 1  7.70   0.01 ? 1 ? ? . A 3  C H6    A 3  C H6    . 2RVO ? 
+11  1 1 4  4  G "H1'" H 1  5.76   0.01 ? 1 ? ? . A 4  G "H1'" A 4  G "H1'" . 2RVO ? 
+12  1 1 4  4  G H8    H 1  7.58   0.01 ? 1 ? ? . A 4  G H8    A 4  G H8    . 2RVO ? 
+13  1 1 4  4  G C8    C 13 133.17 0.16 ? 1 ? ? . A 4  G C8    A 4  G C8    . 2RVO ? 
+14  1 1 5  5  C "H1'" H 1  5.52   0.01 ? 1 ? ? . A 5  C "H1'" A 5  C "H1'" . 2RVO ? 
+15  1 1 5  5  C H5    H 1  5.25   0.01 ? 1 ? ? . A 5  C H5    A 5  C H5    . 2RVO ? 
+16  1 1 5  5  C H6    H 1  7.72   0.01 ? 1 ? ? . A 5  C H6    A 5  C H6    . 2RVO ? 
+17  1 1 6  6  U "H1'" H 1  5.54   0.01 ? 1 ? ? . A 6  U "H1'" A 6  U "H1'" . 2RVO ? 
+18  1 1 6  6  U H5    H 1  5.44   0.01 ? 1 ? ? . A 6  U H5    A 6  U H5    . 2RVO ? 
+19  1 1 6  6  U H6    H 1  7.90   0.01 ? 1 ? ? . A 6  U H6    A 6  U H6    . 2RVO ? 
+20  1 1 6  6  U C5    C 13 100.51 0.16 ? 1 ? ? . A 6  U C5    A 6  U C5    . 2RVO ? 
+21  1 1 7  7  U "H1'" H 1  5.64   0.01 ? 1 ? ? . A 7  U "H1'" A 7  U "H1'" . 2RVO ? 
+22  1 1 7  7  U H5    H 1  5.59   0.01 ? 1 ? ? . A 7  U H5    A 7  U H5    . 2RVO ? 
+23  1 1 7  7  U H6    H 1  8.02   0.01 ? 1 ? ? . A 7  U H6    A 7  U H6    . 2RVO ? 
+24  1 1 8  8  U "H1'" H 1  5.62   0.01 ? 1 ? ? . A 8  U "H1'" A 8  U "H1'" . 2RVO ? 
+25  1 1 8  8  U H5    H 1  5.54   0.01 ? 1 ? ? . A 8  U H5    A 8  U H5    . 2RVO ? 
+26  1 1 8  8  U H6    H 1  7.83   0.01 ? 1 ? ? . A 8  U H6    A 8  U H6    . 2RVO ? 
+27  1 1 9  9  G "H1'" H 1  5.43   0.01 ? 1 ? ? . A 9  G "H1'" A 9  G "H1'" . 2RVO ? 
+28  1 1 9  9  G H8    H 1  7.68   0.01 ? 1 ? ? . A 9  G H8    A 9  G H8    . 2RVO ? 
+29  1 1 9  9  G C8    C 13 135.12 0.16 ? 1 ? ? . A 9  G C8    A 9  G C8    . 2RVO ? 
+30  1 1 10 10 A H2    H 1  7.49   0.01 ? 1 ? ? . A 10 A H2    A 10 A H2    . 2RVO ? 
+31  1 1 10 10 A H8    H 1  7.77   0.01 ? 1 ? ? . A 10 A H8    A 10 A H8    . 2RVO ? 
+32  1 1 10 10 A C2    C 13 151.61 0.16 ? 1 ? ? . A 10 A C2    A 10 A C2    . 2RVO ? 
+33  1 1 10 10 A C8    C 13 137.44 0.16 ? 1 ? ? . A 10 A C8    A 10 A C8    . 2RVO ? 
+34  1 1 11 11 C "H1'" H 1  6.05   0.01 ? 1 ? ? . A 11 C "H1'" A 11 C "H1'" . 2RVO ? 
+35  1 1 11 11 C H5    H 1  5.81   0.01 ? 1 ? ? . A 11 C H5    A 11 C H5    . 2RVO ? 
+36  1 1 11 11 C H6    H 1  7.82   0.01 ? 1 ? ? . A 11 C H6    A 11 C H6    . 2RVO ? 
+37  1 1 12 12 A "H1'" H 1  5.90   0.01 ? 1 ? ? . A 12 A "H1'" A 12 A "H1'" . 2RVO ? 
+38  1 1 12 12 A H2    H 1  7.33   0.01 ? 1 ? ? . A 12 A H2    A 12 A H2    . 2RVO ? 
+39  1 1 12 12 A H8    H 1  8.39   0.01 ? 1 ? ? . A 12 A H8    A 12 A H8    . 2RVO ? 
+40  1 1 12 12 A C2    C 13 150.45 0.16 ? 1 ? ? . A 12 A C2    A 12 A C2    . 2RVO ? 
+41  1 1 12 12 A C8    C 13 138.05 0.16 ? 1 ? ? . A 12 A C8    A 12 A C8    . 2RVO ? 
+42  1 1 13 13 C "H1'" H 1  5.41   0.01 ? 1 ? ? . A 13 C "H1'" A 13 C "H1'" . 2RVO ? 
+43  1 1 13 13 C H5    H 1  5.23   0.01 ? 1 ? ? . A 13 C H5    A 13 C H5    . 2RVO ? 
+44  1 1 13 13 C H6    H 1  7.58   0.01 ? 1 ? ? . A 13 C H6    A 13 C H6    . 2RVO ? 
+45  1 1 14 14 A "H1'" H 1  5.87   0.01 ? 1 ? ? . A 14 A "H1'" A 14 A "H1'" . 2RVO ? 
+46  1 1 14 14 A H2    H 1  6.75   0.01 ? 1 ? ? . A 14 A H2    A 14 A H2    . 2RVO ? 
+47  1 1 14 14 A H8    H 1  7.95   0.01 ? 1 ? ? . A 14 A H8    A 14 A H8    . 2RVO ? 
+48  1 1 14 14 A C2    C 13 149.33 0.16 ? 1 ? ? . A 14 A C2    A 14 A C2    . 2RVO ? 
+49  1 1 14 14 A C8    C 13 136.71 0.16 ? 1 ? ? . A 14 A C8    A 14 A C8    . 2RVO ? 
+50  1 1 15 15 A "H1'" H 1  5.91   0.01 ? 1 ? ? . A 15 A "H1'" A 15 A "H1'" . 2RVO ? 
+51  1 1 15 15 A H2    H 1  7.79   0.01 ? 1 ? ? . A 15 A H2    A 15 A H2    . 2RVO ? 
+52  1 1 15 15 A H8    H 1  7.76   0.01 ? 1 ? ? . A 15 A H8    A 15 A H8    . 2RVO ? 
+53  1 1 15 15 A C2    C 13 151.16 0.16 ? 1 ? ? . A 15 A C2    A 15 A C2    . 2RVO ? 
+54  1 1 15 15 A C8    C 13 136.25 0.16 ? 1 ? ? . A 15 A C8    A 15 A C8    . 2RVO ? 
+55  1 1 16 16 U "H1'" H 1  5.56   0.01 ? 1 ? ? . A 16 U "H1'" A 16 U "H1'" . 2RVO ? 
+56  1 1 16 16 U H5    H 1  5.03   0.01 ? 1 ? ? . A 16 U H5    A 16 U H5    . 2RVO ? 
+57  1 1 16 16 U H6    H 1  7.34   0.01 ? 1 ? ? . A 16 U H6    A 16 U H6    . 2RVO ? 
+58  1 1 17 17 C "H1'" H 1  5.69   0.01 ? 1 ? ? . A 17 C "H1'" A 17 C "H1'" . 2RVO ? 
+59  1 1 17 17 C "H2'" H 1  4.24   0.01 ? 1 ? ? . A 17 C "H2'" A 17 C "H2'" . 2RVO ? 
+60  1 1 17 17 C "H3'" H 1  4.48   0.01 ? 1 ? ? . A 17 C "H3'" A 17 C "H3'" . 2RVO ? 
+61  1 1 17 17 C H5    H 1  5.91   0.01 ? 1 ? ? . A 17 C H5    A 17 C H5    . 2RVO ? 
+62  1 1 17 17 C H6    H 1  7.76   0.01 ? 1 ? ? . A 17 C H6    A 17 C H6    . 2RVO ? 
+63  1 1 17 17 C C6    C 13 140.09 0.16 ? 1 ? ? . A 17 C C6    A 17 C C6    . 2RVO ? 
+64  1 1 18 18 U "H1'" H 1  5.65   0.01 ? 1 ? ? . A 18 U "H1'" A 18 U "H1'" . 2RVO ? 
+65  1 1 18 18 U H5    H 1  5.77   0.01 ? 1 ? ? . A 18 U H5    A 18 U H5    . 2RVO ? 
+66  1 1 18 18 U H6    H 1  7.66   0.01 ? 1 ? ? . A 18 U H6    A 18 U H6    . 2RVO ? 
+67  1 1 18 18 U C5    C 13 102.59 0.16 ? 1 ? ? . A 18 U C5    A 18 U C5    . 2RVO ? 
+68  1 1 18 18 U C6    C 13 140.58 0.16 ? 1 ? ? . A 18 U C6    A 18 U C6    . 2RVO ? 
+69  1 1 19 19 A "H1'" H 1  5.63   0.01 ? 1 ? ? . A 19 A "H1'" A 19 A "H1'" . 2RVO ? 
+70  1 1 19 19 A H2    H 1  7.95   0.01 ? 1 ? ? . A 19 A H2    A 19 A H2    . 2RVO ? 
+71  1 1 19 19 A H8    H 1  8.00   0.01 ? 1 ? ? . A 19 A H8    A 19 A H8    . 2RVO ? 
+72  1 1 19 19 A C2    C 13 152.19 0.16 ? 1 ? ? . A 19 A C2    A 19 A C2    . 2RVO ? 
+73  1 1 19 19 A C8    C 13 138.52 0.16 ? 1 ? ? . A 19 A C8    A 19 A C8    . 2RVO ? 
+74  1 1 20 20 C "H1'" H 1  5.94   0.01 ? 1 ? ? . A 20 C "H1'" A 20 C "H1'" . 2RVO ? 
+75  1 1 20 20 C H5    H 1  5.88   0.01 ? 1 ? ? . A 20 C H5    A 20 C H5    . 2RVO ? 
+76  1 1 20 20 C H6    H 1  7.81   0.01 ? 1 ? ? . A 20 C H6    A 20 C H6    . 2RVO ? 
+77  1 1 21 21 A "H1'" H 1  5.79   0.01 ? 1 ? ? . A 21 A "H1'" A 21 A "H1'" . 2RVO ? 
+78  1 1 21 21 A H2    H 1  7.87   0.01 ? 1 ? ? . A 21 A H2    A 21 A H2    . 2RVO ? 
+79  1 1 21 21 A H8    H 1  8.30   0.01 ? 1 ? ? . A 21 A H8    A 21 A H8    . 2RVO ? 
+80  1 1 21 21 A C2    C 13 151.11 0.16 ? 1 ? ? . A 21 A C2    A 21 A C2    . 2RVO ? 
+81  1 1 21 21 A C8    C 13 138.08 0.16 ? 1 ? ? . A 21 A C8    A 21 A C8    . 2RVO ? 
+82  1 1 22 22 U "H1'" H 1  5.59   0.01 ? 1 ? ? . A 22 U "H1'" A 22 U "H1'" . 2RVO ? 
+83  1 1 22 22 U H5    H 1  5.13   0.01 ? 1 ? ? . A 22 U H5    A 22 U H5    . 2RVO ? 
+84  1 1 22 22 U H6    H 1  7.68   0.01 ? 1 ? ? . A 22 U H6    A 22 U H6    . 2RVO ? 
+85  1 1 23 23 U "H1'" H 1  5.69   0.01 ? 1 ? ? . A 23 U "H1'" A 23 U "H1'" . 2RVO ? 
+86  1 1 23 23 U H5    H 1  5.57   0.01 ? 1 ? ? . A 23 U H5    A 23 U H5    . 2RVO ? 
+87  1 1 23 23 U H6    H 1  7.96   0.01 ? 1 ? ? . A 23 U H6    A 23 U H6    . 2RVO ? 
+88  1 1 24 24 G "H1'" H 1  5.76   0.01 ? 1 ? ? . A 24 G "H1'" A 24 G "H1'" . 2RVO ? 
+89  1 1 24 24 G H8    H 1  7.72   0.01 ? 1 ? ? . A 24 G H8    A 24 G H8    . 2RVO ? 
+90  1 1 24 24 G C8    C 13 133.54 0.16 ? 1 ? ? . A 24 G C8    A 24 G C8    . 2RVO ? 
+91  1 1 25 25 U "H1'" H 1  5.57   0.01 ? 1 ? ? . A 25 U "H1'" A 25 U "H1'" . 2RVO ? 
+92  1 1 25 25 U H5    H 1  5.07   0.01 ? 1 ? ? . A 25 U H5    A 25 U H5    . 2RVO ? 
+93  1 1 25 25 U H6    H 1  7.56   0.01 ? 1 ? ? . A 25 U H6    A 25 U H6    . 2RVO ? 
+94  1 1 26 26 A "H1'" H 1  5.81   0.01 ? 1 ? ? . A 26 A "H1'" A 26 A "H1'" . 2RVO ? 
+95  1 1 26 26 A H2    H 1  7.32   0.01 ? 1 ? ? . A 26 A H2    A 26 A H2    . 2RVO ? 
+96  1 1 26 26 A "H2'" H 1  4.56   0.01 ? 1 ? ? . A 26 A "H2'" A 26 A "H2'" . 2RVO ? 
+97  1 1 26 26 A "H3'" H 1  4.72   0.01 ? 1 ? ? . A 26 A "H3'" A 26 A "H3'" . 2RVO ? 
+98  1 1 26 26 A H8    H 1  8.08   0.01 ? 1 ? ? . A 26 A H8    A 26 A H8    . 2RVO ? 
+99  1 1 26 26 A C2    C 13 151.59 0.16 ? 1 ? ? . A 26 A C2    A 26 A C2    . 2RVO ? 
+100 1 1 26 26 A C8    C 13 138.07 0.16 ? 1 ? ? . A 26 A C8    A 26 A C8    . 2RVO ? 
+101 1 1 27 27 A "H1'" H 1  5.61   0.01 ? 1 ? ? . A 27 A "H1'" A 27 A "H1'" . 2RVO ? 
+102 1 1 27 27 A H2    H 1  6.95   0.01 ? 1 ? ? . A 27 A H2    A 27 A H2    . 2RVO ? 
+103 1 1 27 27 A H8    H 1  8.21   0.01 ? 1 ? ? . A 27 A H8    A 27 A H8    . 2RVO ? 
+104 1 1 27 27 A C2    C 13 149.82 0.16 ? 1 ? ? . A 27 A C2    A 27 A C2    . 2RVO ? 
+105 1 1 28 28 A "H1'" H 1  5.83   0.01 ? 1 ? ? . A 28 A "H1'" A 28 A "H1'" . 2RVO ? 
+106 1 1 28 28 A H2    H 1  7.11   0.01 ? 1 ? ? . A 28 A H2    A 28 A H2    . 2RVO ? 
+107 1 1 28 28 A H8    H 1  7.83   0.01 ? 1 ? ? . A 28 A H8    A 28 A H8    . 2RVO ? 
+108 1 1 28 28 A C2    C 13 149.89 0.16 ? 1 ? ? . A 28 A C2    A 28 A C2    . 2RVO ? 
+109 1 1 28 28 A C8    C 13 136.99 0.16 ? 1 ? ? . A 28 A C8    A 28 A C8    . 2RVO ? 
+110 1 1 29 29 A "H1'" H 1  5.85   0.01 ? 1 ? ? . A 29 A "H1'" A 29 A "H1'" . 2RVO ? 
+111 1 1 29 29 A H2    H 1  7.40   0.01 ? 1 ? ? . A 29 A H2    A 29 A H2    . 2RVO ? 
+112 1 1 29 29 A H8    H 1  7.71   0.01 ? 1 ? ? . A 29 A H8    A 29 A H8    . 2RVO ? 
+113 1 1 29 29 A C2    C 13 150.32 0.16 ? 1 ? ? . A 29 A C2    A 29 A C2    . 2RVO ? 
+114 1 1 29 29 A C8    C 13 136.04 0.16 ? 1 ? ? . A 29 A C8    A 29 A C8    . 2RVO ? 
+115 1 1 30 30 G "H1'" H 1  5.56   0.01 ? 1 ? ? . A 30 G "H1'" A 30 G "H1'" . 2RVO ? 
+116 1 1 30 30 G H8    H 1  7.15   0.01 ? 1 ? ? . A 30 G H8    A 30 G H8    . 2RVO ? 
+117 1 1 30 30 G C8    C 13 132.63 0.16 ? 1 ? ? . A 30 G C8    A 30 G C8    . 2RVO ? 
+118 1 1 31 31 C "H1'" H 1  5.50   0.01 ? 1 ? ? . A 31 C "H1'" A 31 C "H1'" . 2RVO ? 
+119 1 1 31 31 C H5    H 1  5.17   0.01 ? 1 ? ? . A 31 C H5    A 31 C H5    . 2RVO ? 
+120 1 1 31 31 C H6    H 1  7.54   0.01 ? 1 ? ? . A 31 C H6    A 31 C H6    . 2RVO ? 
+121 1 1 31 31 C C5    C 13 94.68  0.16 ? 1 ? ? . A 31 C C5    A 31 C C5    . 2RVO ? 
+122 1 1 31 31 C C6    C 13 137.35 0.16 ? 1 ? ? . A 31 C C6    A 31 C C6    . 2RVO ? 
+123 1 1 32 32 G H8    H 1  7.60   0.01 ? 1 ? ? . A 32 G H8    A 32 G H8    . 2RVO ? 
+124 1 1 32 32 G C8    C 13 133.65 0.16 ? 1 ? ? . A 32 G C8    A 32 G C8    . 2RVO ? 
+125 1 1 33 33 C "H1'" H 1  5.55   0.01 ? 1 ? ? . A 33 C "H1'" A 33 C "H1'" . 2RVO ? 
+126 1 1 33 33 C H5    H 1  5.24   0.01 ? 1 ? ? . A 33 C H5    A 33 C H5    . 2RVO ? 
+127 1 1 33 33 C H6    H 1  7.73   0.01 ? 1 ? ? . A 33 C H6    A 33 C H6    . 2RVO ? 
+128 1 1 34 34 C H5    H 1  5.55   0.01 ? 1 ? ? . A 34 C H5    A 34 C H5    . 2RVO ? 
+129 1 1 34 34 C H6    H 1  7.70   0.01 ? 1 ? ? . A 34 C H6    A 34 C H6    . 2RVO ? 
+130 1 1 34 34 C C5    C 13 95.33  0.16 ? 1 ? ? . A 34 C C5    A 34 C C5    . 2RVO ? 
+stop_
+save_

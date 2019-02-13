@@ -1,0 +1,250 @@
+data_5lsn
+
+save_entry_information
+# 
+_Entry.ID                 5LSN 
+_Entry.Assigned_BMRB_ID   34038 
+# 
+loop_
+_Audit.Revision_ID 
+_Audit.Creation_date 
+_Audit.Update_record 
+_Audit.Creation_method 
+_Audit.Entry_ID 
+1 2016-09-05 'Nomenclature checked and updated' . 5LSN 
+2 2016-09-05 'Preliminary version'              . 5LSN 
+3 2017-09-20 'Initial release'                  . 5LSN 
+stop_
+save_
+save_REF
+# 
+_Chem_shift_reference.Sf_category    chem_shift_reference 
+_Chem_shift_reference.Sf_framecode   REF 
+_Chem_shift_reference.Entry_ID       5LSN 
+_Chem_shift_reference.ID             1 
+# 
+loop_
+_Chem_shift_ref.Atom_type 
+_Chem_shift_ref.Atom_isotope_number 
+_Chem_shift_ref.Mol_common_name 
+_Chem_shift_ref.Atom_group 
+_Chem_shift_ref.Concentration_val 
+_Chem_shift_ref.Concentration_units 
+_Chem_shift_ref.Solvent 
+_Chem_shift_ref.Rank 
+_Chem_shift_ref.Chem_shift_units 
+_Chem_shift_ref.Chem_shift_val 
+_Chem_shift_ref.Ref_method 
+_Chem_shift_ref.Ref_type 
+_Chem_shift_ref.Indirect_shift_ratio 
+_Chem_shift_ref.Entry_ID 
+_Chem_shift_ref.Chem_shift_reference_ID 
+H 1 water protons ? ? ? ? ppm 4.78 internal direct 1.0 34038 1 
+stop_
+save_
+save_shifts_160905
+# 
+loop_
+_Atom_chem_shift.ID 
+_Atom_chem_shift.Entity_assembly_ID 
+_Atom_chem_shift.Entity_ID 
+_Atom_chem_shift.Comp_index_ID 
+_Atom_chem_shift.Seq_ID 
+_Atom_chem_shift.Comp_ID 
+_Atom_chem_shift.Atom_ID 
+_Atom_chem_shift.Atom_type 
+_Atom_chem_shift.Atom_isotope_number 
+_Atom_chem_shift.Val 
+_Atom_chem_shift.Val_err 
+_Atom_chem_shift.Assign_fig_of_merit 
+_Atom_chem_shift.Ambiguity_code 
+_Atom_chem_shift.Occupancy 
+_Atom_chem_shift.Resonance_ID 
+_Atom_chem_shift.Auth_entity_assembly_ID 
+_Atom_chem_shift.Auth_asym_ID 
+_Atom_chem_shift.Auth_seq_ID 
+_Atom_chem_shift.Auth_comp_ID 
+_Atom_chem_shift.Auth_atom_ID 
+_Atom_chem_shift.Original_PDB_strand_ID 
+_Atom_chem_shift.Original_PDB_residue_no 
+_Atom_chem_shift.Original_PDB_residue_name 
+_Atom_chem_shift.Original_PDB_atom_name 
+_Atom_chem_shift.Details 
+_Atom_chem_shift.Entry_ID 
+_Atom_chem_shift.Assigned_chem_shift_list_ID 
+1   ? . 64 ? C "C1'" C 13 94.212  ? ? ? ? ? . A 64 C "C1'" A 64 C "C1'" . 5LSN ? 
+2   ? . 64 ? C C5    C 13 98.142  ? ? ? ? ? . A 64 C C5    A 64 C C5    . 5LSN ? 
+3   ? . 64 ? C C6    C 13 141.538 ? ? ? ? ? . A 64 C C6    A 64 C C6    . 5LSN ? 
+4   ? . 64 ? C "H1'" H 1  5.338   ? ? ? ? ? . A 64 C "H1'" A 64 C "H1'" . 5LSN ? 
+5   ? . 64 ? C H5    H 1  5.563   ? ? ? ? ? . A 64 C H5    A 64 C H5    . 5LSN ? 
+6   ? . 64 ? C H6    H 1  7.596   ? ? ? ? ? . A 64 C H6    A 64 C H6    . 5LSN ? 
+7   ? . 64 ? C N1    N 15 151.242 ? ? ? ? ? . A 64 C N1    A 64 C N1    . 5LSN ? 
+8   ? . 65 ? C C5    C 13 97.998  ? ? ? ? ? . A 65 C C5    A 65 C C5    . 5LSN ? 
+9   ? . 65 ? C C6    C 13 141.268 ? ? ? ? ? . A 65 C C6    A 65 C C6    . 5LSN ? 
+10  ? . 65 ? C "H1'" H 1  5.433   ? ? ? ? ? . A 65 C "H1'" A 65 C "H1'" . 5LSN ? 
+11  ? . 65 ? C H5    H 1  5.428   ? ? ? ? ? . A 65 C H5    A 65 C H5    . 5LSN ? 
+12  ? . 65 ? C H6    H 1  7.665   ? ? ? ? ? . A 65 C H6    A 65 C H6    . 5LSN ? 
+13  ? . 65 ? C N1    N 15 151.254 ? ? ? ? ? . A 65 C N1    A 65 C N1    . 5LSN ? 
+14  ? . 66 ? U "C1'" C 13 93.779  ? ? ? ? ? . A 66 U "C1'" A 66 U "C1'" . 5LSN ? 
+15  ? . 66 ? U C5    C 13 104.105 ? ? ? ? ? . A 66 U C5    A 66 U C5    . 5LSN ? 
+16  ? . 66 ? U C6    C 13 141.476 ? ? ? ? ? . A 66 U C6    A 66 U C6    . 5LSN ? 
+17  ? . 66 ? U "H1'" H 1  5.490   ? ? ? ? ? . A 66 U "H1'" A 66 U "H1'" . 5LSN ? 
+18  ? . 66 ? U H5    H 1  5.502   ? ? ? ? ? . A 66 U H5    A 66 U H5    . 5LSN ? 
+19  ? . 66 ? U H6    H 1  7.776   ? ? ? ? ? . A 66 U H6    A 66 U H6    . 5LSN ? 
+20  ? . 66 ? U N1    N 15 145.882 ? ? ? ? ? . A 66 U N1    A 66 U N1    . 5LSN ? 
+21  ? . 67 ? C "C1'" C 13 92.572  ? ? ? ? ? . A 67 C "C1'" A 67 C "C1'" . 5LSN ? 
+22  ? . 67 ? C C5    C 13 97.593  ? ? ? ? ? . A 67 C C5    A 67 C C5    . 5LSN ? 
+23  ? . 67 ? C C6    C 13 142.489 ? ? ? ? ? . A 67 C C6    A 67 C C6    . 5LSN ? 
+24  ? . 67 ? C "H1'" H 1  5.732   ? ? ? ? ? . A 67 C "H1'" A 67 C "H1'" . 5LSN ? 
+25  ? . 67 ? C H5    H 1  5.662   ? ? ? ? ? . A 67 C H5    A 67 C H5    . 5LSN ? 
+26  ? . 67 ? C H6    H 1  7.934   ? ? ? ? ? . A 67 C H6    A 67 C H6    . 5LSN ? 
+27  ? . 67 ? C N1    N 15 151.445 ? ? ? ? ? . A 67 C N1    A 67 C N1    . 5LSN ? 
+28  ? . 68 ? G "C1'" C 13 92.919  ? ? ? ? ? . A 68 G "C1'" A 68 G "C1'" . 5LSN ? 
+29  ? . 68 ? G C8    C 13 137.519 ? ? ? ? ? . A 68 G C8    A 68 G C8    . 5LSN ? 
+30  ? . 68 ? G "H1'" H 1  5.677   ? ? ? ? ? . A 68 G "H1'" A 68 G "H1'" . 5LSN ? 
+31  ? . 68 ? G H8    H 1  7.553   ? ? ? ? ? . A 68 G H8    A 68 G H8    . 5LSN ? 
+32  ? . 69 ? U C5    C 13 103.039 ? ? ? ? ? . A 69 U C5    A 69 U C5    . 5LSN ? 
+33  ? . 69 ? U C6    C 13 141.734 ? ? ? ? ? . A 69 U C6    A 69 U C6    . 5LSN ? 
+34  ? . 69 ? U "H1'" H 1  5.495   ? ? ? ? ? . A 69 U "H1'" A 69 U "H1'" . 5LSN ? 
+35  ? . 69 ? U H5    H 1  5.090   ? ? ? ? ? . A 69 U H5    A 69 U H5    . 5LSN ? 
+36  ? . 69 ? U H6    H 1  7.637   ? ? ? ? ? . A 69 U H6    A 69 U H6    . 5LSN ? 
+37  ? . 69 ? U N1    N 15 146.315 ? ? ? ? ? . A 69 U N1    A 69 U N1    . 5LSN ? 
+38  ? . 70 ? G "C1'" C 13 92.524  ? ? ? ? ? . A 70 G "C1'" A 70 G "C1'" . 5LSN ? 
+39  ? . 70 ? G C8    C 13 136.447 ? ? ? ? ? . A 70 G C8    A 70 G C8    . 5LSN ? 
+40  ? . 70 ? G H1    H 1  11.990  ? ? ? ? ? . A 70 G H1    A 70 G H1    . 5LSN ? 
+41  ? . 70 ? G "H1'" H 1  5.796   ? ? ? ? ? . A 70 G "H1'" A 70 G "H1'" . 5LSN ? 
+42  ? . 70 ? G H8    H 1  7.706   ? ? ? ? ? . A 70 G H8    A 70 G H8    . 5LSN ? 
+43  ? . 71 ? G "C1'" C 13 89.328  ? ? ? ? ? . A 71 G "C1'" A 71 G "C1'" . 5LSN ? 
+44  ? . 71 ? G C8    C 13 136.284 ? ? ? ? ? . A 71 G C8    A 71 G C8    . 5LSN ? 
+45  ? . 71 ? G H1    H 1  13.167  ? ? ? ? ? . A 71 G H1    A 71 G H1    . 5LSN ? 
+46  ? . 71 ? G "H1'" H 1  5.684   ? ? ? ? ? . A 71 G "H1'" A 71 G "H1'" . 5LSN ? 
+47  ? . 71 ? G H8    H 1  7.175   ? ? ? ? ? . A 71 G H8    A 71 G H8    . 5LSN ? 
+48  ? . 72 ? U C5    C 13 105.637 ? ? ? ? ? . A 72 U C5    A 72 U C5    . 5LSN ? 
+49  ? . 72 ? U C6    C 13 141.594 ? ? ? ? ? . A 72 U C6    A 72 U C6    . 5LSN ? 
+50  ? . 72 ? U "H1'" H 1  5.502   ? ? ? ? ? . A 72 U "H1'" A 72 U "H1'" . 5LSN ? 
+51  ? . 72 ? U H3    H 1  13.600  ? ? ? ? ? . A 72 U H3    A 72 U H3    . 5LSN ? 
+52  ? . 72 ? U H5    H 1  4.993   ? ? ? ? ? . A 72 U H5    A 72 U H5    . 5LSN ? 
+53  ? . 72 ? U H6    H 1  7.617   ? ? ? ? ? . A 72 U H6    A 72 U H6    . 5LSN ? 
+54  ? . 73 ? G "C1'" C 13 92.666  ? ? ? ? ? . A 73 G "C1'" A 73 G "C1'" . 5LSN ? 
+55  ? . 73 ? G C8    C 13 136.333 ? ? ? ? ? . A 73 G C8    A 73 G C8    . 5LSN ? 
+56  ? . 73 ? G H1    H 1  12.093  ? ? ? ? ? . A 73 G H1    A 73 G H1    . 5LSN ? 
+57  ? . 73 ? G "H1'" H 1  5.791   ? ? ? ? ? . A 73 G "H1'" A 73 G "H1'" . 5LSN ? 
+58  ? . 73 ? G H8    H 1  7.679   ? ? ? ? ? . A 73 G H8    A 73 G H8    . 5LSN ? 
+59  ? . 73 ? G N9    N 15 169.935 ? ? ? ? ? . A 73 G N9    A 73 G N9    . 5LSN ? 
+60  ? . 74 ? G C8    C 13 136.277 ? ? ? ? ? . A 74 G C8    A 74 G C8    . 5LSN ? 
+61  ? . 74 ? G H1    H 1  13.219  ? ? ? ? ? . A 74 G H1    A 74 G H1    . 5LSN ? 
+62  ? . 74 ? G "H1'" H 1  5.637   ? ? ? ? ? . A 74 G "H1'" A 74 G "H1'" . 5LSN ? 
+63  ? . 74 ? G H8    H 1  7.168   ? ? ? ? ? . A 74 G H8    A 74 G H8    . 5LSN ? 
+64  ? . 75 ? U C5    C 13 102.816 ? ? ? ? ? . A 75 U C5    A 75 U C5    . 5LSN ? 
+65  ? . 75 ? U "H1'" H 1  5.542   ? ? ? ? ? . A 75 U "H1'" A 75 U "H1'" . 5LSN ? 
+66  ? . 75 ? U H5    H 1  4.983   ? ? ? ? ? . A 75 U H5    A 75 U H5    . 5LSN ? 
+67  ? . 75 ? U H6    H 1  7.628   ? ? ? ? ? . A 75 U H6    A 75 U H6    . 5LSN ? 
+68  ? . 76 ? U C6    C 13 142.239 ? ? ? ? ? . A 76 U C6    A 76 U C6    . 5LSN ? 
+69  ? . 76 ? U "H1'" H 1  5.850   ? ? ? ? ? . A 76 U "H1'" A 76 U "H1'" . 5LSN ? 
+70  ? . 76 ? U H5    H 1  5.526   ? ? ? ? ? . A 76 U H5    A 76 U H5    . 5LSN ? 
+71  ? . 76 ? U H6    H 1  7.727   ? ? ? ? ? . A 76 U H6    A 76 U H6    . 5LSN ? 
+72  ? . 76 ? U N1    N 15 146.048 ? ? ? ? ? . A 76 U N1    A 76 U N1    . 5LSN ? 
+73  ? . 77 ? G C8    C 13 139.815 ? ? ? ? ? . A 77 G C8    A 77 G C8    . 5LSN ? 
+74  ? . 77 ? G "H1'" H 1  5.688   ? ? ? ? ? . A 77 G "H1'" A 77 G "H1'" . 5LSN ? 
+75  ? . 77 ? G H8    H 1  7.975   ? ? ? ? ? . A 77 G H8    A 77 G H8    . 5LSN ? 
+76  ? . 77 ? G N9    N 15 166.521 ? ? ? ? ? . A 77 G N9    A 77 G N9    . 5LSN ? 
+77  ? . 78 ? U "C1'" C 13 88.945  ? ? ? ? ? . A 78 U "C1'" A 78 U "C1'" . 5LSN ? 
+78  ? . 78 ? U "C2'" C 13 78.028  ? ? ? ? ? . A 78 U "C2'" A 78 U "C2'" . 5LSN ? 
+79  ? . 78 ? U "C3'" C 13 75.873  ? ? ? ? ? . A 78 U "C3'" A 78 U "C3'" . 5LSN ? 
+80  ? . 78 ? U "C4'" C 13 84.560  ? ? ? ? ? . A 78 U "C4'" A 78 U "C4'" . 5LSN ? 
+81  ? . 78 ? U C5    C 13 105.637 ? ? ? ? ? . A 78 U C5    A 78 U C5    . 5LSN ? 
+82  ? . 78 ? U C6    C 13 143.243 ? ? ? ? ? . A 78 U C6    A 78 U C6    . 5LSN ? 
+83  ? . 78 ? U "H1'" H 1  5.450   ? ? ? ? ? . A 78 U "H1'" A 78 U "H1'" . 5LSN ? 
+84  ? . 78 ? U "H2'" H 1  4.378   ? ? ? ? ? . A 78 U "H2'" A 78 U "H2'" . 5LSN ? 
+85  ? . 78 ? U "H3'" H 1  4.019   ? ? ? ? ? . A 78 U "H3'" A 78 U "H3'" . 5LSN ? 
+86  ? . 78 ? U "H4'" H 1  3.892   ? ? ? ? ? . A 78 U "H4'" A 78 U "H4'" . 5LSN ? 
+87  ? . 78 ? U H5    H 1  5.681   ? ? ? ? ? . A 78 U H5    A 78 U H5    . 5LSN ? 
+88  ? . 78 ? U H6    H 1  7.499   ? ? ? ? ? . A 78 U H6    A 78 U H6    . 5LSN ? 
+89  ? . 78 ? U N1    N 15 142.901 ? ? ? ? ? . A 78 U N1    A 78 U N1    . 5LSN ? 
+90  ? . 79 ? G "C1'" C 13 89.954  ? ? ? ? ? . A 79 G "C1'" A 79 G "C1'" . 5LSN ? 
+91  ? . 79 ? G C8    C 13 138.986 ? ? ? ? ? . A 79 G C8    A 79 G C8    . 5LSN ? 
+92  ? . 79 ? G "H1'" H 1  5.406   ? ? ? ? ? . A 79 G "H1'" A 79 G "H1'" . 5LSN ? 
+93  ? . 79 ? G H8    H 1  7.392   ? ? ? ? ? . A 79 G H8    A 79 G H8    . 5LSN ? 
+94  ? . 80 ? A "C1'" C 13 87.526  ? ? ? ? ? . A 80 A "C1'" A 80 A "C1'" . 5LSN ? 
+95  ? . 80 ? A C2    C 13 153.217 ? ? ? ? ? . A 80 A C2    A 80 A C2    . 5LSN ? 
+96  ? . 80 ? A C8    C 13 141.578 ? ? ? ? ? . A 80 A C8    A 80 A C8    . 5LSN ? 
+97  ? . 80 ? A "H1'" H 1  5.682   ? ? ? ? ? . A 80 A "H1'" A 80 A "H1'" . 5LSN ? 
+98  ? . 80 ? A H2    H 1  7.190   ? ? ? ? ? . A 80 A H2    A 80 A H2    . 5LSN ? 
+99  ? . 80 ? A H8    H 1  8.296   ? ? ? ? ? . A 80 A H8    A 80 A H8    . 5LSN ? 
+100 ? . 80 ? A N9    N 15 165.413 ? ? ? ? ? . A 80 A N9    A 80 A N9    . 5LSN ? 
+101 ? . 81 ? A "C1'" C 13 92.994  ? ? ? ? ? . A 81 A "C1'" A 81 A "C1'" . 5LSN ? 
+102 ? . 81 ? A C2    C 13 154.152 ? ? ? ? ? . A 81 A C2    A 81 A C2    . 5LSN ? 
+103 ? . 81 ? A C8    C 13 139.740 ? ? ? ? ? . A 81 A C8    A 81 A C8    . 5LSN ? 
+104 ? . 81 ? A "H1'" H 1  5.961   ? ? ? ? ? . A 81 A "H1'" A 81 A "H1'" . 5LSN ? 
+105 ? . 81 ? A H2    H 1  7.845   ? ? ? ? ? . A 81 A H2    A 81 A H2    . 5LSN ? 
+106 ? . 81 ? A H8    H 1  7.965   ? ? ? ? ? . A 81 A H8    A 81 A H8    . 5LSN ? 
+107 ? . 81 ? A N9    N 15 170.157 ? ? ? ? ? . A 81 A N9    A 81 A N9    . 5LSN ? 
+108 ? . 82 ? C C5    C 13 97.102  ? ? ? ? ? . A 82 C C5    A 82 C C5    . 5LSN ? 
+109 ? . 82 ? C C6    C 13 140.919 ? ? ? ? ? . A 82 C C6    A 82 C C6    . 5LSN ? 
+110 ? . 82 ? C "H1'" H 1  5.418   ? ? ? ? ? . A 82 C "H1'" A 82 C "H1'" . 5LSN ? 
+111 ? . 82 ? C H41   H 1  8.231   ? ? ? ? ? . A 82 C H41   A 82 C H41   . 5LSN ? 
+112 ? . 82 ? C H42   H 1  6.743   ? ? ? ? ? . A 82 C H42   A 82 C H42   . 5LSN ? 
+113 ? . 82 ? C H5    H 1  5.100   ? ? ? ? ? . A 82 C H5    A 82 C H5    . 5LSN ? 
+114 ? . 82 ? C H6    H 1  7.504   ? ? ? ? ? . A 82 C H6    A 82 C H6    . 5LSN ? 
+115 ? . 82 ? C N1    N 15 151.501 ? ? ? ? ? . A 82 C N1    A 82 C N1    . 5LSN ? 
+116 ? . 83 ? C "C1'" C 13 93.801  ? ? ? ? ? . A 83 C "C1'" A 83 C "C1'" . 5LSN ? 
+117 ? . 83 ? C C5    C 13 97.792  ? ? ? ? ? . A 83 C C5    A 83 C C5    . 5LSN ? 
+118 ? . 83 ? C C6    C 13 141.156 ? ? ? ? ? . A 83 C C6    A 83 C C6    . 5LSN ? 
+119 ? . 83 ? C "H1'" H 1  5.413   ? ? ? ? ? . A 83 C "H1'" A 83 C "H1'" . 5LSN ? 
+120 ? . 83 ? C H41   H 1  8.328   ? ? ? ? ? . A 83 C H41   A 83 C H41   . 5LSN ? 
+121 ? . 83 ? C H42   H 1  6.749   ? ? ? ? ? . A 83 C H42   A 83 C H42   . 5LSN ? 
+122 ? . 83 ? C H5    H 1  5.392   ? ? ? ? ? . A 83 C H5    A 83 C H5    . 5LSN ? 
+123 ? . 83 ? C H6    H 1  7.692   ? ? ? ? ? . A 83 C H6    A 83 C H6    . 5LSN ? 
+124 ? . 83 ? C N1    N 15 150.636 ? ? ? ? ? . A 83 C N1    A 83 C N1    . 5LSN ? 
+125 ? . 84 ? A "C1'" C 13 92.992  ? ? ? ? ? . A 84 A "C1'" A 84 A "C1'" . 5LSN ? 
+126 ? . 84 ? A C2    C 13 153.223 ? ? ? ? ? . A 84 A C2    A 84 A C2    . 5LSN ? 
+127 ? . 84 ? A C8    C 13 139.636 ? ? ? ? ? . A 84 A C8    A 84 A C8    . 5LSN ? 
+128 ? . 84 ? A "H1'" H 1  5.882   ? ? ? ? ? . A 84 A "H1'" A 84 A "H1'" . 5LSN ? 
+129 ? . 84 ? A H2    H 1  7.316   ? ? ? ? ? . A 84 A H2    A 84 A H2    . 5LSN ? 
+130 ? . 84 ? A H8    H 1  8.020   ? ? ? ? ? . A 84 A H8    A 84 A H8    . 5LSN ? 
+131 ? . 84 ? A N9    N 15 170.619 ? ? ? ? ? . A 84 A N9    A 84 A N9    . 5LSN ? 
+132 ? . 85 ? C "C1'" C 13 93.739  ? ? ? ? ? . A 85 C "C1'" A 85 C "C1'" . 5LSN ? 
+133 ? . 85 ? C C5    C 13 97.145  ? ? ? ? ? . A 85 C C5    A 85 C C5    . 5LSN ? 
+134 ? . 85 ? C C6    C 13 140.751 ? ? ? ? ? . A 85 C C6    A 85 C C6    . 5LSN ? 
+135 ? . 85 ? C "H1'" H 1  5.367   ? ? ? ? ? . A 85 C "H1'" A 85 C "H1'" . 5LSN ? 
+136 ? . 85 ? C H41   H 1  8.261   ? ? ? ? ? . A 85 C H41   A 85 C H41   . 5LSN ? 
+137 ? . 85 ? C H42   H 1  6.855   ? ? ? ? ? . A 85 C H42   A 85 C H42   . 5LSN ? 
+138 ? . 85 ? C H5    H 1  5.122   ? ? ? ? ? . A 85 C H5    A 85 C H5    . 5LSN ? 
+139 ? . 85 ? C H6    H 1  7.496   ? ? ? ? ? . A 85 C H6    A 85 C H6    . 5LSN ? 
+140 ? . 85 ? C N1    N 15 151.222 ? ? ? ? ? . A 85 C N1    A 85 C N1    . 5LSN ? 
+141 ? . 86 ? C C5    C 13 97.755  ? ? ? ? ? . A 86 C C5    A 86 C C5    . 5LSN ? 
+142 ? . 86 ? C "H1'" H 1  5.420   ? ? ? ? ? . A 86 C "H1'" A 86 C "H1'" . 5LSN ? 
+143 ? . 86 ? C H41   H 1  8.238   ? ? ? ? ? . A 86 C H41   A 86 C H41   . 5LSN ? 
+144 ? . 86 ? C H42   H 1  6.772   ? ? ? ? ? . A 86 C H42   A 86 C H42   . 5LSN ? 
+145 ? . 86 ? C H5    H 1  5.394   ? ? ? ? ? . A 86 C H5    A 86 C H5    . 5LSN ? 
+146 ? . 86 ? C H6    H 1  7.676   ? ? ? ? ? . A 86 C H6    A 86 C H6    . 5LSN ? 
+147 ? . 86 ? C N1    N 15 150.601 ? ? ? ? ? . A 86 C N1    A 86 C N1    . 5LSN ? 
+148 ? . 87 ? A "C1'" C 13 93.417  ? ? ? ? ? . A 87 A "C1'" A 87 A "C1'" . 5LSN ? 
+149 ? . 87 ? A C2    C 13 153.294 ? ? ? ? ? . A 87 A C2    A 87 A C2    . 5LSN ? 
+150 ? . 87 ? A C8    C 13 139.367 ? ? ? ? ? . A 87 A C8    A 87 A C8    . 5LSN ? 
+151 ? . 87 ? A "H1'" H 1  5.901   ? ? ? ? ? . A 87 A "H1'" A 87 A "H1'" . 5LSN ? 
+152 ? . 87 ? A H2    H 1  7.308   ? ? ? ? ? . A 87 A H2    A 87 A H2    . 5LSN ? 
+153 ? . 87 ? A H8    H 1  7.886   ? ? ? ? ? . A 87 A H8    A 87 A H8    . 5LSN ? 
+154 ? . 87 ? A N9    N 15 171.102 ? ? ? ? ? . A 87 A N9    A 87 A N9    . 5LSN ? 
+155 ? . 88 ? U "C1'" C 13 92.781  ? ? ? ? ? . A 88 U "C1'" A 88 U "C1'" . 5LSN ? 
+156 ? . 88 ? U C6    C 13 140.372 ? ? ? ? ? . A 88 U C6    A 88 U C6    . 5LSN ? 
+157 ? . 88 ? U "H1'" H 1  5.296   ? ? ? ? ? . A 88 U "H1'" A 88 U "H1'" . 5LSN ? 
+158 ? . 88 ? U H5    H 1  5.287   ? ? ? ? ? . A 88 U H5    A 88 U H5    . 5LSN ? 
+159 ? . 88 ? U H6    H 1  7.420   ? ? ? ? ? . A 88 U H6    A 88 U H6    . 5LSN ? 
+160 ? . 88 ? U N1    N 15 144.772 ? ? ? ? ? . A 88 U N1    A 88 U N1    . 5LSN ? 
+161 ? . 89 ? G "C1'" C 13 92.657  ? ? ? ? ? . A 89 G "C1'" A 89 G "C1'" . 5LSN ? 
+162 ? . 89 ? G C8    C 13 137.715 ? ? ? ? ? . A 89 G C8    A 89 G C8    . 5LSN ? 
+163 ? . 89 ? G "H1'" H 1  5.758   ? ? ? ? ? . A 89 G "H1'" A 89 G "H1'" . 5LSN ? 
+164 ? . 89 ? G H8    H 1  7.817   ? ? ? ? ? . A 89 G H8    A 89 G H8    . 5LSN ? 
+165 ? . 90 ? U C5    C 13 103.285 ? ? ? ? ? . A 90 U C5    A 90 U C5    . 5LSN ? 
+166 ? . 90 ? U C6    C 13 141.170 ? ? ? ? ? . A 90 U C6    A 90 U C6    . 5LSN ? 
+167 ? . 90 ? U "H1'" H 1  5.455   ? ? ? ? ? . A 90 U "H1'" A 90 U "H1'" . 5LSN ? 
+168 ? . 90 ? U H5    H 1  5.079   ? ? ? ? ? . A 90 U H5    A 90 U H5    . 5LSN ? 
+169 ? . 90 ? U H6    H 1  7.311   ? ? ? ? ? . A 90 U H6    A 90 U H6    . 5LSN ? 
+170 ? . 91 ? G "H1'" H 1  5.775   ? ? ? ? ? . A 91 G "H1'" A 91 G "H1'" . 5LSN ? 
+171 ? . 91 ? G H8    H 1  7.652   ? ? ? ? ? . A 91 G H8    A 91 G H8    . 5LSN ? 
+172 ? . 92 ? G C8    C 13 136.430 ? ? ? ? ? . A 92 G C8    A 92 G C8    . 5LSN ? 
+173 ? . 92 ? G "H1'" H 1  5.702   ? ? ? ? ? . A 92 G "H1'" A 92 G "H1'" . 5LSN ? 
+174 ? . 92 ? G H8    H 1  7.179   ? ? ? ? ? . A 92 G H8    A 92 G H8    . 5LSN ? 
+stop_
+save_

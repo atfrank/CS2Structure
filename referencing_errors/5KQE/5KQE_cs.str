@@ -1,0 +1,593 @@
+data_5kqe
+
+save_entry_information
+# 
+_Entry.ID                 5KQE 
+_Entry.Assigned_BMRB_ID   30132 
+# 
+loop_
+_Audit.Revision_ID 
+_Audit.Creation_date 
+_Audit.Update_record 
+_Audit.Creation_method 
+_Audit.Entry_ID 
+1 2016-08-15 'Nomenclature checked and updated' . 5KQE 
+2 2016-08-15 'Preliminary version'              . 5KQE 
+3 2016-08-24 'Initial release'                  . 5KQE 
+stop_
+save_
+save_Chemical_Shift_Reference_1
+# 
+_Chem_shift_reference.Sf_category    chem_shift_reference 
+_Chem_shift_reference.Sf_framecode   Chemical_Shift_Reference_1 
+_Chem_shift_reference.Entry_ID       5KQE 
+_Chem_shift_reference.ID             1 
+# 
+loop_
+_Chem_shift_ref.Atom_type 
+_Chem_shift_ref.Atom_isotope_number 
+_Chem_shift_ref.Mol_common_name 
+_Chem_shift_ref.Atom_group 
+_Chem_shift_ref.Concentration_val 
+_Chem_shift_ref.Concentration_units 
+_Chem_shift_ref.Solvent 
+_Chem_shift_ref.Rank 
+_Chem_shift_ref.Chem_shift_units 
+_Chem_shift_ref.Chem_shift_val 
+_Chem_shift_ref.Ref_method 
+_Chem_shift_ref.Ref_type 
+_Chem_shift_ref.Indirect_shift_ratio 
+_Chem_shift_ref.Entry_ID 
+_Chem_shift_ref.Chem_shift_reference_ID 
+H 1  DSS 'methyl protons' ? ? ? ? ppm 0.000 internal direct   1.0        30132 1 
+C 13 DSS 'methyl protons' ? ? ? ? ppm 0.000 internal indirect 0.25144953 30132 1 
+N 15 DSS 'methyl protons' ? ? ? ? ppm 0.000 internal indirect 0.10132912 30132 1 
+stop_
+save_
+save_mfp2ab6nt_7
+# 
+loop_
+_Atom_chem_shift.ID 
+_Atom_chem_shift.Entity_assembly_ID 
+_Atom_chem_shift.Entity_ID 
+_Atom_chem_shift.Comp_index_ID 
+_Atom_chem_shift.Seq_ID 
+_Atom_chem_shift.Comp_ID 
+_Atom_chem_shift.Atom_ID 
+_Atom_chem_shift.Atom_type 
+_Atom_chem_shift.Atom_isotope_number 
+_Atom_chem_shift.Val 
+_Atom_chem_shift.Val_err 
+_Atom_chem_shift.Assign_fig_of_merit 
+_Atom_chem_shift.Ambiguity_code 
+_Atom_chem_shift.Occupancy 
+_Atom_chem_shift.Resonance_ID 
+_Atom_chem_shift.Auth_entity_assembly_ID 
+_Atom_chem_shift.Auth_asym_ID 
+_Atom_chem_shift.Auth_seq_ID 
+_Atom_chem_shift.Auth_comp_ID 
+_Atom_chem_shift.Auth_atom_ID 
+_Atom_chem_shift.Original_PDB_strand_ID 
+_Atom_chem_shift.Original_PDB_residue_no 
+_Atom_chem_shift.Original_PDB_residue_name 
+_Atom_chem_shift.Original_PDB_atom_name 
+_Atom_chem_shift.Details 
+_Atom_chem_shift.Entry_ID 
+_Atom_chem_shift.Assigned_chem_shift_list_ID 
+1   ? . 1  ? G "C1'"  C ? 91.84   0.28 ? 1 ? ? . A 1  G "C1'"  A 1  GUA "C1'"  . 5KQE ? 
+2   ? . 1  ? G "C2'"  C ? 75.274  0.13 ? 1 ? ? . A 1  G "C2'"  A 1  GUA "C2'"  . 5KQE ? 
+3   ? . 1  ? G "C3'"  C ? 74.677  0.37 ? 1 ? ? . A 1  G "C3'"  A 1  GUA "C3'"  . 5KQE ? 
+4   ? . 1  ? G "C4'"  C ? 83.57   0.24 ? 1 ? ? . A 1  G "C4'"  A 1  GUA "C4'"  . 5KQE ? 
+5   ? . 1  ? G C8     C ? 139.62  0    ? 1 ? ? . A 1  G C8     A 1  GUA C8     . 5KQE ? 
+6   ? . 1  ? G H1     H ? 12.792  0.01 ? 1 ? ? . A 1  G H1     A 1  GUA H1     . 5KQE ? 
+7   ? . 1  ? G "H1'"  H ? 5.823   0.13 ? 1 ? ? . A 1  G "H1'"  A 1  GUA "H1'"  . 5KQE ? 
+8   ? . 1  ? G "H2'"  H ? 4.962   0    ? 1 ? ? . A 1  G "H2'"  A 1  GUA "H2'"  . 5KQE ? 
+9   ? . 1  ? G H21    H ? 6.988   0    ? 1 ? ? . A 1  G H21    A 1  GUA H21    . 5KQE ? 
+10  ? . 1  ? G H22    H ? 8.619   0    ? 1 ? ? . A 1  G H22    A 1  GUA H22    . 5KQE ? 
+11  ? . 1  ? G "H3'"  H ? 4.804   0.01 ? 1 ? ? . A 1  G "H3'"  A 1  GUA "H3'"  . 5KQE ? 
+12  ? . 1  ? G "H4'"  H ? 4.583   0.01 ? 1 ? ? . A 1  G "H4'"  A 1  GUA "H4'"  . 5KQE ? 
+13  ? . 1  ? G H8     H ? 8.178   0.11 ? 1 ? ? . A 1  G H8     A 1  GUA H8     . 5KQE ? 
+14  ? . 1  ? G N1     N ? 142.995 0    ? 1 ? ? . A 1  G N1     A 1  GUA N1     . 5KQE ? 
+15  ? . 2  ? G "C1'"  C ? 92.88   0.14 ? 1 ? ? . A 2  G "C1'"  A 2  GUA "C1'"  . 5KQE ? 
+16  ? . 2  ? G "C2'"  C ? 76.088  0.11 ? 1 ? ? . A 2  G "C2'"  A 2  GUA "C2'"  . 5KQE ? 
+17  ? . 2  ? G "C3'"  C ? 73.418  0.09 ? 1 ? ? . A 2  G "C3'"  A 2  GUA "C3'"  . 5KQE ? 
+18  ? . 2  ? G "C4'"  C ? 82.541  0.22 ? 1 ? ? . A 2  G "C4'"  A 2  GUA "C4'"  . 5KQE ? 
+19  ? . 2  ? G "C5'"  C ? 66.938  0    ? 1 ? ? . A 2  G "C5'"  A 2  GUA "C5'"  . 5KQE ? 
+20  ? . 2  ? G C8     C ? 137.596 0.03 ? 1 ? ? . A 2  G C8     A 2  GUA C8     . 5KQE ? 
+21  ? . 2  ? G H1     H ? 12.957  0.02 ? 1 ? ? . A 2  G H1     A 2  GUA H1     . 5KQE ? 
+22  ? . 2  ? G "H1'"  H ? 5.999   0.02 ? 1 ? ? . A 2  G "H1'"  A 2  GUA "H1'"  . 5KQE ? 
+23  ? . 2  ? G "H2'"  H ? 4.668   0.01 ? 1 ? ? . A 2  G "H2'"  A 2  GUA "H2'"  . 5KQE ? 
+24  ? . 2  ? G "H3'"  H ? 4.617   0    ? 1 ? ? . A 2  G "H3'"  A 2  GUA "H3'"  . 5KQE ? 
+25  ? . 2  ? G "H4'"  H ? 4.607   0.02 ? 1 ? ? . A 2  G "H4'"  A 2  GUA "H4'"  . 5KQE ? 
+26  ? . 2  ? G "H5'"  H ? 4.313   0.01 ? 1 ? ? . A 2  G "H5'"  A 2  GUA "H5'"  . 5KQE ? 
+27  ? . 2  ? G "H5''" H ? 4.545   0.01 ? 1 ? ? . A 2  G "H5''" A 2  GUA "H5''" . 5KQE ? 
+28  ? . 2  ? G H8     H ? 7.696   0.01 ? 1 ? ? . A 2  G H8     A 2  GUA H8     . 5KQE ? 
+29  ? . 2  ? G N1     N ? 142.932 0.08 ? 1 ? ? . A 2  G N1     A 2  GUA N1     . 5KQE ? 
+30  ? . 3  ? G "C1'"  C ? 93.774  0.04 ? 1 ? ? . A 3  G "C1'"  A 3  GUA "C1'"  . 5KQE ? 
+31  ? . 3  ? G "C2'"  C ? 75.716  0    ? 1 ? ? . A 3  G "C2'"  A 3  GUA "C2'"  . 5KQE ? 
+32  ? . 3  ? G "C3'"  C ? 73.402  0    ? 1 ? ? . A 3  G "C3'"  A 3  GUA "C3'"  . 5KQE ? 
+33  ? . 3  ? G "C4'"  C ? 84.057  0    ? 1 ? ? . A 3  G "C4'"  A 3  GUA "C4'"  . 5KQE ? 
+34  ? . 3  ? G C8     C ? 137.357 0    ? 1 ? ? . A 3  G C8     A 3  GUA C8     . 5KQE ? 
+35  ? . 3  ? G H1     H ? 11.567  0.02 ? 1 ? ? . A 3  G H1     A 3  GUA H1     . 5KQE ? 
+36  ? . 3  ? G "H1'"  H ? 5.856   0.01 ? 1 ? ? . A 3  G "H1'"  A 3  GUA "H1'"  . 5KQE ? 
+37  ? . 3  ? G "H2'"  H ? 4.714   0    ? 1 ? ? . A 3  G "H2'"  A 3  GUA "H2'"  . 5KQE ? 
+38  ? . 3  ? G H21    H ? 6.482   0.04 ? 1 ? ? . A 3  G H21    A 3  GUA H21    . 5KQE ? 
+39  ? . 3  ? G "H3'"  H ? 4.361   0.01 ? 1 ? ? . A 3  G "H3'"  A 3  GUA "H3'"  . 5KQE ? 
+40  ? . 3  ? G "H4'"  H ? 4.551   0.01 ? 1 ? ? . A 3  G "H4'"  A 3  GUA "H4'"  . 5KQE ? 
+41  ? . 3  ? G "H5'"  H ? 4.518   0    ? 1 ? ? . A 3  G "H5'"  A 3  GUA "H5'"  . 5KQE ? 
+42  ? . 3  ? G "H5''" H ? 4.127   0    ? 1 ? ? . A 3  G "H5''" A 3  GUA "H5''" . 5KQE ? 
+43  ? . 3  ? G H8     H ? 7.246   0.01 ? 1 ? ? . A 3  G H8     A 3  GUA H8     . 5KQE ? 
+44  ? . 3  ? G N1     N ? 139.612 0.04 ? 1 ? ? . A 3  G N1     A 3  GUA N1     . 5KQE ? 
+45  ? . 4  ? U "C1'"  C ? 94.011  0.03 ? 1 ? ? . A 4  U "C1'"  A 4  URI "C1'"  . 5KQE ? 
+46  ? . 4  ? U "C2'"  C ? 72.53   0.11 ? 1 ? ? . A 4  U "C2'"  A 4  URI "C2'"  . 5KQE ? 
+47  ? . 4  ? U "C3'"  C ? 75.746  0.01 ? 1 ? ? . A 4  U "C3'"  A 4  URI "C3'"  . 5KQE ? 
+48  ? . 4  ? U "C4'"  C ? 82.456  0.01 ? 1 ? ? . A 4  U "C4'"  A 4  URI "C4'"  . 5KQE ? 
+49  ? . 4  ? U C5     C ? 104.095 0.01 ? 1 ? ? . A 4  U C5     A 4  URI C5     . 5KQE ? 
+50  ? . 4  ? U C6     C ? 140.865 0.05 ? 1 ? ? . A 4  U C6     A 4  URI C6     . 5KQE ? 
+51  ? . 4  ? U "H1'"  H ? 5.561   0.01 ? 1 ? ? . A 4  U "H1'"  A 4  URI "H1'"  . 5KQE ? 
+52  ? . 4  ? U "H2'"  H ? 4.584   0    ? 1 ? ? . A 4  U "H2'"  A 4  URI "H2'"  . 5KQE ? 
+53  ? . 4  ? U H3     H ? 13.696  0.02 ? 1 ? ? . A 4  U H3     A 4  URI H3     . 5KQE ? 
+54  ? . 4  ? U "H3'"  H ? 4.613   0    ? 1 ? ? . A 4  U "H3'"  A 4  URI "H3'"  . 5KQE ? 
+55  ? . 4  ? U "H4'"  H ? 4.475   0.01 ? 1 ? ? . A 4  U "H4'"  A 4  URI "H4'"  . 5KQE ? 
+56  ? . 4  ? U H5     H ? 5.337   0.01 ? 1 ? ? . A 4  U H5     A 4  URI H5     . 5KQE ? 
+57  ? . 4  ? U "H5'"  H ? 4.429   0.17 ? 1 ? ? . A 4  U "H5'"  A 4  URI "H5'"  . 5KQE ? 
+58  ? . 4  ? U H6     H ? 7.667   0.01 ? 1 ? ? . A 4  U H6     A 4  URI H6     . 5KQE ? 
+59  ? . 4  ? U N3     N ? 157.239 0.1  ? 1 ? ? . A 4  U N3     A 4  URI N3     . 5KQE ? 
+60  ? . 5  ? G "C1'"  C ? 93.123  0.24 ? 1 ? ? . A 5  G "C1'"  A 5  GUA "C1'"  . 5KQE ? 
+61  ? . 5  ? G "C2'"  C ? 73.044  0.21 ? 1 ? ? . A 5  G "C2'"  A 5  GUA "C2'"  . 5KQE ? 
+62  ? . 5  ? G "C3'"  C ? 75.694  0.21 ? 1 ? ? . A 5  G "C3'"  A 5  GUA "C3'"  . 5KQE ? 
+63  ? . 5  ? G "C4'"  C ? 82.291  0.18 ? 1 ? ? . A 5  G "C4'"  A 5  GUA "C4'"  . 5KQE ? 
+64  ? . 5  ? G C8     C ? 136.783 0.02 ? 1 ? ? . A 5  G C8     A 5  GUA C8     . 5KQE ? 
+65  ? . 5  ? G H1     H ? 12.568  0.01 ? 1 ? ? . A 5  G H1     A 5  GUA H1     . 5KQE ? 
+66  ? . 5  ? G "H1'"  H ? 5.808   0.01 ? 1 ? ? . A 5  G "H1'"  A 5  GUA "H1'"  . 5KQE ? 
+67  ? . 5  ? G "H2'"  H ? 4.584   0.02 ? 1 ? ? . A 5  G "H2'"  A 5  GUA "H2'"  . 5KQE ? 
+68  ? . 5  ? G H21    H ? 6.136   0    ? 1 ? ? . A 5  G H21    A 5  GUA H21    . 5KQE ? 
+69  ? . 5  ? G H22    H ? 8.069   0    ? 1 ? ? . A 5  G H22    A 5  GUA H22    . 5KQE ? 
+70  ? . 5  ? G "H3'"  H ? 4.529   0.01 ? 1 ? ? . A 5  G "H3'"  A 5  GUA "H3'"  . 5KQE ? 
+71  ? . 5  ? G "H4'"  H ? 4.522   0.01 ? 1 ? ? . A 5  G "H4'"  A 5  GUA "H4'"  . 5KQE ? 
+72  ? . 5  ? G H8     H ? 7.715   0.01 ? 1 ? ? . A 5  G H8     A 5  GUA H8     . 5KQE ? 
+73  ? . 5  ? G N1     N ? 142.089 0.04 ? 1 ? ? . A 5  G N1     A 5  GUA N1     . 5KQE ? 
+74  ? . 6  ? U "C1'"  C ? 92.833  3.2  ? 1 ? ? . A 6  U "C1'"  A 6  URI "C1'"  . 5KQE ? 
+75  ? . 6  ? U "C2'"  C ? 72.947  0.02 ? 1 ? ? . A 6  U "C2'"  A 6  URI "C2'"  . 5KQE ? 
+76  ? . 6  ? U "C3'"  C ? 75.85   0.01 ? 1 ? ? . A 6  U "C3'"  A 6  URI "C3'"  . 5KQE ? 
+77  ? . 6  ? U "C4'"  C ? 82.723  0    ? 1 ? ? . A 6  U "C4'"  A 6  URI "C4'"  . 5KQE ? 
+78  ? . 6  ? U C5     C ? 103.61  0.03 ? 1 ? ? . A 6  U C5     A 6  URI C5     . 5KQE ? 
+79  ? . 6  ? U C6     C ? 141.508 0.03 ? 1 ? ? . A 6  U C6     A 6  URI C6     . 5KQE ? 
+80  ? . 6  ? U "H1'"  H ? 5.508   0.01 ? 1 ? ? . A 6  U "H1'"  A 6  URI "H1'"  . 5KQE ? 
+81  ? . 6  ? U "H2'"  H ? 4.504   0.01 ? 1 ? ? . A 6  U "H2'"  A 6  URI "H2'"  . 5KQE ? 
+82  ? . 6  ? U H3     H ? 13.527  0.01 ? 1 ? ? . A 6  U H3     A 6  URI H3     . 5KQE ? 
+83  ? . 6  ? U "H3'"  H ? 4.532   0.01 ? 1 ? ? . A 6  U "H3'"  A 6  URI "H3'"  . 5KQE ? 
+84  ? . 6  ? U "H4'"  H ? 4.459   0.01 ? 1 ? ? . A 6  U "H4'"  A 6  URI "H4'"  . 5KQE ? 
+85  ? . 6  ? U H5     H ? 5.169   0.01 ? 1 ? ? . A 6  U H5     A 6  URI H5     . 5KQE ? 
+86  ? . 6  ? U "H5'"  H ? 4.123   0    ? 1 ? ? . A 6  U "H5'"  A 6  URI "H5'"  . 5KQE ? 
+87  ? . 6  ? U H6     H ? 7.64    0.01 ? 1 ? ? . A 6  U H6     A 6  URI H6     . 5KQE ? 
+88  ? . 6  ? U N3     N ? 156.554 0    ? 1 ? ? . A 6  U N3     A 6  URI N3     . 5KQE ? 
+89  ? . 7  ? A "C1'"  C ? 93.078  0.05 ? 1 ? ? . A 7  A "C1'"  A 7  ADE "C1'"  . 5KQE ? 
+90  ? . 7  ? A C2     C ? 154.041 0.08 ? 1 ? ? . A 7  A C2     A 7  ADE C2     . 5KQE ? 
+91  ? . 7  ? A "C2'"  C ? 76.218  0.04 ? 1 ? ? . A 7  A "C2'"  A 7  ADE "C2'"  . 5KQE ? 
+92  ? . 7  ? A "C3'"  C ? 73.779  0.02 ? 1 ? ? . A 7  A "C3'"  A 7  ADE "C3'"  . 5KQE ? 
+93  ? . 7  ? A "C4'"  C ? 83.321  0.08 ? 1 ? ? . A 7  A "C4'"  A 7  ADE "C4'"  . 5KQE ? 
+94  ? . 7  ? A C8     C ? 140.035 0.1  ? 1 ? ? . A 7  A C8     A 7  ADE C8     . 5KQE ? 
+95  ? . 7  ? A "H1'"  H ? 5.763   0.31 ? 1 ? ? . A 7  A "H1'"  A 7  ADE "H1'"  . 5KQE ? 
+96  ? . 7  ? A H2     H ? 7.065   0.04 ? 1 ? ? . A 7  A H2     A 7  ADE H2     . 5KQE ? 
+97  ? . 7  ? A "H2'"  H ? 4.483   0.34 ? 1 ? ? . A 7  A "H2'"  A 7  ADE "H2'"  . 5KQE ? 
+98  ? . 7  ? A "H3'"  H ? 4.58    0.35 ? 1 ? ? . A 7  A "H3'"  A 7  ADE "H3'"  . 5KQE ? 
+99  ? . 7  ? A "H4'"  H ? 4.747   0.5  ? 1 ? ? . A 7  A "H4'"  A 7  ADE "H4'"  . 5KQE ? 
+100 ? . 7  ? A "H5''" H ? 4.164   0.07 ? 1 ? ? . A 7  A "H5''" A 7  ADE "H5''" . 5KQE ? 
+101 ? . 7  ? A H8     H ? 7.98    0.01 ? 1 ? ? . A 7  A H8     A 7  ADE H8     . 5KQE ? 
+102 ? . 7  ? A N1     N ? 219.222 0    ? 1 ? ? . A 7  A N1     A 7  ADE N1     . 5KQE ? 
+103 ? . 7  ? A N3     N ? 209.376 0    ? 1 ? ? . A 7  A N3     A 7  ADE N3     . 5KQE ? 
+104 ? . 8  ? C "C1'"  C ? 93.134  0.08 ? 1 ? ? . A 8  C "C1'"  A 8  CYT "C1'"  . 5KQE ? 
+105 ? . 8  ? C "C2'"  C ? 76.258  0    ? 1 ? ? . A 8  C "C2'"  A 8  CYT "C2'"  . 5KQE ? 
+106 ? . 8  ? C "C3'"  C ? 74.215  0    ? 1 ? ? . A 8  C "C3'"  A 8  CYT "C3'"  . 5KQE ? 
+107 ? . 8  ? C "C4'"  C ? 83.39   0    ? 1 ? ? . A 8  C "C4'"  A 8  CYT "C4'"  . 5KQE ? 
+108 ? . 8  ? C C5     C ? 97.819  0.1  ? 1 ? ? . A 8  C C5     A 8  CYT C5     . 5KQE ? 
+109 ? . 8  ? C C6     C ? 141.944 0.1  ? 1 ? ? . A 8  C C6     A 8  CYT C6     . 5KQE ? 
+110 ? . 8  ? C "H1'"  H ? 5.311   0.04 ? 1 ? ? . A 8  C "H1'"  A 8  CYT "H1'"  . 5KQE ? 
+111 ? . 8  ? C "H2'"  H ? 3.984   0.01 ? 1 ? ? . A 8  C "H2'"  A 8  CYT "H2'"  . 5KQE ? 
+112 ? . 8  ? C "H3'"  H ? 4.305   0    ? 1 ? ? . A 8  C "H3'"  A 8  CYT "H3'"  . 5KQE ? 
+113 ? . 8  ? C "H4'"  H ? 4.154   0.01 ? 1 ? ? . A 8  C "H4'"  A 8  CYT "H4'"  . 5KQE ? 
+114 ? . 8  ? C H5     H ? 5.353   0.02 ? 1 ? ? . A 8  C H5     A 8  CYT H5     . 5KQE ? 
+115 ? . 8  ? C "H5'"  H ? 3.975   0.01 ? 1 ? ? . A 8  C "H5'"  A 8  CYT "H5'"  . 5KQE ? 
+116 ? . 8  ? C "H5''" H ? 4.14    0.15 ? 1 ? ? . A 8  C "H5''" A 8  CYT "H5''" . 5KQE ? 
+117 ? . 8  ? C H6     H ? 7.348   0.02 ? 1 ? ? . A 8  C H6     A 8  CYT H6     . 5KQE ? 
+118 ? . 9  ? U "C1'"  C ? 93.567  1.26 ? 1 ? ? . A 9  U "C1'"  A 9  URI "C1'"  . 5KQE ? 
+119 ? . 9  ? U "C2'"  C ? 77.015  0.03 ? 1 ? ? . A 9  U "C2'"  A 9  URI "C2'"  . 5KQE ? 
+120 ? . 9  ? U "C3'"  C ? 73.136  0.02 ? 1 ? ? . A 9  U "C3'"  A 9  URI "C3'"  . 5KQE ? 
+121 ? . 9  ? U "C4'"  C ? 82.631  0.01 ? 1 ? ? . A 9  U "C4'"  A 9  URI "C4'"  . 5KQE ? 
+122 ? . 9  ? U C5     C ? 105.431 0.07 ? 1 ? ? . A 9  U C5     A 9  URI C5     . 5KQE ? 
+123 ? . 9  ? U C6     C ? 143.442 0.08 ? 1 ? ? . A 9  U C6     A 9  URI C6     . 5KQE ? 
+124 ? . 9  ? U "H1'"  H ? 5.719   0.03 ? 1 ? ? . A 9  U "H1'"  A 9  URI "H1'"  . 5KQE ? 
+125 ? . 9  ? U "H2'"  H ? 4.481   0.01 ? 1 ? ? . A 9  U "H2'"  A 9  URI "H2'"  . 5KQE ? 
+126 ? . 9  ? U "H3'"  H ? 4.579   0.01 ? 1 ? ? . A 9  U "H3'"  A 9  URI "H3'"  . 5KQE ? 
+127 ? . 9  ? U "H4'"  H ? 4.545   0.01 ? 1 ? ? . A 9  U "H4'"  A 9  URI "H4'"  . 5KQE ? 
+128 ? . 9  ? U H5     H ? 5.578   0.04 ? 1 ? ? . A 9  U H5     A 9  URI H5     . 5KQE ? 
+129 ? . 9  ? U "H5''" H ? 4.074   0    ? 1 ? ? . A 9  U "H5''" A 9  URI "H5''" . 5KQE ? 
+130 ? . 9  ? U H6     H ? 7.587   0.02 ? 1 ? ? . A 9  U H6     A 9  URI H6     . 5KQE ? 
+131 ? . 10 ? U "C1'"  C ? 91.215  0.07 ? 1 ? ? . A 10 U "C1'"  A 10 URI "C1'"  . 5KQE ? 
+132 ? . 10 ? U "C2'"  C ? 75.675  0    ? 1 ? ? . A 10 U "C2'"  A 10 URI "C2'"  . 5KQE ? 
+133 ? . 10 ? U "C3'"  C ? 77.112  0    ? 1 ? ? . A 10 U "C3'"  A 10 URI "C3'"  . 5KQE ? 
+134 ? . 10 ? U "C4'"  C ? 84.962  0.03 ? 1 ? ? . A 10 U "C4'"  A 10 URI "C4'"  . 5KQE ? 
+135 ? . 10 ? U C5     C ? 105.721 0.03 ? 1 ? ? . A 10 U C5     A 10 URI C5     . 5KQE ? 
+136 ? . 10 ? U "C5'"  C ? 68.061  0.02 ? 1 ? ? . A 10 U "C5'"  A 10 URI "C5'"  . 5KQE ? 
+137 ? . 10 ? U C6     C ? 144.071 0.03 ? 1 ? ? . A 10 U C6     A 10 URI C6     . 5KQE ? 
+138 ? . 10 ? U "H1'"  H ? 5.699   0.01 ? 1 ? ? . A 10 U "H1'"  A 10 URI "H1'"  . 5KQE ? 
+139 ? . 10 ? U "H2'"  H ? 4.179   0.01 ? 1 ? ? . A 10 U "H2'"  A 10 URI "H2'"  . 5KQE ? 
+140 ? . 10 ? U "H3'"  H ? 4.469   0.01 ? 1 ? ? . A 10 U "H3'"  A 10 URI "H3'"  . 5KQE ? 
+141 ? . 10 ? U "H4'"  H ? 4.213   0.01 ? 1 ? ? . A 10 U "H4'"  A 10 URI "H4'"  . 5KQE ? 
+142 ? . 10 ? U H5     H ? 5.734   0.02 ? 1 ? ? . A 10 U H5     A 10 URI H5     . 5KQE ? 
+143 ? . 10 ? U "H5'"  H ? 3.974   0.05 ? 1 ? ? . A 10 U "H5'"  A 10 URI "H5'"  . 5KQE ? 
+144 ? . 10 ? U "H5''" H ? 3.954   0.01 ? 1 ? ? . A 10 U "H5''" A 10 URI "H5''" . 5KQE ? 
+145 ? . 10 ? U H6     H ? 7.588   0.01 ? 1 ? ? . A 10 U H6     A 10 URI H6     . 5KQE ? 
+146 ? . 11 ? A "C1'"  C ? 90.77   0.08 ? 1 ? ? . A 11 A "C1'"  A 11 ADE "C1'"  . 5KQE ? 
+147 ? . 11 ? A C2     C ? 154.99  0    ? 1 ? ? . A 11 A C2     A 11 ADE C2     . 5KQE ? 
+148 ? . 11 ? A "C2'"  C ? 76.6    0.07 ? 1 ? ? . A 11 A "C2'"  A 11 ADE "C2'"  . 5KQE ? 
+149 ? . 11 ? A "C3'"  C ? 76.544  0.06 ? 1 ? ? . A 11 A "C3'"  A 11 ADE "C3'"  . 5KQE ? 
+150 ? . 11 ? A "C4'"  C ? 85.078  0.06 ? 1 ? ? . A 11 A "C4'"  A 11 ADE "C4'"  . 5KQE ? 
+151 ? . 11 ? A "C5'"  C ? 67.683  0.37 ? 1 ? ? . A 11 A "C5'"  A 11 ADE "C5'"  . 5KQE ? 
+152 ? . 11 ? A C8     C ? 142.382 0.06 ? 1 ? ? . A 11 A C8     A 11 ADE C8     . 5KQE ? 
+153 ? . 11 ? A "H1'"  H ? 5.636   0.42 ? 1 ? ? . A 11 A "H1'"  A 11 ADE "H1'"  . 5KQE ? 
+154 ? . 11 ? A H2     H ? 7.891   0.02 ? 1 ? ? . A 11 A H2     A 11 ADE H2     . 5KQE ? 
+155 ? . 11 ? A "H2'"  H ? 4.768   0.31 ? 1 ? ? . A 11 A "H2'"  A 11 ADE "H2'"  . 5KQE ? 
+156 ? . 11 ? A "H3'"  H ? 5.039   0.43 ? 1 ? ? . A 11 A "H3'"  A 11 ADE "H3'"  . 5KQE ? 
+157 ? . 11 ? A "H4'"  H ? 4.588   0.4  ? 1 ? ? . A 11 A "H4'"  A 11 ADE "H4'"  . 5KQE ? 
+158 ? . 11 ? A "H5''" H ? 4.225   0.44 ? 1 ? ? . A 11 A "H5''" A 11 ADE "H5''" . 5KQE ? 
+159 ? . 11 ? A H8     H ? 8.181   0.01 ? 1 ? ? . A 11 A H8     A 11 ADE H8     . 5KQE ? 
+160 ? . 11 ? A N1     N ? 211.578 0    ? 1 ? ? . A 11 A N1     A 11 ADE N1     . 5KQE ? 
+161 ? . 12 ? A "C1'"  C ? 90.893  0.08 ? 1 ? ? . A 12 A "C1'"  A 12 ADE "C1'"  . 5KQE ? 
+162 ? . 12 ? A C2     C ? 155.158 0    ? 1 ? ? . A 12 A C2     A 12 ADE C2     . 5KQE ? 
+163 ? . 12 ? A "C2'"  C ? 76.38   0.43 ? 1 ? ? . A 12 A "C2'"  A 12 ADE "C2'"  . 5KQE ? 
+164 ? . 12 ? A "C3'"  C ? 76.207  0.24 ? 1 ? ? . A 12 A "C3'"  A 12 ADE "C3'"  . 5KQE ? 
+165 ? . 12 ? A C8     C ? 141.418 0.13 ? 1 ? ? . A 12 A C8     A 12 ADE C8     . 5KQE ? 
+166 ? . 12 ? A "H1'"  H ? 5.687   0.34 ? 1 ? ? . A 12 A "H1'"  A 12 ADE "H1'"  . 5KQE ? 
+167 ? . 12 ? A H2     H ? 7.921   0.01 ? 1 ? ? . A 12 A H2     A 12 ADE H2     . 5KQE ? 
+168 ? . 12 ? A "H2'"  H ? 4.71    0.28 ? 1 ? ? . A 12 A "H2'"  A 12 ADE "H2'"  . 5KQE ? 
+169 ? . 12 ? A "H3'"  H ? 4.637   0.26 ? 1 ? ? . A 12 A "H3'"  A 12 ADE "H3'"  . 5KQE ? 
+170 ? . 12 ? A "H4'"  H ? 4.379   0.08 ? 1 ? ? . A 12 A "H4'"  A 12 ADE "H4'"  . 5KQE ? 
+171 ? . 12 ? A H8     H ? 8.119   0.02 ? 1 ? ? . A 12 A H8     A 12 ADE H8     . 5KQE ? 
+172 ? . 12 ? A N1     N ? 219.293 0    ? 1 ? ? . A 12 A N1     A 12 ADE N1     . 5KQE ? 
+173 ? . 12 ? A N3     N ? 210.194 0    ? 1 ? ? . A 12 A N3     A 12 ADE N3     . 5KQE ? 
+174 ? . 13 ? C "C1'"  C ? 92.625  0    ? 1 ? ? . A 13 C "C1'"  A 13 CYT "C1'"  . 5KQE ? 
+175 ? . 13 ? C C5     C ? 98.933  0.09 ? 1 ? ? . A 13 C C5     A 13 CYT C5     . 5KQE ? 
+176 ? . 13 ? C C6     C ? 142.923 0.2  ? 1 ? ? . A 13 C C6     A 13 CYT C6     . 5KQE ? 
+177 ? . 13 ? C "H1'"  H ? 5.824   0.03 ? 1 ? ? . A 13 C "H1'"  A 13 CYT "H1'"  . 5KQE ? 
+178 ? . 13 ? C "H2'"  H ? 4.48    0.01 ? 1 ? ? . A 13 C "H2'"  A 13 CYT "H2'"  . 5KQE ? 
+179 ? . 13 ? C "H3'"  H ? 4.543   0    ? 1 ? ? . A 13 C "H3'"  A 13 CYT "H3'"  . 5KQE ? 
+180 ? . 13 ? C H5     H ? 5.663   0.03 ? 1 ? ? . A 13 C H5     A 13 CYT H5     . 5KQE ? 
+181 ? . 13 ? C "H5'"  H ? 4.414   0    ? 1 ? ? . A 13 C "H5'"  A 13 CYT "H5'"  . 5KQE ? 
+182 ? . 13 ? C "H5''" H ? 4.232   0    ? 1 ? ? . A 13 C "H5''" A 13 CYT "H5''" . 5KQE ? 
+183 ? . 13 ? C H6     H ? 7.686   0.03 ? 1 ? ? . A 13 C H6     A 13 CYT H6     . 5KQE ? 
+184 ? . 14 ? G "C1'"  C ? 93.102  0.18 ? 1 ? ? . A 14 G "C1'"  A 14 GUA "C1'"  . 5KQE ? 
+185 ? . 14 ? G "C2'"  C ? 75.101  0.14 ? 1 ? ? . A 14 G "C2'"  A 14 GUA "C2'"  . 5KQE ? 
+186 ? . 14 ? G "C3'"  C ? 74.166  0.19 ? 1 ? ? . A 14 G "C3'"  A 14 GUA "C3'"  . 5KQE ? 
+187 ? . 14 ? G "C4'"  C ? 83.309  0.14 ? 1 ? ? . A 14 G "C4'"  A 14 GUA "C4'"  . 5KQE ? 
+188 ? . 14 ? G C8     C ? 138.236 0.04 ? 1 ? ? . A 14 G C8     A 14 GUA C8     . 5KQE ? 
+189 ? . 14 ? G H1     H ? 13.152  0.02 ? 1 ? ? . A 14 G H1     A 14 GUA H1     . 5KQE ? 
+190 ? . 14 ? G "H1'"  H ? 5.657   0.33 ? 1 ? ? . A 14 G "H1'"  A 14 GUA "H1'"  . 5KQE ? 
+191 ? . 14 ? G "H2'"  H ? 4.667   0.01 ? 1 ? ? . A 14 G "H2'"  A 14 GUA "H2'"  . 5KQE ? 
+192 ? . 14 ? G "H3'"  H ? 4.538   0.01 ? 1 ? ? . A 14 G "H3'"  A 14 GUA "H3'"  . 5KQE ? 
+193 ? . 14 ? G "H4'"  H ? 4.541   0.01 ? 1 ? ? . A 14 G "H4'"  A 14 GUA "H4'"  . 5KQE ? 
+194 ? . 14 ? G "H5'"  H ? 4.412   0    ? 1 ? ? . A 14 G "H5'"  A 14 GUA "H5'"  . 5KQE ? 
+195 ? . 14 ? G "H5''" H ? 4.219   0.01 ? 1 ? ? . A 14 G "H5''" A 14 GUA "H5''" . 5KQE ? 
+196 ? . 14 ? G H8     H ? 7.777   0.02 ? 1 ? ? . A 14 G H8     A 14 GUA H8     . 5KQE ? 
+197 ? . 14 ? G N1     N ? 142.829 0.1  ? 1 ? ? . A 14 G N1     A 14 GUA N1     . 5KQE ? 
+198 ? . 15 ? U "C1'"  C ? 94.396  0.04 ? 1 ? ? . A 15 U "C1'"  A 15 URI "C1'"  . 5KQE ? 
+199 ? . 15 ? U "C2'"  C ? 75.648  0.01 ? 1 ? ? . A 15 U "C2'"  A 15 URI "C2'"  . 5KQE ? 
+200 ? . 15 ? U C5     C ? 103.017 0.05 ? 1 ? ? . A 15 U C5     A 15 URI C5     . 5KQE ? 
+201 ? . 15 ? U C6     C ? 142.772 0.04 ? 1 ? ? . A 15 U C6     A 15 URI C6     . 5KQE ? 
+202 ? . 15 ? U "H1'"  H ? 5.669   0.01 ? 1 ? ? . A 15 U "H1'"  A 15 URI "H1'"  . 5KQE ? 
+203 ? . 15 ? U "H2'"  H ? 4.579   0.01 ? 1 ? ? . A 15 U "H2'"  A 15 URI "H2'"  . 5KQE ? 
+204 ? . 15 ? U H3     H ? 14.465  0.01 ? 1 ? ? . A 15 U H3     A 15 URI H3     . 5KQE ? 
+205 ? . 15 ? U "H4'"  H ? 4.196   0    ? 1 ? ? . A 15 U "H4'"  A 15 URI "H4'"  . 5KQE ? 
+206 ? . 15 ? U H5     H ? 5.193   0.01 ? 1 ? ? . A 15 U H5     A 15 URI H5     . 5KQE ? 
+207 ? . 15 ? U H6     H ? 7.933   0.01 ? 1 ? ? . A 15 U H6     A 15 URI H6     . 5KQE ? 
+208 ? . 15 ? U N3     N ? 157.51  0.09 ? 1 ? ? . A 15 U N3     A 15 URI N3     . 5KQE ? 
+209 ? . 16 ? U "C1'"  C ? 91.453  1.15 ? 1 ? ? . A 16 U "C1'"  A 16 URI "C1'"  . 5KQE ? 
+210 ? . 16 ? U "C2'"  C ? 76.045  0.02 ? 1 ? ? . A 16 U "C2'"  A 16 URI "C2'"  . 5KQE ? 
+211 ? . 16 ? U "C3'"  C ? 76.987  0.02 ? 1 ? ? . A 16 U "C3'"  A 16 URI "C3'"  . 5KQE ? 
+212 ? . 16 ? U "C4'"  C ? 85.038  0.02 ? 1 ? ? . A 16 U "C4'"  A 16 URI "C4'"  . 5KQE ? 
+213 ? . 16 ? U C5     C ? 103.921 0.06 ? 1 ? ? . A 16 U C5     A 16 URI C5     . 5KQE ? 
+214 ? . 16 ? U "C5'"  C ? 67.523  0.02 ? 1 ? ? . A 16 U "C5'"  A 16 URI "C5'"  . 5KQE ? 
+215 ? . 16 ? U C6     C ? 142.885 0.05 ? 1 ? ? . A 16 U C6     A 16 URI C6     . 5KQE ? 
+216 ? . 16 ? U "H1'"  H ? 5.729   0.01 ? 1 ? ? . A 16 U "H1'"  A 16 URI "H1'"  . 5KQE ? 
+217 ? . 16 ? U "H2'"  H ? 4.182   0.01 ? 1 ? ? . A 16 U "H2'"  A 16 URI "H2'"  . 5KQE ? 
+218 ? . 16 ? U "H3'"  H ? 4.475   0.01 ? 1 ? ? . A 16 U "H3'"  A 16 URI "H3'"  . 5KQE ? 
+219 ? . 16 ? U "H4'"  H ? 4.221   0.01 ? 1 ? ? . A 16 U "H4'"  A 16 URI "H4'"  . 5KQE ? 
+220 ? . 16 ? U H5     H ? 5.674   0.01 ? 1 ? ? . A 16 U H5     A 16 URI H5     . 5KQE ? 
+221 ? . 16 ? U "H5'"  H ? 3.979   0.08 ? 1 ? ? . A 16 U "H5'"  A 16 URI "H5'"  . 5KQE ? 
+222 ? . 16 ? U H6     H ? 8.029   0.1  ? 1 ? ? . A 16 U H6     A 16 URI H6     . 5KQE ? 
+223 ? . 16 ? U N3     N ? 157.534 0.11 ? 1 ? ? . A 16 U N3     A 16 URI N3     . 5KQE ? 
+224 ? . 17 ? U "C1'"  C ? 91.612  6.13 ? 1 ? ? . A 17 U "C1'"  A 17 URI "C1'"  . 5KQE ? 
+225 ? . 17 ? U "C2'"  C ? 73.423  0.04 ? 1 ? ? . A 17 U "C2'"  A 17 URI "C2'"  . 5KQE ? 
+226 ? . 17 ? U "C3'"  C ? 73.047  0    ? 1 ? ? . A 17 U "C3'"  A 17 URI "C3'"  . 5KQE ? 
+227 ? . 17 ? U "C4'"  C ? 82.713  0.14 ? 1 ? ? . A 17 U "C4'"  A 17 URI "C4'"  . 5KQE ? 
+228 ? . 17 ? U C5     C ? 104.302 0.03 ? 1 ? ? . A 17 U C5     A 17 URI C5     . 5KQE ? 
+229 ? . 17 ? U C6     C ? 142.453 0    ? 1 ? ? . A 17 U C6     A 17 URI C6     . 5KQE ? 
+230 ? . 17 ? U "H1'"  H ? 5.64    0.01 ? 1 ? ? . A 17 U "H1'"  A 17 URI "H1'"  . 5KQE ? 
+231 ? . 17 ? U "H2'"  H ? 4.542   0.01 ? 1 ? ? . A 17 U "H2'"  A 17 URI "H2'"  . 5KQE ? 
+232 ? . 17 ? U H3     H ? 13.142  0.02 ? 1 ? ? . A 17 U H3     A 17 URI H3     . 5KQE ? 
+233 ? . 17 ? U "H3'"  H ? 4.639   0    ? 1 ? ? . A 17 U "H3'"  A 17 URI "H3'"  . 5KQE ? 
+234 ? . 17 ? U "H4'"  H ? 4.452   0.06 ? 1 ? ? . A 17 U "H4'"  A 17 URI "H4'"  . 5KQE ? 
+235 ? . 17 ? U H5     H ? 5.642   0.01 ? 1 ? ? . A 17 U H5     A 17 URI H5     . 5KQE ? 
+236 ? . 17 ? U H6     H ? 8.01    0.01 ? 1 ? ? . A 17 U H6     A 17 URI H6     . 5KQE ? 
+237 ? . 17 ? U N3     N ? 157.101 0.08 ? 1 ? ? . A 17 U N3     A 17 URI N3     . 5KQE ? 
+238 ? . 18 ? G "C1'"  C ? 92.726  0.18 ? 1 ? ? . A 18 G "C1'"  A 18 GUA "C1'"  . 5KQE ? 
+239 ? . 18 ? G "C2'"  C ? 75.704  0.2  ? 1 ? ? . A 18 G "C2'"  A 18 GUA "C2'"  . 5KQE ? 
+240 ? . 18 ? G "C3'"  C ? 72.982  0.21 ? 1 ? ? . A 18 G "C3'"  A 18 GUA "C3'"  . 5KQE ? 
+241 ? . 18 ? G "C4'"  C ? 82.291  0.16 ? 1 ? ? . A 18 G "C4'"  A 18 GUA "C4'"  . 5KQE ? 
+242 ? . 18 ? G C8     C ? 136.804 0.04 ? 1 ? ? . A 18 G C8     A 18 GUA C8     . 5KQE ? 
+243 ? . 18 ? G H1     H ? 12.529  0.01 ? 1 ? ? . A 18 G H1     A 18 GUA H1     . 5KQE ? 
+244 ? . 18 ? G "H1'"  H ? 5.803   0.01 ? 1 ? ? . A 18 G "H1'"  A 18 GUA "H1'"  . 5KQE ? 
+245 ? . 18 ? G "H2'"  H ? 4.523   0.02 ? 1 ? ? . A 18 G "H2'"  A 18 GUA "H2'"  . 5KQE ? 
+246 ? . 18 ? G H21    H ? 6.454   0    ? 1 ? ? . A 18 G H21    A 18 GUA H21    . 5KQE ? 
+247 ? . 18 ? G H22    H ? 5.93    0    ? 1 ? ? . A 18 G H22    A 18 GUA H22    . 5KQE ? 
+248 ? . 18 ? G "H3'"  H ? 4.597   0.01 ? 1 ? ? . A 18 G "H3'"  A 18 GUA "H3'"  . 5KQE ? 
+249 ? . 18 ? G "H4'"  H ? 4.52    0.01 ? 1 ? ? . A 18 G "H4'"  A 18 GUA "H4'"  . 5KQE ? 
+250 ? . 18 ? G "H5'"  H ? 4.166   0.01 ? 1 ? ? . A 18 G "H5'"  A 18 GUA "H5'"  . 5KQE ? 
+251 ? . 18 ? G H8     H ? 7.804   0.02 ? 1 ? ? . A 18 G H8     A 18 GUA H8     . 5KQE ? 
+252 ? . 18 ? G N1     N ? 142.178 0.04 ? 1 ? ? . A 18 G N1     A 18 GUA N1     . 5KQE ? 
+253 ? . 19 ? C "C1'"  C ? 94.166  0.03 ? 1 ? ? . A 19 C "C1'"  A 19 CYT "C1'"  . 5KQE ? 
+254 ? . 19 ? C "C2'"  C ? 75.758  0    ? 1 ? ? . A 19 C "C2'"  A 19 CYT "C2'"  . 5KQE ? 
+255 ? . 19 ? C "C3'"  C ? 72.171  0    ? 1 ? ? . A 19 C "C3'"  A 19 CYT "C3'"  . 5KQE ? 
+256 ? . 19 ? C "C4'"  C ? 82.285  0    ? 1 ? ? . A 19 C "C4'"  A 19 CYT "C4'"  . 5KQE ? 
+257 ? . 19 ? C C5     C ? 97.727  0    ? 1 ? ? . A 19 C C5     A 19 CYT C5     . 5KQE ? 
+258 ? . 19 ? C C6     C ? 140.782 0.05 ? 1 ? ? . A 19 C C6     A 19 CYT C6     . 5KQE ? 
+259 ? . 19 ? C "H1'"  H ? 5.444   0.01 ? 1 ? ? . A 19 C "H1'"  A 19 CYT "H1'"  . 5KQE ? 
+260 ? . 19 ? C "H2'"  H ? 4.452   0.01 ? 1 ? ? . A 19 C "H2'"  A 19 CYT "H2'"  . 5KQE ? 
+261 ? . 19 ? C "H3'"  H ? 4.252   0    ? 1 ? ? . A 19 C "H3'"  A 19 CYT "H3'"  . 5KQE ? 
+262 ? . 19 ? C "H4'"  H ? 4.444   0.01 ? 1 ? ? . A 19 C "H4'"  A 19 CYT "H4'"  . 5KQE ? 
+263 ? . 19 ? C H41    H ? 7.249   0.55 ? 1 ? ? . A 19 C H41    A 19 CYT H41    . 5KQE ? 
+264 ? . 19 ? C H42    H ? 8.422   0.4  ? 1 ? ? . A 19 C H42    A 19 CYT H42    . 5KQE ? 
+265 ? . 19 ? C H5     H ? 5.218   0.04 ? 1 ? ? . A 19 C H5     A 19 CYT H5     . 5KQE ? 
+266 ? . 19 ? C "H5'"  H ? 4.084   0    ? 1 ? ? . A 19 C "H5'"  A 19 CYT "H5'"  . 5KQE ? 
+267 ? . 19 ? C H6     H ? 7.459   0.01 ? 1 ? ? . A 19 C H6     A 19 CYT H6     . 5KQE ? 
+268 ? . 20 ? U "C1'"  C ? 94.875  0.05 ? 1 ? ? . A 20 U "C1'"  A 20 URI "C1'"  . 5KQE ? 
+269 ? . 20 ? U "C2'"  C ? 76.388  0.02 ? 1 ? ? . A 20 U "C2'"  A 20 URI "C2'"  . 5KQE ? 
+270 ? . 20 ? U "C3'"  C ? 73.495  0.01 ? 1 ? ? . A 20 U "C3'"  A 20 URI "C3'"  . 5KQE ? 
+271 ? . 20 ? U "C4'"  C ? 82.858  0.03 ? 1 ? ? . A 20 U "C4'"  A 20 URI "C4'"  . 5KQE ? 
+272 ? . 20 ? U C5     C ? 105.534 0.01 ? 1 ? ? . A 20 U C5     A 20 URI C5     . 5KQE ? 
+273 ? . 20 ? U C6     C ? 141.023 0.03 ? 1 ? ? . A 20 U C6     A 20 URI C6     . 5KQE ? 
+274 ? . 20 ? U "H1'"  H ? 5.663   0.01 ? 1 ? ? . A 20 U "H1'"  A 20 URI "H1'"  . 5KQE ? 
+275 ? . 20 ? U "H2'"  H ? 3.798   0    ? 1 ? ? . A 20 U "H2'"  A 20 URI "H2'"  . 5KQE ? 
+276 ? . 20 ? U H3     H ? 11.753  0.01 ? 1 ? ? . A 20 U H3     A 20 URI H3     . 5KQE ? 
+277 ? . 20 ? U "H3'"  H ? 4.501   0.18 ? 1 ? ? . A 20 U "H3'"  A 20 URI "H3'"  . 5KQE ? 
+278 ? . 20 ? U "H4'"  H ? 4.381   0    ? 1 ? ? . A 20 U "H4'"  A 20 URI "H4'"  . 5KQE ? 
+279 ? . 20 ? U H5     H ? 5.743   0.01 ? 1 ? ? . A 20 U H5     A 20 URI H5     . 5KQE ? 
+280 ? . 20 ? U "H5'"  H ? 4.26    0    ? 1 ? ? . A 20 U "H5'"  A 20 URI "H5'"  . 5KQE ? 
+281 ? . 20 ? U H6     H ? 7.768   0.01 ? 1 ? ? . A 20 U H6     A 20 URI H6     . 5KQE ? 
+282 ? . 20 ? U "HO2'" H ? 6.686   0.01 ? 1 ? ? . A 20 U "HO2'" A 20 URI HO2    . 5KQE ? 
+283 ? . 21 ? U "C1'"  C ? 89.619  0.06 ? 1 ? ? . A 21 U "C1'"  A 21 URI "C1'"  . 5KQE ? 
+284 ? . 21 ? U "C2'"  C ? 74.909  0.03 ? 1 ? ? . A 21 U "C2'"  A 21 URI "C2'"  . 5KQE ? 
+285 ? . 21 ? U "C4'"  C ? 87.216  0.01 ? 1 ? ? . A 21 U "C4'"  A 21 URI "C4'"  . 5KQE ? 
+286 ? . 21 ? U C5     C ? 105.925 0.02 ? 1 ? ? . A 21 U C5     A 21 URI C5     . 5KQE ? 
+287 ? . 21 ? U "C5'"  C ? 68.1    0.02 ? 1 ? ? . A 21 U "C5'"  A 21 URI "C5'"  . 5KQE ? 
+288 ? . 21 ? U C6     C ? 145.097 0.01 ? 1 ? ? . A 21 U C6     A 21 URI C6     . 5KQE ? 
+289 ? . 21 ? U "H1'"  H ? 6.034   0.42 ? 1 ? ? . A 21 U "H1'"  A 21 URI "H1'"  . 5KQE ? 
+290 ? . 21 ? U "H2'"  H ? 4.686   0.01 ? 1 ? ? . A 21 U "H2'"  A 21 URI "H2'"  . 5KQE ? 
+291 ? . 21 ? U "H3'"  H ? 4.158   0.46 ? 1 ? ? . A 21 U "H3'"  A 21 URI "H3'"  . 5KQE ? 
+292 ? . 21 ? U "H4'"  H ? 4.507   0    ? 1 ? ? . A 21 U "H4'"  A 21 URI "H4'"  . 5KQE ? 
+293 ? . 21 ? U H5     H ? 5.877   0.01 ? 1 ? ? . A 21 U H5     A 21 URI H5     . 5KQE ? 
+294 ? . 21 ? U "H5'"  H ? 4.34    0.52 ? 1 ? ? . A 21 U "H5'"  A 21 URI "H5'"  . 5KQE ? 
+295 ? . 21 ? U "H5''" H ? 4.182   0.1  ? 1 ? ? . A 21 U "H5''" A 21 URI "H5''" . 5KQE ? 
+296 ? . 21 ? U H6     H ? 8.035   0.01 ? 1 ? ? . A 21 U H6     A 21 URI H6     . 5KQE ? 
+297 ? . 22 ? C "C1'"  C ? 89.497  0.04 ? 1 ? ? . A 22 C "C1'"  A 22 CYT "C1'"  . 5KQE ? 
+298 ? . 22 ? C "C2'"  C ? 77.927  0    ? 1 ? ? . A 22 C "C2'"  A 22 CYT "C2'"  . 5KQE ? 
+299 ? . 22 ? C "C3'"  C ? 80.679  0    ? 1 ? ? . A 22 C "C3'"  A 22 CYT "C3'"  . 5KQE ? 
+300 ? . 22 ? C "C4'"  C ? 84.808  0    ? 1 ? ? . A 22 C "C4'"  A 22 CYT "C4'"  . 5KQE ? 
+301 ? . 22 ? C C5     C ? 99.043  0.01 ? 1 ? ? . A 22 C C5     A 22 CYT C5     . 5KQE ? 
+302 ? . 22 ? C C6     C ? 143.25  0.02 ? 1 ? ? . A 22 C C6     A 22 CYT C6     . 5KQE ? 
+303 ? . 22 ? C "H1'"  H ? 5.93    0.33 ? 1 ? ? . A 22 C "H1'"  A 22 CYT "H1'"  . 5KQE ? 
+304 ? . 22 ? C "H2'"  H ? 4.124   0.01 ? 1 ? ? . A 22 C "H2'"  A 22 CYT "H2'"  . 5KQE ? 
+305 ? . 22 ? C "H3'"  H ? 4.512   0    ? 1 ? ? . A 22 C "H3'"  A 22 CYT "H3'"  . 5KQE ? 
+306 ? . 22 ? C "H4'"  H ? 3.827   0    ? 1 ? ? . A 22 C "H4'"  A 22 CYT "H4'"  . 5KQE ? 
+307 ? . 22 ? C H41    H ? 6.39    0.03 ? 1 ? ? . A 22 C H41    A 22 CYT H41    . 5KQE ? 
+308 ? . 22 ? C H42    H ? 7.163   0.01 ? 1 ? ? . A 22 C H42    A 22 CYT H42    . 5KQE ? 
+309 ? . 22 ? C H5     H ? 6.147   0.01 ? 1 ? ? . A 22 C H5     A 22 CYT H5     . 5KQE ? 
+310 ? . 22 ? C "H5'"  H ? 3.438   0.37 ? 1 ? ? . A 22 C "H5'"  A 22 CYT "H5'"  . 5KQE ? 
+311 ? . 22 ? C H6     H ? 7.715   0.01 ? 1 ? ? . A 22 C H6     A 22 CYT H6     . 5KQE ? 
+312 ? . 23 ? G "C1'"  C ? 94.809  0.18 ? 1 ? ? . A 23 G "C1'"  A 23 GUA "C1'"  . 5KQE ? 
+313 ? . 23 ? G "C2'"  C ? 77.492  0.21 ? 1 ? ? . A 23 G "C2'"  A 23 GUA "C2'"  . 5KQE ? 
+314 ? . 23 ? G "C3'"  C ? 76.017  0.22 ? 1 ? ? . A 23 G "C3'"  A 23 GUA "C3'"  . 5KQE ? 
+315 ? . 23 ? G "C4'"  C ? 83.434  0.18 ? 1 ? ? . A 23 G "C4'"  A 23 GUA "C4'"  . 5KQE ? 
+316 ? . 23 ? G "C5'"  C ? 69.106  0.02 ? 1 ? ? . A 23 G "C5'"  A 23 GUA "C5'"  . 5KQE ? 
+317 ? . 23 ? G C8     C ? 143.477 0    ? 1 ? ? . A 23 G C8     A 23 GUA C8     . 5KQE ? 
+318 ? . 23 ? G H1     H ? 9.912   0.01 ? 1 ? ? . A 23 G H1     A 23 GUA H1     . 5KQE ? 
+319 ? . 23 ? G "H1'"  H ? 5.988   0.01 ? 1 ? ? . A 23 G "H1'"  A 23 GUA "H1'"  . 5KQE ? 
+320 ? . 23 ? G "H2'"  H ? 4.857   0.01 ? 1 ? ? . A 23 G "H2'"  A 23 GUA "H2'"  . 5KQE ? 
+321 ? . 23 ? G "H3'"  H ? 5.655   0.01 ? 1 ? ? . A 23 G "H3'"  A 23 GUA "H3'"  . 5KQE ? 
+322 ? . 23 ? G "H4'"  H ? 4.438   0    ? 1 ? ? . A 23 G "H4'"  A 23 GUA "H4'"  . 5KQE ? 
+323 ? . 23 ? G "H5'"  H ? 4.223   0.01 ? 1 ? ? . A 23 G "H5'"  A 23 GUA "H5'"  . 5KQE ? 
+324 ? . 23 ? G H8     H ? 7.905   0.08 ? 1 ? ? . A 23 G H8     A 23 GUA H8     . 5KQE ? 
+325 ? . 23 ? G N1     N ? 138.099 0.02 ? 1 ? ? . A 23 G N1     A 23 GUA N1     . 5KQE ? 
+326 ? . 24 ? G "C1'"  C ? 93.561  0.17 ? 1 ? ? . A 24 G "C1'"  A 24 GUA "C1'"  . 5KQE ? 
+327 ? . 24 ? G C8     C ? 139.381 0    ? 1 ? ? . A 24 G C8     A 24 GUA C8     . 5KQE ? 
+328 ? . 24 ? G H1     H ? 13.389  0    ? 1 ? ? . A 24 G H1     A 24 GUA H1     . 5KQE ? 
+329 ? . 24 ? G "H1'"  H ? 4.616   0.37 ? 1 ? ? . A 24 G "H1'"  A 24 GUA "H1'"  . 5KQE ? 
+330 ? . 24 ? G "H2'"  H ? 4.445   0.02 ? 1 ? ? . A 24 G "H2'"  A 24 GUA "H2'"  . 5KQE ? 
+331 ? . 24 ? G H21    H ? 6.459   0.01 ? 1 ? ? . A 24 G H21    A 24 GUA H21    . 5KQE ? 
+332 ? . 24 ? G H22    H ? 8.777   0.01 ? 1 ? ? . A 24 G H22    A 24 GUA H22    . 5KQE ? 
+333 ? . 24 ? G "H3'"  H ? 4.3     0.01 ? 1 ? ? . A 24 G "H3'"  A 24 GUA "H3'"  . 5KQE ? 
+334 ? . 24 ? G "H4'"  H ? 4.438   0    ? 1 ? ? . A 24 G "H4'"  A 24 GUA "H4'"  . 5KQE ? 
+335 ? . 24 ? G H8     H ? 8.333   0.01 ? 1 ? ? . A 24 G H8     A 24 GUA H8     . 5KQE ? 
+336 ? . 24 ? G N1     N ? 143.046 0.05 ? 1 ? ? . A 24 G N1     A 24 GUA N1     . 5KQE ? 
+337 ? . 25 ? C "C1'"  C ? 94.302  0.01 ? 1 ? ? . A 25 C "C1'"  A 25 CYT "C1'"  . 5KQE ? 
+338 ? . 25 ? C "C2'"  C ? 75.675  0    ? 1 ? ? . A 25 C "C2'"  A 25 CYT "C2'"  . 5KQE ? 
+339 ? . 25 ? C "C3'"  C ? 72.338  0    ? 1 ? ? . A 25 C "C3'"  A 25 CYT "C3'"  . 5KQE ? 
+340 ? . 25 ? C "C4'"  C ? 82.16   0    ? 1 ? ? . A 25 C "C4'"  A 25 CYT "C4'"  . 5KQE ? 
+341 ? . 25 ? C C5     C ? 97.716  0.05 ? 1 ? ? . A 25 C C5     A 25 CYT C5     . 5KQE ? 
+342 ? . 25 ? C C6     C ? 141.449 0.01 ? 1 ? ? . A 25 C C6     A 25 CYT C6     . 5KQE ? 
+343 ? . 25 ? C "H1'"  H ? 5.511   0.01 ? 1 ? ? . A 25 C "H1'"  A 25 CYT "H1'"  . 5KQE ? 
+344 ? . 25 ? C "H2'"  H ? 4.607   0    ? 1 ? ? . A 25 C "H2'"  A 25 CYT "H2'"  . 5KQE ? 
+345 ? . 25 ? C "H3'"  H ? 4.562   0.01 ? 1 ? ? . A 25 C "H3'"  A 25 CYT "H3'"  . 5KQE ? 
+346 ? . 25 ? C "H4'"  H ? 4.413   0.01 ? 1 ? ? . A 25 C "H4'"  A 25 CYT "H4'"  . 5KQE ? 
+347 ? . 25 ? C H41    H ? 6.901   0.03 ? 1 ? ? . A 25 C H41    A 25 CYT H41    . 5KQE ? 
+348 ? . 25 ? C H42    H ? 8.626   0.01 ? 1 ? ? . A 25 C H42    A 25 CYT H42    . 5KQE ? 
+349 ? . 25 ? C H5     H ? 5.306   0.01 ? 1 ? ? . A 25 C H5     A 25 CYT H5     . 5KQE ? 
+350 ? . 25 ? C H6     H ? 7.614   0.47 ? 1 ? ? . A 25 C H6     A 25 CYT H6     . 5KQE ? 
+351 ? . 25 ? C N4     N ? 92.203  0.05 ? 1 ? ? . A 25 C N4     A 25 CYT N4     . 5KQE ? 
+352 ? . 26 ? A "C1'"  C ? 93.519  0.03 ? 1 ? ? . A 26 A "C1'"  A 26 ADE "C1'"  . 5KQE ? 
+353 ? . 26 ? A C2     C ? 152.475 0.03 ? 1 ? ? . A 26 A C2     A 26 ADE C2     . 5KQE ? 
+354 ? . 26 ? A "C2'"  C ? 76.123  0.01 ? 1 ? ? . A 26 A "C2'"  A 26 ADE "C2'"  . 5KQE ? 
+355 ? . 26 ? A "C3'"  C ? 73.294  0.04 ? 1 ? ? . A 26 A "C3'"  A 26 ADE "C3'"  . 5KQE ? 
+356 ? . 26 ? A "C4'"  C ? 82.502  0.05 ? 1 ? ? . A 26 A "C4'"  A 26 ADE "C4'"  . 5KQE ? 
+357 ? . 26 ? A C8     C ? 139.99  0.01 ? 1 ? ? . A 26 A C8     A 26 ADE C8     . 5KQE ? 
+358 ? . 26 ? A "H1'"  H ? 5.845   0.31 ? 1 ? ? . A 26 A "H1'"  A 26 ADE "H1'"  . 5KQE ? 
+359 ? . 26 ? A H2     H ? 6.682   0.02 ? 1 ? ? . A 26 A H2     A 26 ADE H2     . 5KQE ? 
+360 ? . 26 ? A "H2'"  H ? 4.739   0.36 ? 1 ? ? . A 26 A "H2'"  A 26 ADE "H2'"  . 5KQE ? 
+361 ? . 26 ? A "H3'"  H ? 4.856   0.32 ? 1 ? ? . A 26 A "H3'"  A 26 ADE "H3'"  . 5KQE ? 
+362 ? . 26 ? A "H4'"  H ? 4.768   0.52 ? 1 ? ? . A 26 A "H4'"  A 26 ADE "H4'"  . 5KQE ? 
+363 ? . 26 ? A H8     H ? 7.992   0.07 ? 1 ? ? . A 26 A H8     A 26 ADE H8     . 5KQE ? 
+364 ? . 26 ? A N1     N ? 215.21  0.02 ? 1 ? ? . A 26 A N1     A 26 ADE N1     . 5KQE ? 
+365 ? . 26 ? A N3     N ? 207.977 0    ? 1 ? ? . A 26 A N3     A 26 ADE N3     . 5KQE ? 
+366 ? . 26 ? A N6     N ? 78.137  0.01 ? 1 ? ? . A 26 A N6     A 26 ADE N6     . 5KQE ? 
+367 ? . 27 ? A "C1'"  C ? 93.184  0.02 ? 1 ? ? . A 27 A "C1'"  A 27 ADE "C1'"  . 5KQE ? 
+368 ? . 27 ? A C2     C ? 153.252 0.02 ? 1 ? ? . A 27 A C2     A 27 ADE C2     . 5KQE ? 
+369 ? . 27 ? A "C2'"  C ? 76.003  0.12 ? 1 ? ? . A 27 A "C2'"  A 27 ADE "C2'"  . 5KQE ? 
+370 ? . 27 ? A "C3'"  C ? 73.2    0.01 ? 1 ? ? . A 27 A "C3'"  A 27 ADE "C3'"  . 5KQE ? 
+371 ? . 27 ? A "C4'"  C ? 82.498  0.05 ? 1 ? ? . A 27 A "C4'"  A 27 ADE "C4'"  . 5KQE ? 
+372 ? . 27 ? A C8     C ? 139.661 0.02 ? 1 ? ? . A 27 A C8     A 27 ADE C8     . 5KQE ? 
+373 ? . 27 ? A "H1'"  H ? 5.736   0.31 ? 1 ? ? . A 27 A "H1'"  A 27 ADE "H1'"  . 5KQE ? 
+374 ? . 27 ? A H2     H ? 6.911   1.74 ? 1 ? ? . A 27 A H2     A 27 ADE H2     . 5KQE ? 
+375 ? . 27 ? A "H2'"  H ? 4.64    0.37 ? 1 ? ? . A 27 A "H2'"  A 27 ADE "H2'"  . 5KQE ? 
+376 ? . 27 ? A "H3'"  H ? 4.786   0.33 ? 1 ? ? . A 27 A "H3'"  A 27 ADE "H3'"  . 5KQE ? 
+377 ? . 27 ? A "H4'"  H ? 4.788   0.51 ? 1 ? ? . A 27 A "H4'"  A 27 ADE "H4'"  . 5KQE ? 
+378 ? . 27 ? A H8     H ? 7.755   0.01 ? 1 ? ? . A 27 A H8     A 27 ADE H8     . 5KQE ? 
+379 ? . 27 ? A N1     N ? 215.207 0.03 ? 1 ? ? . A 27 A N1     A 27 ADE N1     . 5KQE ? 
+380 ? . 27 ? A N3     N ? 206.244 0    ? 1 ? ? . A 27 A N3     A 27 ADE N3     . 5KQE ? 
+381 ? . 27 ? A N6     N ? 79.26   0.08 ? 1 ? ? . A 27 A N6     A 27 ADE N6     . 5KQE ? 
+382 ? . 28 ? A "C1'"  C ? 93.263  0.07 ? 1 ? ? . A 28 A "C1'"  A 28 ADE "C1'"  . 5KQE ? 
+383 ? . 28 ? A C2     C ? 154.349 0.01 ? 1 ? ? . A 28 A C2     A 28 ADE C2     . 5KQE ? 
+384 ? . 28 ? A "C2'"  C ? 76.023  0.08 ? 1 ? ? . A 28 A "C2'"  A 28 ADE "C2'"  . 5KQE ? 
+385 ? . 28 ? A "C3'"  C ? 72.837  0.02 ? 1 ? ? . A 28 A "C3'"  A 28 ADE "C3'"  . 5KQE ? 
+386 ? . 28 ? A "C4'"  C ? 82.485  0.03 ? 1 ? ? . A 28 A "C4'"  A 28 ADE "C4'"  . 5KQE ? 
+387 ? . 28 ? A C8     C ? 139.466 0.03 ? 1 ? ? . A 28 A C8     A 28 ADE C8     . 5KQE ? 
+388 ? . 28 ? A "H1'"  H ? 5.841   0.3  ? 1 ? ? . A 28 A "H1'"  A 28 ADE "H1'"  . 5KQE ? 
+389 ? . 28 ? A H2     H ? 7.608   1.18 ? 1 ? ? . A 28 A H2     A 28 ADE H2     . 5KQE ? 
+390 ? . 28 ? A "H2'"  H ? 4.552   0.34 ? 1 ? ? . A 28 A "H2'"  A 28 ADE "H2'"  . 5KQE ? 
+391 ? . 28 ? A "H3'"  H ? 4.671   0.31 ? 1 ? ? . A 28 A "H3'"  A 28 ADE "H3'"  . 5KQE ? 
+392 ? . 28 ? A H61    H ? 6.813   0    ? 1 ? ? . A 28 A H61    A 28 ADE H61    . 5KQE ? 
+393 ? . 28 ? A H62    H ? 8.209   0    ? 1 ? ? . A 28 A H62    A 28 ADE H62    . 5KQE ? 
+394 ? . 28 ? A H8     H ? 7.783   0    ? 1 ? ? . A 28 A H8     A 28 ADE H8     . 5KQE ? 
+395 ? . 28 ? A N1     N ? 216.552 0    ? 1 ? ? . A 28 A N1     A 28 ADE N1     . 5KQE ? 
+396 ? . 28 ? A N3     N ? 206.5   0    ? 1 ? ? . A 28 A N3     A 28 ADE N3     . 5KQE ? 
+397 ? . 29 ? C "C1'"  C ? 93.671  0.08 ? 1 ? ? . A 29 C "C1'"  A 29 CYT "C1'"  . 5KQE ? 
+398 ? . 29 ? C "C2'"  C ? 76.279  0    ? 1 ? ? . A 29 C "C2'"  A 29 CYT "C2'"  . 5KQE ? 
+399 ? . 29 ? C "C3'"  C ? 73.735  0    ? 1 ? ? . A 29 C "C3'"  A 29 CYT "C3'"  . 5KQE ? 
+400 ? . 29 ? C "C4'"  C ? 83.014  0    ? 1 ? ? . A 29 C "C4'"  A 29 CYT "C4'"  . 5KQE ? 
+401 ? . 29 ? C C5     C ? 98.194  0    ? 1 ? ? . A 29 C C5     A 29 CYT C5     . 5KQE ? 
+402 ? . 29 ? C C6     C ? 141.037 0.06 ? 1 ? ? . A 29 C C6     A 29 CYT C6     . 5KQE ? 
+403 ? . 29 ? C "H1'"  H ? 5.521   0.01 ? 1 ? ? . A 29 C "H1'"  A 29 CYT "H1'"  . 5KQE ? 
+404 ? . 29 ? C "H2'"  H ? 4.231   0.01 ? 1 ? ? . A 29 C "H2'"  A 29 CYT "H2'"  . 5KQE ? 
+405 ? . 29 ? C "H3'"  H ? 4.424   0.01 ? 1 ? ? . A 29 C "H3'"  A 29 CYT "H3'"  . 5KQE ? 
+406 ? . 29 ? C "H4'"  H ? 4.421   0.01 ? 1 ? ? . A 29 C "H4'"  A 29 CYT "H4'"  . 5KQE ? 
+407 ? . 29 ? C H41    H ? 7.049   0.04 ? 1 ? ? . A 29 C H41    A 29 CYT H41    . 5KQE ? 
+408 ? . 29 ? C H42    H ? 8.262   0.01 ? 1 ? ? . A 29 C H42    A 29 CYT H42    . 5KQE ? 
+409 ? . 29 ? C H5     H ? 5.19    0.01 ? 1 ? ? . A 29 C H5     A 29 CYT H5     . 5KQE ? 
+410 ? . 29 ? C H6     H ? 7.325   0.01 ? 1 ? ? . A 29 C H6     A 29 CYT H6     . 5KQE ? 
+411 ? . 29 ? C N4     N ? 93.049  0.03 ? 1 ? ? . A 29 C N4     A 29 CYT N4     . 5KQE ? 
+412 ? . 30 ? U "C1'"  C ? 91.131  ?    ? 1 ? ? . A 30 U "C1'"  A 30 URI "C1'"  . 5KQE ? 
+413 ? . 30 ? U "C2'"  C ? 75.962  0.11 ? 1 ? ? . A 30 U "C2'"  A 30 URI "C2'"  . 5KQE ? 
+414 ? . 30 ? U "C3'"  C ? 75.484  0    ? 1 ? ? . A 30 U "C3'"  A 30 URI "C3'"  . 5KQE ? 
+415 ? . 30 ? U "C4'"  C ? 84.353  0.02 ? 1 ? ? . A 30 U "C4'"  A 30 URI "C4'"  . 5KQE ? 
+416 ? . 30 ? U C5     C ? 105.04  0.06 ? 1 ? ? . A 30 U C5     A 30 URI C5     . 5KQE ? 
+417 ? . 30 ? U "C5'"  C ? 66.853  0.05 ? 1 ? ? . A 30 U "C5'"  A 30 URI "C5'"  . 5KQE ? 
+418 ? . 30 ? U C6     C ? 143.063 0.04 ? 1 ? ? . A 30 U C6     A 30 URI C6     . 5KQE ? 
+419 ? . 30 ? U "H1'"  H ? 5.833   0.16 ? 1 ? ? . A 30 U "H1'"  A 30 URI "H1'"  . 5KQE ? 
+420 ? . 30 ? U "H2'"  H ? 4.51    0.05 ? 1 ? ? . A 30 U "H2'"  A 30 URI "H2'"  . 5KQE ? 
+421 ? . 30 ? U H3     H ? 14.358  0.01 ? 1 ? ? . A 30 U H3     A 30 URI H3     . 5KQE ? 
+422 ? . 30 ? U "H3'"  H ? 4.926   0.47 ? 1 ? ? . A 30 U "H3'"  A 30 URI "H3'"  . 5KQE ? 
+423 ? . 30 ? U "H4'"  H ? 4.508   0.02 ? 1 ? ? . A 30 U "H4'"  A 30 URI "H4'"  . 5KQE ? 
+424 ? . 30 ? U "H5'"  H ? 4.257   0.11 ? 1 ? ? . A 30 U "H5'"  A 30 URI "H5'"  . 5KQE ? 
+425 ? . 30 ? U H5     H ? 5.603   0.01 ? 1 ? ? . A 30 U H5     A 30 URI H5     . 5KQE ? 
+426 ? . 30 ? U H6     H ? 7.818   0.02 ? 1 ? ? . A 30 U H6     A 30 URI H6     . 5KQE ? 
+427 ? . 31 ? A "C1'"  C ? 93.133  0.04 ? 1 ? ? . A 31 A "C1'"  A 31 ADE "C1'"  . 5KQE ? 
+428 ? . 31 ? A C2     C ? 153.549 0.05 ? 1 ? ? . A 31 A C2     A 31 ADE C2     . 5KQE ? 
+429 ? . 31 ? A "C2'"  C ? 75.038  0.78 ? 1 ? ? . A 31 A "C2'"  A 31 ADE "C2'"  . 5KQE ? 
+430 ? . 31 ? A "C3'"  C ? 75.044  0.85 ? 1 ? ? . A 31 A "C3'"  A 31 ADE "C3'"  . 5KQE ? 
+431 ? . 31 ? A "C4'"  C ? 83.326  0.08 ? 1 ? ? . A 31 A "C4'"  A 31 ADE "C4'"  . 5KQE ? 
+432 ? . 31 ? A "C5'"  C ? 67.125  0    ? 1 ? ? . A 31 A "C5'"  A 31 ADE "C5'"  . 5KQE ? 
+433 ? . 31 ? A C8     C ? 141.603 0.02 ? 1 ? ? . A 31 A C8     A 31 ADE C8     . 5KQE ? 
+434 ? . 31 ? A "H1'"  H ? 6.004   0.29 ? 1 ? ? . A 31 A "H1'"  A 31 ADE "H1'"  . 5KQE ? 
+435 ? . 31 ? A H2     H ? 7.346   0.02 ? 1 ? ? . A 31 A H2     A 31 ADE H2     . 5KQE ? 
+436 ? . 31 ? A "H2'"  H ? 4.793   0.33 ? 1 ? ? . A 31 A "H2'"  A 31 ADE "H2'"  . 5KQE ? 
+437 ? . 31 ? A "H3'"  H ? 4.855   0.43 ? 1 ? ? . A 31 A "H3'"  A 31 ADE "H3'"  . 5KQE ? 
+438 ? . 31 ? A "H4'"  H ? 4.771   0.43 ? 1 ? ? . A 31 A "H4'"  A 31 ADE "H4'"  . 5KQE ? 
+439 ? . 31 ? A H8     H ? 8.413   0.01 ? 1 ? ? . A 31 A H8     A 31 ADE H8     . 5KQE ? 
+440 ? . 31 ? A N1     N ? 217.297 0.01 ? 1 ? ? . A 31 A N1     A 31 ADE N1     . 5KQE ? 
+441 ? . 31 ? A N3     N ? 208.244 0    ? 1 ? ? . A 31 A N3     A 31 ADE N3     . 5KQE ? 
+442 ? . 32 ? C "C1'"  C ? 94.077  0.04 ? 1 ? ? . A 32 C "C1'"  A 32 CYT "C1'"  . 5KQE ? 
+443 ? . 32 ? C "C2'"  C ? 72.922  0    ? 1 ? ? . A 32 C "C2'"  A 32 CYT "C2'"  . 5KQE ? 
+444 ? . 32 ? C "C3'"  C ? 72.338  0    ? 1 ? ? . A 32 C "C3'"  A 32 CYT "C3'"  . 5KQE ? 
+445 ? . 32 ? C "C4'"  C ? 88.136  ?    ? 1 ? ? . A 32 C "C4'"  A 32 CYT "C4'"  . 5KQE ? 
+446 ? . 32 ? C C5     C ? 97.99   0.04 ? 1 ? ? . A 32 C C5     A 32 CYT C5     . 5KQE ? 
+447 ? . 32 ? C C6     C ? 141.315 0.04 ? 1 ? ? . A 32 C C6     A 32 CYT C6     . 5KQE ? 
+448 ? . 32 ? C "H1'"  H ? 5.433   0.15 ? 1 ? ? . A 32 C "H1'"  A 32 CYT "H1'"  . 5KQE ? 
+449 ? . 32 ? C "H2'"  H ? 4.496   0.01 ? 1 ? ? . A 32 C "H2'"  A 32 CYT "H2'"  . 5KQE ? 
+450 ? . 32 ? C "H3'"  H ? 4.409   0.16 ? 1 ? ? . A 32 C "H3'"  A 32 CYT "H3'"  . 5KQE ? 
+451 ? . 32 ? C "H4'"  H ? 4.942   0.51 ? 1 ? ? . A 32 C "H4'"  A 32 CYT "H4'"  . 5KQE ? 
+452 ? . 32 ? C H41    H ? 6.944   0.03 ? 1 ? ? . A 32 C H41    A 32 CYT H41    . 5KQE ? 
+453 ? . 32 ? C H42    H ? 8.337   0.01 ? 1 ? ? . A 32 C H42    A 32 CYT H42    . 5KQE ? 
+454 ? . 32 ? C H5     H ? 5.252   0.01 ? 1 ? ? . A 32 C H5     A 32 CYT H5     . 5KQE ? 
+455 ? . 32 ? C H6     H ? 7.575   0.01 ? 1 ? ? . A 32 C H6     A 32 CYT H6     . 5KQE ? 
+456 ? . 32 ? C N4     N ? 91.882  0.04 ? 1 ? ? . A 32 C N4     A 32 CYT N4     . 5KQE ? 
+457 ? . 33 ? A "C1'"  C ? 92.737  3.05 ? 1 ? ? . A 33 A "C1'"  A 33 ADE "C1'"  . 5KQE ? 
+458 ? . 33 ? A C2     C ? 153.791 0.03 ? 1 ? ? . A 33 A C2     A 33 ADE C2     . 5KQE ? 
+459 ? . 33 ? A "C2'"  C ? 75.938  0.02 ? 1 ? ? . A 33 A "C2'"  A 33 ADE "C2'"  . 5KQE ? 
+460 ? . 33 ? A "C3'"  C ? 73.018  0.06 ? 1 ? ? . A 33 A "C3'"  A 33 ADE "C3'"  . 5KQE ? 
+461 ? . 33 ? A "C4'"  C ? 82.504  0    ? 1 ? ? . A 33 A "C4'"  A 33 ADE "C4'"  . 5KQE ? 
+462 ? . 33 ? A C8     C ? 140.027 0.06 ? 1 ? ? . A 33 A C8     A 33 ADE C8     . 5KQE ? 
+463 ? . 33 ? A "H1'"  H ? 5.88    0.33 ? 1 ? ? . A 33 A "H1'"  A 33 ADE "H1'"  . 5KQE ? 
+464 ? . 33 ? A H2     H ? 7.467   0.02 ? 1 ? ? . A 33 A H2     A 33 ADE H2     . 5KQE ? 
+465 ? . 33 ? A "H2'"  H ? 4.81    0.37 ? 1 ? ? . A 33 A "H2'"  A 33 ADE "H2'"  . 5KQE ? 
+466 ? . 33 ? A H61    H ? 6.551   0.01 ? 1 ? ? . A 33 A H61    A 33 ADE H61    . 5KQE ? 
+467 ? . 33 ? A H62    H ? 8.344   0.01 ? 1 ? ? . A 33 A H62    A 33 ADE H62    . 5KQE ? 
+468 ? . 33 ? A H8     H ? 7.994   0.01 ? 1 ? ? . A 33 A H8     A 33 ADE H8     . 5KQE ? 
+469 ? . 33 ? A N1     N ? 216.44  0.02 ? 1 ? ? . A 33 A N1     A 33 ADE N1     . 5KQE ? 
+470 ? . 33 ? A N3     N ? 209.686 0    ? 1 ? ? . A 33 A N3     A 33 ADE N3     . 5KQE ? 
+471 ? . 33 ? A N6     N ? 77.862  0.01 ? 1 ? ? . A 33 A N6     A 33 ADE N6     . 5KQE ? 
+472 ? . 34 ? U "C1'"  C ? 92.777  3.2  ? 1 ? ? . A 34 U "C1'"  A 34 URI "C1'"  . 5KQE ? 
+473 ? . 34 ? U "C2'"  C ? 76.077  0.02 ? 1 ? ? . A 34 U "C2'"  A 34 URI "C2'"  . 5KQE ? 
+474 ? . 34 ? U "C3'"  C ? 72.551  0.21 ? 1 ? ? . A 34 U "C3'"  A 34 URI "C3'"  . 5KQE ? 
+475 ? . 34 ? U "C4'"  C ? 82.639  0    ? 1 ? ? . A 34 U "C4'"  A 34 URI "C4'"  . 5KQE ? 
+476 ? . 34 ? U C5     C ? 104.242 0.04 ? 1 ? ? . A 34 U C5     A 34 URI C5     . 5KQE ? 
+477 ? . 34 ? U C6     C ? 140.988 0.02 ? 1 ? ? . A 34 U C6     A 34 URI C6     . 5KQE ? 
+478 ? . 34 ? U "H1'"  H ? 5.38    0.01 ? 1 ? ? . A 34 U "H1'"  A 34 URI "H1'"  . 5KQE ? 
+479 ? . 34 ? U "H2'"  H ? 4.073   0.01 ? 1 ? ? . A 34 U "H2'"  A 34 URI "H2'"  . 5KQE ? 
+480 ? . 34 ? U H3     H ? 12.112  0.02 ? 1 ? ? . A 34 U H3     A 34 URI H3     . 5KQE ? 
+481 ? . 34 ? U "H3'"  H ? 4.534   0.02 ? 1 ? ? . A 34 U "H3'"  A 34 URI "H3'"  . 5KQE ? 
+482 ? . 34 ? U "H4'"  H ? 4.443   0.04 ? 1 ? ? . A 34 U "H4'"  A 34 URI "H4'"  . 5KQE ? 
+483 ? . 34 ? U H5     H ? 5.394   0.01 ? 1 ? ? . A 34 U H5     A 34 URI H5     . 5KQE ? 
+484 ? . 34 ? U H6     H ? 7.728   0.01 ? 1 ? ? . A 34 U H6     A 34 URI H6     . 5KQE ? 
+485 ? . 34 ? U N3     N ? 153.254 0.07 ? 1 ? ? . A 34 U N3     A 34 URI N3     . 5KQE ? 
+486 ? . 35 ? C "C1'"  C ? 94.317  0.03 ? 1 ? ? . A 35 C "C1'"  A 35 CYT "C1'"  . 5KQE ? 
+487 ? . 35 ? C "C2'"  C ? 76.029  0    ? 1 ? ? . A 35 C "C2'"  A 35 CYT "C2'"  . 5KQE ? 
+488 ? . 35 ? C "C3'"  C ? 83.365  ?    ? 1 ? ? . A 35 C "C3'"  A 35 CYT "C3'"  . 5KQE ? 
+489 ? . 35 ? C "C4'"  C ? 82.16   0    ? 1 ? ? . A 35 C "C4'"  A 35 CYT "C4'"  . 5KQE ? 
+490 ? . 35 ? C C5     C ? 97.759  0.04 ? 1 ? ? . A 35 C C5     A 35 CYT C5     . 5KQE ? 
+491 ? . 35 ? C C6     C ? 143.289 0.01 ? 1 ? ? . A 35 C C6     A 35 CYT C6     . 5KQE ? 
+492 ? . 35 ? C "H1'"  H ? 5.594   0.22 ? 1 ? ? . A 35 C "H1'"  A 35 CYT "H1'"  . 5KQE ? 
+493 ? . 35 ? C "H2'"  H ? 4.225   0.01 ? 1 ? ? . A 35 C "H2'"  A 35 CYT "H2'"  . 5KQE ? 
+494 ? . 35 ? C "H3'"  H ? 4.692   0.39 ? 1 ? ? . A 35 C "H3'"  A 35 CYT "H3'"  . 5KQE ? 
+495 ? . 35 ? C "H5'"  H ? 4.527   0    ? 1 ? ? . A 35 C "H5'"  A 35 CYT "H5'"  . 5KQE ? 
+496 ? . 35 ? C H41    H ? 7.002   0.03 ? 1 ? ? . A 35 C H41    A 35 CYT H41    . 5KQE ? 
+497 ? . 35 ? C H42    H ? 8.592   0.01 ? 1 ? ? . A 35 C H42    A 35 CYT H42    . 5KQE ? 
+498 ? . 35 ? C H5     H ? 5.661   0.01 ? 1 ? ? . A 35 C H5     A 35 CYT H5     . 5KQE ? 
+499 ? . 35 ? C H6     H ? 8.021   0.01 ? 1 ? ? . A 35 C H6     A 35 CYT H6     . 5KQE ? 
+500 ? . 35 ? C N4     N ? 92.936  0.03 ? 1 ? ? . A 35 C N4     A 35 CYT N4     . 5KQE ? 
+501 ? . 36 ? C "C1'"  C ? 93.32   0.02 ? 1 ? ? . A 36 C "C1'"  A 36 CYT "C1'"  . 5KQE ? 
+502 ? . 36 ? C "C2'"  C ? 77.947  0    ? 1 ? ? . A 36 C "C2'"  A 36 CYT "C2'"  . 5KQE ? 
+503 ? . 36 ? C "C3'"  C ? 70.003  0    ? 1 ? ? . A 36 C "C3'"  A 36 CYT "C3'"  . 5KQE ? 
+504 ? . 36 ? C "C4'"  C ? 83.828  0    ? 1 ? ? . A 36 C "C4'"  A 36 CYT "C4'"  . 5KQE ? 
+505 ? . 36 ? C C5     C ? 98.613  0.01 ? 1 ? ? . A 36 C C5     A 36 CYT C5     . 5KQE ? 
+506 ? . 36 ? C C6     C ? 142.323 0.07 ? 1 ? ? . A 36 C C6     A 36 CYT C6     . 5KQE ? 
+507 ? . 36 ? C "H1'"  H ? 5.776   0.01 ? 1 ? ? . A 36 C "H1'"  A 36 CYT "H1'"  . 5KQE ? 
+508 ? . 36 ? C "H2'"  H ? 4.041   0.06 ? 1 ? ? . A 36 C "H2'"  A 36 CYT "H2'"  . 5KQE ? 
+509 ? . 36 ? C "H3'"  H ? 4.211   0.01 ? 1 ? ? . A 36 C "H3'"  A 36 CYT "H3'"  . 5KQE ? 
+510 ? . 36 ? C "H4'"  H ? 4.193   0.01 ? 1 ? ? . A 36 C "H4'"  A 36 CYT "H4'"  . 5KQE ? 
+511 ? . 36 ? C H41    H ? 7.088   0.03 ? 1 ? ? . A 36 C H41    A 36 CYT H41    . 5KQE ? 
+512 ? . 36 ? C H42    H ? 8.441   0.01 ? 1 ? ? . A 36 C H42    A 36 CYT H42    . 5KQE ? 
+513 ? . 36 ? C H5     H ? 5.575   0.01 ? 1 ? ? . A 36 C H5     A 36 CYT H5     . 5KQE ? 
+514 ? . 36 ? C H6     H ? 7.707   0.06 ? 1 ? ? . A 36 C H6     A 36 CYT H6     . 5KQE ? 
+515 ? . 36 ? C N4     N ? 92.241  0.43 ? 1 ? ? . A 36 C N4     A 36 CYT N4     . 5KQE ? 
+stop_
+save_

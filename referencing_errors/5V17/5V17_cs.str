@@ -1,0 +1,187 @@
+data_5v17
+
+save_entry_information
+# 
+_Entry.ID                 5V17 
+_Entry.Assigned_BMRB_ID   30262 
+# 
+loop_
+_Audit.Revision_ID 
+_Audit.Creation_date 
+_Audit.Update_record 
+_Audit.Creation_method 
+_Audit.Entry_ID 
+1 2017-03-10 'Nomenclature checked and updated' . 5V17 
+2 2017-03-10 'Preliminary version'              . 5V17 
+3 2017-07-12 'Initial release'                  . 5V17 
+stop_
+save_
+save_chemical_shift_reference_1
+# 
+_Chem_shift_reference.Sf_category    chem_shift_reference 
+_Chem_shift_reference.Sf_framecode   chemical_shift_reference_1 
+_Chem_shift_reference.Entry_ID       5V17 
+_Chem_shift_reference.ID             1 
+# 
+loop_
+_Chem_shift_ref.Atom_type 
+_Chem_shift_ref.Atom_isotope_number 
+_Chem_shift_ref.Mol_common_name 
+_Chem_shift_ref.Atom_group 
+_Chem_shift_ref.Concentration_val 
+_Chem_shift_ref.Concentration_units 
+_Chem_shift_ref.Solvent 
+_Chem_shift_ref.Rank 
+_Chem_shift_ref.Chem_shift_units 
+_Chem_shift_ref.Chem_shift_val 
+_Chem_shift_ref.Ref_method 
+_Chem_shift_ref.Ref_type 
+_Chem_shift_ref.Indirect_shift_ratio 
+_Chem_shift_ref.Entry_ID 
+_Chem_shift_ref.Chem_shift_reference_ID 
+H 1  DSS 'methyl protons' ? ? ? ? ppm 0.000 internal direct   1.0        30262 1 
+C 13 DSS 'methyl protons' ? ? ? ? ppm 0.000 internal indirect 0.25144953 30262 1 
+stop_
+save_
+save_CCC_pklist_cln_fin.str3
+# 
+loop_
+_Atom_chem_shift.ID 
+_Atom_chem_shift.Entity_assembly_ID 
+_Atom_chem_shift.Entity_ID 
+_Atom_chem_shift.Comp_index_ID 
+_Atom_chem_shift.Seq_ID 
+_Atom_chem_shift.Comp_ID 
+_Atom_chem_shift.Atom_ID 
+_Atom_chem_shift.Atom_type 
+_Atom_chem_shift.Atom_isotope_number 
+_Atom_chem_shift.Val 
+_Atom_chem_shift.Val_err 
+_Atom_chem_shift.Assign_fig_of_merit 
+_Atom_chem_shift.Ambiguity_code 
+_Atom_chem_shift.Occupancy 
+_Atom_chem_shift.Resonance_ID 
+_Atom_chem_shift.Auth_entity_assembly_ID 
+_Atom_chem_shift.Auth_asym_ID 
+_Atom_chem_shift.Auth_seq_ID 
+_Atom_chem_shift.Auth_comp_ID 
+_Atom_chem_shift.Auth_atom_ID 
+_Atom_chem_shift.Original_PDB_strand_ID 
+_Atom_chem_shift.Original_PDB_residue_no 
+_Atom_chem_shift.Original_PDB_residue_name 
+_Atom_chem_shift.Original_PDB_atom_name 
+_Atom_chem_shift.Details 
+_Atom_chem_shift.Entry_ID 
+_Atom_chem_shift.Assigned_chem_shift_list_ID 
+1   ? . 1  ? G H8    ? ? 8.09749 ? ? ? ? ? . A 1  G H8    A 1  G H8    . 5V17 ? 
+2   ? . 1  ? G "H1'" ? ? 5.78306 ? ? ? ? ? . A 1  G "H1'" A 1  G "H1'" . 5V17 ? 
+3   ? . 2  ? G H8    ? ? 7.55435 ? ? ? ? ? . A 2  G H8    A 2  G H8    . 5V17 ? 
+4   ? . 2  ? G "H1'" ? ? 5.86916 ? ? ? ? ? . A 2  G "H1'" A 2  G "H1'" . 5V17 ? 
+5   ? . 2  ? G "H2'" ? ? 4.91083 ? ? ? ? ? . A 2  G "H2'" A 2  G "H2'" . 5V17 ? 
+6   ? . 3  ? A H8    ? ? 7.75835 ? ? ? ? ? . A 3  A H8    A 3  A H8    . 5V17 ? 
+7   ? . 3  ? A "H1'" ? ? 5.96046 ? ? ? ? ? . A 3  A "H1'" A 3  A "H1'" . 5V17 ? 
+8   ? . 3  ? A H2    ? ? 7.71792 ? ? ? ? ? . A 3  A H2    A 3  A H2    . 5V17 ? 
+9   ? . 4  ? U H6    ? ? 7.50715 ? ? ? ? ? . A 4  U H6    A 4  U H6    . 5V17 ? 
+10  ? . 4  ? U "H1'" ? ? 5.43714 ? ? ? ? ? . A 4  U "H1'" A 4  U "H1'" . 5V17 ? 
+11  ? . 4  ? U H5    ? ? 4.97534 ? ? ? ? ? . A 4  U H5    A 4  U H5    . 5V17 ? 
+12  ? . 5  ? C H6    ? ? 7.69332 ? ? ? ? ? . A 5  C H6    A 5  C H6    . 5V17 ? 
+13  ? . 5  ? C "H1'" ? ? 5.50082 ? ? ? ? ? . A 5  C "H1'" A 5  C "H1'" . 5V17 ? 
+14  ? . 5  ? C H5    ? ? 5.5282  ? ? ? ? ? . A 5  C H5    A 5  C H5    . 5V17 ? 
+15  ? . 6  ? A H8    ? ? 7.8475  ? ? ? ? ? . A 6  A H8    A 6  A H8    . 5V17 ? 
+16  ? . 6  ? A "H1'" ? ? 5.74438 ? ? ? ? ? . A 6  A "H1'" A 6  A "H1'" . 5V17 ? 
+17  ? . 6  ? A H2    ? ? 6.85076 ? ? ? ? ? . A 6  A H2    A 6  A H2    . 5V17 ? 
+18  ? . 7  ? A H8    ? ? 7.40264 ? ? ? ? ? . A 7  A H8    A 7  A H8    . 5V17 ? 
+19  ? . 7  ? A "H1'" ? ? 5.48474 ? ? ? ? ? . A 7  A "H1'" A 7  A "H1'" . 5V17 ? 
+20  ? . 7  ? A H2    ? ? 7.61829 ? ? ? ? ? . A 7  A H2    A 7  A H2    . 5V17 ? 
+21  ? . 8  ? C H6    ? ? 7.24031 ? ? ? ? ? . A 8  C H6    A 8  C H6    . 5V17 ? 
+22  ? . 8  ? C "H1'" ? ? 5.31679 ? ? ? ? ? . A 8  C "H1'" A 8  C "H1'" . 5V17 ? 
+23  ? . 8  ? C H5    ? ? 5.15544 ? ? ? ? ? . A 8  C H5    A 8  C H5    . 5V17 ? 
+24  ? . 9  ? C H6    ? ? 7.59917 ? ? ? ? ? . A 9  C H6    A 9  C H6    . 5V17 ? 
+25  ? . 9  ? C "H1'" ? ? 5.57638 ? ? ? ? ? . A 9  C "H1'" A 9  C "H1'" . 5V17 ? 
+26  ? . 9  ? C H5    ? ? 5.67266 ? ? ? ? ? . A 9  C H5    A 9  C H5    . 5V17 ? 
+27  ? . 10 ? C H6    ? ? 7.60906 ? ? ? ? ? . A 10 C H6    A 10 C H6    . 5V17 ? 
+28  ? . 10 ? C H5    ? ? 5.46037 ? ? ? ? ? . A 10 C H5    A 10 C H5    . 5V17 ? 
+29  ? . 11 ? C H6    ? ? 7.62979 ? ? ? ? ? . A 11 C H6    A 11 C H6    . 5V17 ? 
+30  ? . 11 ? C "H1'" ? ? 5.58128 ? ? ? ? ? . A 11 C "H1'" A 11 C "H1'" . 5V17 ? 
+31  ? . 11 ? C H5    ? ? 5.59437 ? ? ? ? ? . A 11 C H5    A 11 C H5    . 5V17 ? 
+32  ? . 12 ? A H8    ? ? 8.215   ? ? ? ? ? . A 12 A H8    A 12 A H8    . 5V17 ? 
+33  ? . 12 ? A "H1'" ? ? 5.88809 ? ? ? ? ? . A 12 A "H1'" A 12 A "H1'" . 5V17 ? 
+34  ? . 12 ? A H2    ? ? 7.79286 ? ? ? ? ? . A 12 A H2    A 12 A H2    . 5V17 ? 
+35  ? . 13 ? G H8    ? ? 7.3128  ? ? ? ? ? . A 13 G H8    A 13 G H8    . 5V17 ? 
+36  ? . 13 ? G "H1'" ? ? 5.68433 ? ? ? ? ? . A 13 G "H1'" A 13 G "H1'" . 5V17 ? 
+37  ? . 14 ? G H8    ? ? 7.18711 ? ? ? ? ? . A 14 G H8    A 14 G H8    . 5V17 ? 
+38  ? . 14 ? G "H1'" ? ? 5.78008 ? ? ? ? ? . A 14 G "H1'" A 14 G "H1'" . 5V17 ? 
+39  ? . 15 ? U H6    ? ? 7.61039 ? ? ? ? ? . A 15 U H6    A 15 U H6    . 5V17 ? 
+40  ? . 15 ? U "H1'" ? ? 5.6296  ? ? ? ? ? . A 15 U "H1'" A 15 U "H1'" . 5V17 ? 
+41  ? . 15 ? U H5    ? ? 5.13142 ? ? ? ? ? . A 15 U H5    A 15 U H5    . 5V17 ? 
+42  ? . 16 ? G H8    ? ? 7.69302 ? ? ? ? ? . A 16 G H8    A 16 G H8    . 5V17 ? 
+43  ? . 16 ? G "H1'" ? ? 5.74606 ? ? ? ? ? . A 16 G "H1'" A 16 G "H1'" . 5V17 ? 
+44  ? . 17 ? U H6    ? ? 7.60515 ? ? ? ? ? . A 17 U H6    A 17 U H6    . 5V17 ? 
+45  ? . 17 ? U "H1'" ? ? 5.41042 ? ? ? ? ? . A 17 U "H1'" A 17 U "H1'" . 5V17 ? 
+46  ? . 18 ? G H8    ? ? 7.677   ? ? ? ? ? . A 18 G H8    A 18 G H8    . 5V17 ? 
+47  ? . 18 ? G "H1'" ? ? 5.77563 ? ? ? ? ? . A 18 G "H1'" A 18 G "H1'" . 5V17 ? 
+48  ? . 19 ? G H8    ? ? 7.15017 ? ? ? ? ? . A 19 G H8    A 19 G H8    . 5V17 ? 
+49  ? . 19 ? G "H1'" ? ? 5.66206 ? ? ? ? ? . A 19 G "H1'" A 19 G "H1'" . 5V17 ? 
+50  ? . 20 ? C H6    ? ? 7.34492 ? ? ? ? ? . A 20 C H6    A 20 C H6    . 5V17 ? 
+51  ? . 20 ? C "H1'" ? ? 5.40958 ? ? ? ? ? . A 20 C "H1'" A 20 C "H1'" . 5V17 ? 
+52  ? . 20 ? C H5    ? ? 4.97534 ? ? ? ? ? . A 20 C H5    A 20 C H5    . 5V17 ? 
+53  ? . 21 ? A H8    ? ? 7.96549 ? ? ? ? ? . A 21 A H8    A 21 A H8    . 5V17 ? 
+54  ? . 21 ? A "H1'" ? ? 5.83353 ? ? ? ? ? . A 21 A "H1'" A 21 A "H1'" . 5V17 ? 
+55  ? . 21 ? A H2    ? ? 8.1333  ? ? ? ? ? . A 21 A H2    A 21 A H2    . 5V17 ? 
+56  ? . 22 ? C H6    ? ? 7.38427 ? ? ? ? ? . A 22 C H6    A 22 C H6    . 5V17 ? 
+57  ? . 22 ? C "H1'" ? ? 5.34834 ? ? ? ? ? . A 22 C "H1'" A 22 C "H1'" . 5V17 ? 
+58  ? . 22 ? C H5    ? ? 5.3706  ? ? ? ? ? . A 22 C H5    A 22 C H5    . 5V17 ? 
+59  ? . 23 ? A H8    ? ? 8.26038 ? ? ? ? ? . A 23 A H8    A 23 A H8    . 5V17 ? 
+60  ? . 23 ? A "H1'" ? ? 5.85468 ? ? ? ? ? . A 23 A "H1'" A 23 A "H1'" . 5V17 ? 
+61  ? . 23 ? A H2    ? ? 7.99199 ? ? ? ? ? . A 23 A H2    A 23 A H2    . 5V17 ? 
+62  ? . 24 ? C H6    ? ? 7.40672 ? ? ? ? ? . A 24 C H6    A 24 C H6    . 5V17 ? 
+63  ? . 24 ? C "H1'" ? ? 5.30798 ? ? ? ? ? . A 24 C "H1'" A 24 C "H1'" . 5V17 ? 
+64  ? . 24 ? C H5    ? ? 5.24151 ? ? ? ? ? . A 24 C H5    A 24 C H5    . 5V17 ? 
+65  ? . 25 ? C H6    ? ? 7.68191 ? ? ? ? ? . A 25 C H6    A 25 C H6    . 5V17 ? 
+66  ? . 25 ? C "H1'" ? ? 5.54323 ? ? ? ? ? . A 25 C "H1'" A 25 C "H1'" . 5V17 ? 
+67  ? . 25 ? C H5    ? ? 5.58766 ? ? ? ? ? . A 25 C H5    A 25 C H5    . 5V17 ? 
+68  ? . 26 ? A H8    ? ? 8.20497 ? ? ? ? ? . A 26 A H8    A 26 A H8    . 5V17 ? 
+69  ? . 26 ? A "H1'" ? ? 5.94264 ? ? ? ? ? . A 26 A "H1'" A 26 A "H1'" . 5V17 ? 
+70  ? . 26 ? A H2    ? ? 7.48949 ? ? ? ? ? . A 26 A H2    A 26 A H2    . 5V17 ? 
+71  ? . 27 ? G H8    ? ? 7.5329  ? ? ? ? ? . A 27 G H8    A 27 G H8    . 5V17 ? 
+72  ? . 27 ? G "H1'" ? ? 5.42267 ? ? ? ? ? . A 27 G "H1'" A 27 G "H1'" . 5V17 ? 
+73  ? . 28 ? U H6    ? ? 7.68944 ? ? ? ? ? . A 28 U H6    A 28 U H6    . 5V17 ? 
+74  ? . 28 ? U "H1'" ? ? 5.4061  ? ? ? ? ? . A 28 U "H1'" A 28 U "H1'" . 5V17 ? 
+75  ? . 28 ? U H5    ? ? 5.30111 ? ? ? ? ? . A 28 U H5    A 28 U H5    . 5V17 ? 
+76  ? . 29 ? C H6    ? ? 7.87301 ? ? ? ? ? . A 29 C H6    A 29 C H6    . 5V17 ? 
+77  ? . 29 ? C "H1'" ? ? 5.58332 ? ? ? ? ? . A 29 C "H1'" A 29 C "H1'" . 5V17 ? 
+78  ? . 29 ? C H5    ? ? 5.64634 ? ? ? ? ? . A 29 C H5    A 29 C H5    . 5V17 ? 
+79  ? . 30 ? A H8    ? ? 7.91399 ? ? ? ? ? . A 30 A H8    A 30 A H8    . 5V17 ? 
+80  ? . 30 ? A "H1'" ? ? 5.78565 ? ? ? ? ? . A 30 A "H1'" A 30 A "H1'" . 5V17 ? 
+81  ? . 30 ? A H2    ? ? 7.27368 ? ? ? ? ? . A 30 A H2    A 30 A H2    . 5V17 ? 
+82  ? . 31 ? U H6    ? ? 7.52088 ? ? ? ? ? . A 31 U H6    A 31 U H6    . 5V17 ? 
+83  ? . 31 ? U "H1'" ? ? 5.23366 ? ? ? ? ? . A 31 U "H1'" A 31 U "H1'" . 5V17 ? 
+84  ? . 31 ? U H5    ? ? 5.31822 ? ? ? ? ? . A 31 U H5    A 31 U H5    . 5V17 ? 
+85  ? . 32 ? A H8    ? ? 8.32022 ? ? ? ? ? . A 32 A H8    A 32 A H8    . 5V17 ? 
+86  ? . 32 ? A "H1'" ? ? 5.90146 ? ? ? ? ? . A 32 A "H1'" A 32 A "H1'" . 5V17 ? 
+87  ? . 32 ? A H2    ? ? 7.39043 ? ? ? ? ? . A 32 A H2    A 32 A H2    . 5V17 ? 
+88  ? . 33 ? C H6    ? ? 7.47281 ? ? ? ? ? . A 33 C H6    A 33 C H6    . 5V17 ? 
+89  ? . 33 ? C "H1'" ? ? 5.38509 ? ? ? ? ? . A 33 C "H1'" A 33 C "H1'" . 5V17 ? 
+90  ? . 33 ? C H5    ? ? 5.18356 ? ? ? ? ? . A 33 C H5    A 33 C H5    . 5V17 ? 
+91  ? . 34 ? C H6    ? ? 7.73765 ? ? ? ? ? . A 34 C H6    A 34 C H6    . 5V17 ? 
+92  ? . 34 ? C "H1'" ? ? 5.51706 ? ? ? ? ? . A 34 C "H1'" A 34 C "H1'" . 5V17 ? 
+93  ? . 34 ? C H5    ? ? 5.41736 ? ? ? ? ? . A 34 C H5    A 34 C H5    . 5V17 ? 
+94  ? . 35 ? U H6    ? ? 7.61799 ? ? ? ? ? . A 35 U H6    A 35 U H6    . 5V17 ? 
+95  ? . 35 ? U "H1'" ? ? 5.72098 ? ? ? ? ? . A 35 U "H1'" A 35 U "H1'" . 5V17 ? 
+96  ? . 36 ? U H6    ? ? 7.90027 ? ? ? ? ? . A 36 U H6    A 36 U H6    . 5V17 ? 
+97  ? . 36 ? U "H1'" ? ? 5.72331 ? ? ? ? ? . A 36 U "H1'" A 36 U "H1'" . 5V17 ? 
+98  ? . 36 ? U H5    ? ? 5.85456 ? ? ? ? ? . A 36 U H5    A 36 U H5    . 5V17 ? 
+99  ? . 37 ? G H8    ? ? 7.84807 ? ? ? ? ? . A 37 G H8    A 37 G H8    . 5V17 ? 
+100 ? . 37 ? G "H1'" ? ? 5.75339 ? ? ? ? ? . A 37 G "H1'" A 37 G "H1'" . 5V17 ? 
+101 ? . 38 ? A H8    ? ? 7.8063  ? ? ? ? ? . A 38 A H8    A 38 A H8    . 5V17 ? 
+102 ? . 38 ? A "H1'" ? ? 5.90256 ? ? ? ? ? . A 38 A "H1'" A 38 A "H1'" . 5V17 ? 
+103 ? . 38 ? A H2    ? ? 7.66043 ? ? ? ? ? . A 38 A H2    A 38 A H2    . 5V17 ? 
+104 ? . 39 ? U H6    ? ? 7.57504 ? ? ? ? ? . A 39 U H6    A 39 U H6    . 5V17 ? 
+105 ? . 39 ? U "H1'" ? ? 5.43565 ? ? ? ? ? . A 39 U "H1'" A 39 U "H1'" . 5V17 ? 
+106 ? . 39 ? U H5    ? ? 4.96687 ? ? ? ? ? . A 39 U H5    A 39 U H5    . 5V17 ? 
+107 ? . 40 ? C H6    ? ? 7.79297 ? ? ? ? ? . A 40 C H6    A 40 C H6    . 5V17 ? 
+108 ? . 40 ? C "H1'" ? ? 5.53757 ? ? ? ? ? . A 40 C "H1'" A 40 C "H1'" . 5V17 ? 
+109 ? . 41 ? C H6    ? ? 7.60878 ? ? ? ? ? . A 41 C H6    A 41 C H6    . 5V17 ? 
+110 ? . 41 ? C "H1'" ? ? 5.57141 ? ? ? ? ? . A 41 C "H1'" A 41 C "H1'" . 5V17 ? 
+stop_
+save_

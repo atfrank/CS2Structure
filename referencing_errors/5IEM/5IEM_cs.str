@@ -1,0 +1,426 @@
+data_5iem
+
+save_entry_information
+# 
+_Entry.ID                 5IEM 
+_Entry.Assigned_BMRB_ID   30026 
+# 
+loop_
+_Audit.Revision_ID 
+_Audit.Creation_date 
+_Audit.Update_record 
+_Audit.Creation_method 
+_Audit.Entry_ID 
+1 2016-03-02 'Nomenclature checked and updated' . 5IEM 
+2 2016-03-02 'Preliminary version'              . 5IEM 
+3 2016-05-26 'Nomenclature checked'             . 5IEM 
+4 2016-11-02 'Initial release'                  . 5IEM 
+stop_
+save_
+save_chemical_shift_reference
+# 
+_Chem_shift_reference.Sf_category    chem_shift_reference 
+_Chem_shift_reference.Sf_framecode   'chemical shift reference' 
+_Chem_shift_reference.Entry_ID       5IEM 
+_Chem_shift_reference.ID             1 
+# 
+loop_
+_Chem_shift_ref.Atom_type 
+_Chem_shift_ref.Atom_isotope_number 
+_Chem_shift_ref.Mol_common_name 
+_Chem_shift_ref.Atom_group 
+_Chem_shift_ref.Concentration_val 
+_Chem_shift_ref.Concentration_units 
+_Chem_shift_ref.Solvent 
+_Chem_shift_ref.Rank 
+_Chem_shift_ref.Chem_shift_units 
+_Chem_shift_ref.Chem_shift_val 
+_Chem_shift_ref.Ref_method 
+_Chem_shift_ref.Ref_type 
+_Chem_shift_ref.Indirect_shift_ratio 
+_Chem_shift_ref.Entry_ID 
+_Chem_shift_ref.Chem_shift_reference_ID 
+H 1  TSP 'methyl protons' ? ? ? ? ppm 0.000 internal direct   1.0        5IEM 1 
+C 13 TSP 'methyl protons' ? ? ? ? ppm 0.000 external indirect 0.25144953 5IEM 1 
+N 15 TSP 'methyl protons' ? ? ? ? ppm 0.000 external indirect 0.10132912 5IEM 1 
+stop_
+save_
+save_ChemicalShifts160225.rtf
+# 
+loop_
+_Atom_chem_shift.ID 
+_Atom_chem_shift.Entity_assembly_ID 
+_Atom_chem_shift.Entity_ID 
+_Atom_chem_shift.Comp_index_ID 
+_Atom_chem_shift.Seq_ID 
+_Atom_chem_shift.Comp_ID 
+_Atom_chem_shift.Atom_ID 
+_Atom_chem_shift.Atom_type 
+_Atom_chem_shift.Atom_isotope_number 
+_Atom_chem_shift.Val 
+_Atom_chem_shift.Val_err 
+_Atom_chem_shift.Assign_fig_of_merit 
+_Atom_chem_shift.Ambiguity_code 
+_Atom_chem_shift.Occupancy 
+_Atom_chem_shift.Resonance_ID 
+_Atom_chem_shift.Auth_entity_assembly_ID 
+_Atom_chem_shift.Auth_asym_ID 
+_Atom_chem_shift.Auth_seq_ID 
+_Atom_chem_shift.Auth_comp_ID 
+_Atom_chem_shift.Auth_atom_ID 
+_Atom_chem_shift.Original_PDB_strand_ID 
+_Atom_chem_shift.Original_PDB_residue_no 
+_Atom_chem_shift.Original_PDB_residue_name 
+_Atom_chem_shift.Original_PDB_atom_name 
+_Atom_chem_shift.Details 
+_Atom_chem_shift.Entry_ID 
+_Atom_chem_shift.Assigned_chem_shift_list_ID 
+1   ? . 1  1  G H8     H 1  8.16   0.05 ? ? ? ? . A 1  G H8     A 1  GUA H8     . 5IEM ? 
+2   ? . 1  1  G "H1'"  H 1  5.82   0.05 ? ? ? ? . A 1  G "H1'"  A 1  GUA "H1'"  . 5IEM ? 
+3   ? . 1  1  G "H2'"  H 1  4.91   0.05 ? ? ? ? . A 1  G "H2'"  A 1  GUA "H2'"  . 5IEM ? 
+4   ? . 1  1  G "H3'"  H 1  4.77   0.05 ? ? ? ? . A 1  G "H3'"  A 1  GUA "H3'"  . 5IEM ? 
+5   ? . 1  1  G "H4'"  H 1  4.52   0.05 ? ? ? ? . A 1  G "H4'"  A 1  GUA "H4'"  . 5IEM ? 
+6   ? . 1  1  G "H5'"  H 1  4.27   0.05 ? ? ? ? . A 1  G "H5'"  A 1  GUA "H5'"  . 5IEM ? 
+7   ? . 1  1  G "H5''" H 1  4.46   0.05 ? ? ? ? . A 1  G "H5''" A 1  GUA "H5''" . 5IEM ? 
+8   ? . 1  1  G C8     C 13 139.41 0.50 ? ? ? ? . A 1  G C8     A 1  GUA C8     . 5IEM ? 
+9   ? . 2  2  G H1     H 1  12.47  0.05 ? ? ? ? . A 2  G H1     A 2  GUA H1     . 5IEM ? 
+10  ? . 2  2  G H8     H 1  7.51   0.05 ? ? ? ? . A 2  G H8     A 2  GUA H8     . 5IEM ? 
+11  ? . 2  2  G "H1'"  H 1  5.92   0.05 ? ? ? ? . A 2  G "H1'"  A 2  GUA "H1'"  . 5IEM ? 
+12  ? . 2  2  G "H4'"  H 1  4.52   0.05 ? ? ? ? . A 2  G "H4'"  A 2  GUA "H4'"  . 5IEM ? 
+13  ? . 2  2  G "H5'"  H 1  4.19   0.05 ? ? ? ? . A 2  G "H5'"  A 2  GUA "H5'"  . 5IEM ? 
+14  ? . 2  2  G C8     C 13 139.77 0.50 ? ? ? ? . A 2  G C8     A 2  GUA C8     . 5IEM ? 
+15  ? . 2  2  G "C1'"  C 13 92.81  0.50 ? ? ? ? . A 2  G "C1'"  A 2  GUA "C1'"  . 5IEM ? 
+16  ? . 2  2  G N1     N 15 147.66 0.05 ? ? ? ? . A 2  G N1     A 2  GUA N1     . 5IEM ? 
+17  ? . 3  3  G H1     H 1  12.12  0.05 ? ? ? ? . A 3  G H1     A 3  GUA H1     . 5IEM ? 
+18  ? . 3  3  G H8     H 1  7.22   0.05 ? ? ? ? . A 3  G H8     A 3  GUA H8     . 5IEM ? 
+19  ? . 3  3  G "H1'"  H 1  5.77   0.05 ? ? ? ? . A 3  G "H1'"  A 3  GUA "H1'"  . 5IEM ? 
+20  ? . 3  3  G "H3'"  H 1  4.49   0.05 ? ? ? ? . A 3  G "H3'"  A 3  GUA "H3'"  . 5IEM ? 
+21  ? . 3  3  G "H5'"  H 1  4.09   0.05 ? ? ? ? . A 3  G "H5'"  A 3  GUA "H5'"  . 5IEM ? 
+22  ? . 3  3  G C8     C 13 136.15 0.50 ? ? ? ? . A 3  G C8     A 3  GUA C8     . 5IEM ? 
+23  ? . 3  3  G N1     N 15 147.28 0.50 ? ? ? ? . A 3  G N1     A 3  GUA N1     . 5IEM ? 
+24  ? . 4  4  A H2     H 1  7.89   0.05 ? ? ? ? . A 4  A H2     A 4  ADE H2     . 5IEM ? 
+25  ? . 4  4  A H8     H 1  7.65   0.05 ? ? ? ? . A 4  A H8     A 4  ADE H8     . 5IEM ? 
+26  ? . 4  4  A "H1'"  H 1  5.97   0.05 ? ? ? ? . A 4  A "H1'"  A 4  ADE "H1'"  . 5IEM ? 
+27  ? . 4  4  A "H5'"  H 1  4.08   0.05 ? ? ? ? . A 4  A "H5'"  A 4  ADE "H5'"  . 5IEM ? 
+28  ? . 4  4  A C2     C 13 154.19 0.50 ? ? ? ? . A 4  A C2     A 4  ADE C2     . 5IEM ? 
+29  ? . 4  4  A C8     C 13 139.15 0.50 ? ? ? ? . A 4  A C8     A 4  ADE C8     . 5IEM ? 
+30  ? . 5  5  U H3     H 1  11.61  0.05 ? ? ? ? . A 5  U H3     A 5  URI H3     . 5IEM ? 
+31  ? . 5  5  U H5     H 1  5.33   0.05 ? ? ? ? . A 5  U H5     A 5  URI H5     . 5IEM ? 
+32  ? . 5  5  U H6     H 1  7.55   0.05 ? ? ? ? . A 5  U H6     A 5  URI H6     . 5IEM ? 
+33  ? . 5  5  U "H1'"  H 1  5.33   0.05 ? ? ? ? . A 5  U "H1'"  A 5  URI "H1'"  . 5IEM ? 
+34  ? . 5  5  U "H2'"  H 1  4.10   0.05 ? ? ? ? . A 5  U "H2'"  A 5  URI "H2'"  . 5IEM ? 
+35  ? . 5  5  U C5     C 13 104.01 0.50 ? ? ? ? . A 5  U C5     A 5  URI C5     . 5IEM ? 
+36  ? . 5  5  U C6     C 13 140.58 0.50 ? ? ? ? . A 5  U C6     A 5  URI C6     . 5IEM ? 
+37  ? . 5  5  U "C1'"  C 13 93.21  0.50 ? ? ? ? . A 5  U "C1'"  A 5  URI "C1'"  . 5IEM ? 
+38  ? . 5  5  U N3     N 15 158.69 0.50 ? ? ? ? . A 5  U N3     A 5  URI N3     . 5IEM ? 
+39  ? . 6  6  C H41    H 1  6.61   0.05 ? ? ? ? . A 6  C H41    A 6  CYT H41    . 5IEM ? 
+40  ? . 6  6  C H42    H 1  8.15   0.05 ? ? ? ? . A 6  C H42    A 6  CYT H42    . 5IEM ? 
+41  ? . 6  6  C H5     H 1  5.59   0.05 ? ? ? ? . A 6  C H5     A 6  CYT H5     . 5IEM ? 
+42  ? . 6  6  C H6     H 1  7.77   0.05 ? ? ? ? . A 6  C H6     A 6  CYT H6     . 5IEM ? 
+43  ? . 6  6  C "H1'"  H 1  5.59   0.05 ? ? ? ? . A 6  C "H1'"  A 6  CYT "H1'"  . 5IEM ? 
+44  ? . 7  7  U H3     H 1  11.41  0.05 ? ? ? ? . A 7  U H3     A 7  URI H3     . 5IEM ? 
+45  ? . 7  7  U H5     H 1  5.63   0.05 ? ? ? ? . A 7  U H5     A 7  URI H5     . 5IEM ? 
+46  ? . 7  7  U H6     H 1  7.74   0.05 ? ? ? ? . A 7  U H6     A 7  URI H6     . 5IEM ? 
+47  ? . 7  7  U "H1'"  H 1  5.58   0.05 ? ? ? ? . A 7  U "H1'"  A 7  URI "H1'"  . 5IEM ? 
+48  ? . 7  7  U N3     N 15 158.08 0.50 ? ? ? ? . A 7  U N3     A 7  URI N3     . 5IEM ? 
+49  ? . 8  8  G H1     H 1  12.69  0.05 ? ? ? ? . A 8  G H1     A 8  GUA H1     . 5IEM ? 
+50  ? . 8  8  G H8     H 1  7.86   0.05 ? ? ? ? . A 8  G H8     A 8  GUA H8     . 5IEM ? 
+51  ? . 8  8  G "H1'"  H 1  5.71   0.05 ? ? ? ? . A 8  G "H1'"  A 8  GUA "H1'"  . 5IEM ? 
+52  ? . 8  8  G C8     C 13 137.26 0.50 ? ? ? ? . A 8  G C8     A 8  GUA C8     . 5IEM ? 
+53  ? . 8  8  G N1     N 15 147.66 0.50 ? ? ? ? . A 8  G N1     A 8  GUA N1     . 5IEM ? 
+54  ? . 9  9  U H3     H 1  11.80  0.05 ? ? ? ? . A 9  U H3     A 9  URI H3     . 5IEM ? 
+55  ? . 9  9  U H5     H 1  5.39   0.05 ? ? ? ? . A 9  U H5     A 9  URI H5     . 5IEM ? 
+56  ? . 9  9  U H6     H 1  7.69   0.05 ? ? ? ? . A 9  U H6     A 9  URI H6     . 5IEM ? 
+57  ? . 9  9  U "H1'"  H 1  5.42   0.05 ? ? ? ? . A 9  U "H1'"  A 9  URI "H1'"  . 5IEM ? 
+58  ? . 9  9  U C5     C 13 104.03 0.50 ? ? ? ? . A 9  U C5     A 9  URI C5     . 5IEM ? 
+59  ? . 9  9  U C6     C 13 140.78 0.50 ? ? ? ? . A 9  U C6     A 9  URI C6     . 5IEM ? 
+60  ? . 9  9  U "C1'"  C 13 93.84  0.50 ? ? ? ? . A 9  U "C1'"  A 9  URI "C1'"  . 5IEM ? 
+61  ? . 9  9  U N3     N 15 158.67 0.50 ? ? ? ? . A 9  U N3     A 9  URI N3     . 5IEM ? 
+62  ? . 10 10 C H41    H 1  6.61   0.05 ? ? ? ? . A 10 C H41    A 10 CYT H41    . 5IEM ? 
+63  ? . 10 10 C H42    H 1  8.04   0.05 ? ? ? ? . A 10 C H42    A 10 CYT H42    . 5IEM ? 
+64  ? . 10 10 C H5     H 1  5.51   0.05 ? ? ? ? . A 10 C H5     A 10 CYT H5     . 5IEM ? 
+65  ? . 10 10 C H6     H 1  7.84   0.05 ? ? ? ? . A 10 C H6     A 10 CYT H6     . 5IEM ? 
+66  ? . 10 10 C "H1'"  H 1  5.67   0.05 ? ? ? ? . A 10 C "H1'"  A 10 CYT "H1'"  . 5IEM ? 
+67  ? . 10 10 C "H2'"  H 1  4.57   0.05 ? ? ? ? . A 10 C "H2'"  A 10 CYT "H2'"  . 5IEM ? 
+68  ? . 10 10 C "H3'"  H 1  4.50   0.05 ? ? ? ? . A 10 C "H3'"  A 10 CYT "H3'"  . 5IEM ? 
+69  ? . 11 11 A H2     H 1  7.73   0.05 ? ? ? ? . A 11 A H2     A 11 ADE H2     . 5IEM ? 
+70  ? . 11 11 A H8     H 1  8.00   0.05 ? ? ? ? . A 11 A H8     A 11 ADE H8     . 5IEM ? 
+71  ? . 11 11 A "H1'"  H 1  5.82   0.05 ? ? ? ? . A 11 A "H1'"  A 11 ADE "H1'"  . 5IEM ? 
+72  ? . 11 11 A C2     C 13 153.31 0.50 ? ? ? ? . A 11 A C2     A 11 ADE C2     . 5IEM ? 
+73  ? . 11 11 A C8     C 13 140.05 0.50 ? ? ? ? . A 11 A C8     A 11 ADE C8     . 5IEM ? 
+74  ? . 12 12 C H41    H 1  6.83   0.05 ? ? ? ? . A 12 C H41    A 12 CYT H41    . 5IEM ? 
+75  ? . 12 12 C H42    H 1  8.33   0.05 ? ? ? ? . A 12 C H42    A 12 CYT H42    . 5IEM ? 
+76  ? . 12 12 C H5     H 1  5.25   0.05 ? ? ? ? . A 12 C H5     A 12 CYT H5     . 5IEM ? 
+77  ? . 12 12 C H6     H 1  7.42   0.05 ? ? ? ? . A 12 C H6     A 12 CYT H6     . 5IEM ? 
+78  ? . 12 12 C "H1'"  H 1  5.53   0.05 ? ? ? ? . A 12 C "H1'"  A 12 CYT "H1'"  . 5IEM ? 
+79  ? . 13 13 C H41    H 1  6.82   0.05 ? ? ? ? . A 13 C H41    A 13 CYT H41    . 5IEM ? 
+80  ? . 13 13 C H42    H 1  8.00   0.05 ? ? ? ? . A 13 C H42    A 13 CYT H42    . 5IEM ? 
+81  ? . 13 13 C H5     H 1  5.50   0.05 ? ? ? ? . A 13 C H5     A 13 CYT H5     . 5IEM ? 
+82  ? . 13 13 C H6     H 1  7.49   0.05 ? ? ? ? . A 13 C H6     A 13 CYT H6     . 5IEM ? 
+83  ? . 13 13 C "H1'"  H 1  5.47   0.05 ? ? ? ? . A 13 C "H1'"  A 13 CYT "H1'"  . 5IEM ? 
+84  ? . 14 14 C H5     H 1  5.72   0.05 ? ? ? ? . A 14 C H5     A 14 CYT H5     . 5IEM ? 
+85  ? . 14 14 C H6     H 1  7.78   0.05 ? ? ? ? . A 14 C H6     A 14 CYT H6     . 5IEM ? 
+86  ? . 14 14 C "H1'"  H 1  5.45   0.05 ? ? ? ? . A 14 C "H1'"  A 14 CYT "H1'"  . 5IEM ? 
+87  ? . 15 15 C H41    H 1  6.68   0.05 ? ? ? ? . A 15 C H41    A 15 CYT H41    . 5IEM ? 
+88  ? . 15 15 C H42    H 1  7.76   0.05 ? ? ? ? . A 15 C H42    A 15 CYT H42    . 5IEM ? 
+89  ? . 15 15 C H5     H 1  5.51   0.05 ? ? ? ? . A 15 C H5     A 15 CYT H5     . 5IEM ? 
+90  ? . 15 15 C H6     H 1  7.68   0.05 ? ? ? ? . A 15 C H6     A 15 CYT H6     . 5IEM ? 
+91  ? . 15 15 C "H1'"  H 1  5.39   0.05 ? ? ? ? . A 15 C "H1'"  A 15 CYT "H1'"  . 5IEM ? 
+92  ? . 16 16 A H2     H 1  6.99   0.05 ? ? ? ? . A 16 A H2     A 16 ADE H2     . 5IEM ? 
+93  ? . 16 16 A H8     H 1  7.89   0.05 ? ? ? ? . A 16 A H8     A 16 ADE H8     . 5IEM ? 
+94  ? . 16 16 A "H1'"  H 1  5.86   0.05 ? ? ? ? . A 16 A "H1'"  A 16 ADE "H1'"  . 5IEM ? 
+95  ? . 16 16 A C2     C 13 153.64 0.50 ? ? ? ? . A 16 A C2     A 16 ADE C2     . 5IEM ? 
+96  ? . 16 16 A C8     C 13 139.64 0.50 ? ? ? ? . A 16 A C8     A 16 ADE C8     . 5IEM ? 
+97  ? . 17 17 U H3     H 1  10.14  0.05 ? ? ? ? . A 17 U H3     A 17 URI H3     . 5IEM ? 
+98  ? . 17 17 U H5     H 1  5.28   0.05 ? ? ? ? . A 17 U H5     A 17 URI H5     . 5IEM ? 
+99  ? . 17 17 U H6     H 1  7.41   0.05 ? ? ? ? . A 17 U H6     A 17 URI H6     . 5IEM ? 
+100 ? . 17 17 U "H1'"  H 1  5.53   0.05 ? ? ? ? . A 17 U "H1'"  A 17 URI "H1'"  . 5IEM ? 
+101 ? . 17 17 U "C1'"  C 13 90.75  0.50 ? ? ? ? . A 17 U "C1'"  A 17 URI "C1'"  . 5IEM ? 
+102 ? . 18 18 U H3     H 1  11.42  0.50 ? ? ? ? . A 18 U H3     A 18 URI H3     . 5IEM ? 
+103 ? . 18 18 U H5     H 1  5.89   0.05 ? ? ? ? . A 18 U H5     A 18 URI H5     . 5IEM ? 
+104 ? . 18 18 U H6     H 1  7.86   0.05 ? ? ? ? . A 18 U H6     A 18 URI H6     . 5IEM ? 
+105 ? . 18 18 U "H1'"  H 1  6.00   0.05 ? ? ? ? . A 18 U "H1'"  A 18 URI "H1'"  . 5IEM ? 
+106 ? . 18 18 U C5     C 13 105.34 0.50 ? ? ? ? . A 18 U C5     A 18 URI C5     . 5IEM ? 
+107 ? . 18 18 U C6     C 13 143.90 0.50 ? ? ? ? . A 18 U C6     A 18 URI C6     . 5IEM ? 
+108 ? . 18 18 U "C1'"  C 13 90.98  0.50 ? ? ? ? . A 18 U "C1'"  A 18 URI "C1'"  . 5IEM ? 
+109 ? . 19 19 G H1     H 1  12.27  0.05 ? ? ? ? . A 19 G H1     A 19 GUA H1     . 5IEM ? 
+110 ? . 19 19 G H8     H 1  7.85   0.05 ? ? ? ? . A 19 G H8     A 19 GUA H8     . 5IEM ? 
+111 ? . 19 19 G "H1'"  H 1  5.72   0.05 ? ? ? ? . A 19 G "H1'"  A 19 GUA "H1'"  . 5IEM ? 
+112 ? . 19 19 G C8     C 13 137.70 0.50 ? ? ? ? . A 19 G C8     A 19 GUA C8     . 5IEM ? 
+113 ? . 19 19 G N1     N 15 147.24 0.50 ? ? ? ? . A 19 G N1     A 19 GUA N1     . 5IEM ? 
+114 ? . 20 20 A H2     H 1  7.83   0.05 ? ? ? ? . A 20 A H2     A 20 ADE H2     . 5IEM ? 
+115 ? . 20 20 A H8     H 1  7.88   0.05 ? ? ? ? . A 20 A H8     A 20 ADE H8     . 5IEM ? 
+116 ? . 20 20 A "H1'"  H 1  6.02   0.05 ? ? ? ? . A 20 A "H1'"  A 20 ADE "H1'"  . 5IEM ? 
+117 ? . 20 20 A C2     C 13 153.84 0.50 ? ? ? ? . A 20 A C2     A 20 ADE C2     . 5IEM ? 
+118 ? . 20 20 A C8     C 13 139.92 0.50 ? ? ? ? . A 20 A C8     A 20 ADE C8     . 5IEM ? 
+119 ? . 21 21 U H3     H 1  13.92  0.05 ? ? ? ? . A 21 U H3     A 21 URI H3     . 5IEM ? 
+120 ? . 21 21 U H5     H 1  5.02   0.05 ? ? ? ? . A 21 U H5     A 21 URI H5     . 5IEM ? 
+121 ? . 21 21 U H6     H 1  7.61   0.05 ? ? ? ? . A 21 U H6     A 21 URI H6     . 5IEM ? 
+122 ? . 21 21 U "H1'"  H 1  5.88   0.05 ? ? ? ? . A 21 U "H1'"  A 21 URI "H1'"  . 5IEM ? 
+123 ? . 21 21 U C5     C 13 102.74 0.50 ? ? ? ? . A 21 U C5     A 21 URI C5     . 5IEM ? 
+124 ? . 21 21 U C6     C 13 141.65 0.50 ? ? ? ? . A 21 U C6     A 21 URI C6     . 5IEM ? 
+125 ? . 21 21 U "C1'"  C 13 90.60  0.50 ? ? ? ? . A 21 U "C1'"  A 21 URI "C1'"  . 5IEM ? 
+126 ? . 21 21 U N3     N 15 162.55 0.50 ? ? ? ? . A 21 U N3     A 21 URI N3     . 5IEM ? 
+127 ? . 22 22 C H41    H 1  6.57   0.05 ? ? ? ? . A 22 C H41    A 22 CYT H41    . 5IEM ? 
+128 ? . 22 22 C H42    H 1  8.06   0.05 ? ? ? ? . A 22 C H42    A 22 CYT H42    . 5IEM ? 
+129 ? . 22 22 C H5     H 1  5.60   0.05 ? ? ? ? . A 22 C H5     A 22 CYT H5     . 5IEM ? 
+130 ? . 22 22 C H6     H 1  7.68   0.05 ? ? ? ? . A 22 C H6     A 22 CYT H6     . 5IEM ? 
+131 ? . 22 22 C "H1'"  H 1  5.55   0.05 ? ? ? ? . A 22 C "H1'"  A 22 CYT "H1'"  . 5IEM ? 
+132 ? . 23 23 G H1     H 1  11.83  0.05 ? ? ? ? . A 23 G H1     A 23 GUA H1     . 5IEM ? 
+133 ? . 23 23 G H8     H 1  7.54   0.05 ? ? ? ? . A 23 G H8     A 23 GUA H8     . 5IEM ? 
+134 ? . 23 23 G "H1'"  H 1  5.61   0.05 ? ? ? ? . A 23 G "H1'"  A 23 GUA "H1'"  . 5IEM ? 
+135 ? . 23 23 G "H2'"  H 1  4.42   0.05 ? ? ? ? . A 23 G "H2'"  A 23 GUA "H2'"  . 5IEM ? 
+136 ? . 23 23 G C8     C 13 136.21 0.50 ? ? ? ? . A 23 G C8     A 23 GUA C8     . 5IEM ? 
+137 ? . 24 24 C H41    H 1  6.66   0.05 ? ? ? ? . A 24 C H41    A 24 CYT H41    . 5IEM ? 
+138 ? . 24 24 C H42    H 1  8.33   0.05 ? ? ? ? . A 24 C H42    A 24 CYT H42    . 5IEM ? 
+139 ? . 24 24 C H5     H 1  5.27   0.05 ? ? ? ? . A 24 C H5     A 24 CYT H5     . 5IEM ? 
+140 ? . 24 24 C H6     H 1  7.75   0.05 ? ? ? ? . A 24 C H6     A 24 CYT H6     . 5IEM ? 
+141 ? . 25 25 C H41    H 1  6.63   0.05 ? ? ? ? . A 25 C H41    A 25 CYT H41    . 5IEM ? 
+142 ? . 25 25 C H42    H 1  8.33   0.05 ? ? ? ? . A 25 C H42    A 25 CYT H42    . 5IEM ? 
+143 ? . 25 25 C H5     H 1  5.46   0.05 ? ? ? ? . A 25 C H5     A 25 CYT H5     . 5IEM ? 
+144 ? . 25 25 C H6     H 1  7.65   0.05 ? ? ? ? . A 25 C H6     A 25 CYT H6     . 5IEM ? 
+145 ? . 25 25 C "H1'"  H 1  5.47   0.05 ? ? ? ? . A 25 C "H1'"  A 25 CYT "H1'"  . 5IEM ? 
+146 ? . 26 26 U H3     H 1  11.53  0.05 ? ? ? ? . A 26 U H3     A 26 URI H3     . 5IEM ? 
+147 ? . 26 26 U H5     H 1  5.76   0.05 ? ? ? ? . A 26 U H5     A 26 URI H5     . 5IEM ? 
+148 ? . 26 26 U H6     H 1  7.77   0.05 ? ? ? ? . A 26 U H6     A 26 URI H6     . 5IEM ? 
+149 ? . 26 26 U "H1'"  H 1  5.59   0.05 ? ? ? ? . A 26 U "H1'"  A 26 URI "H1'"  . 5IEM ? 
+150 ? . 26 26 U "H2'"  H 1  3.77   0.05 ? ? ? ? . A 26 U "H2'"  A 26 URI "H2'"  . 5IEM ? 
+151 ? . 26 26 U "H3'"  H 1  4.52   0.05 ? ? ? ? . A 26 U "H3'"  A 26 URI "H3'"  . 5IEM ? 
+152 ? . 26 26 U "H4'"  H 1  4.36   0.05 ? ? ? ? . A 26 U "H4'"  A 26 URI "H4'"  . 5IEM ? 
+153 ? . 26 26 U "H5'"  H 1  4.09   0.05 ? ? ? ? . A 26 U "H5'"  A 26 URI "H5'"  . 5IEM ? 
+154 ? . 26 26 U "H5''" H 1  4.50   0.05 ? ? ? ? . A 26 U "H5''" A 26 URI "H5''" . 5IEM ? 
+155 ? . 26 26 U C5     C 13 104.78 0.50 ? ? ? ? . A 26 U C5     A 26 URI C5     . 5IEM ? 
+156 ? . 26 26 U C6     C 13 140.80 0.50 ? ? ? ? . A 26 U C6     A 26 URI C6     . 5IEM ? 
+157 ? . 26 26 U "C1'"  C 13 94.59  0.50 ? ? ? ? . A 26 U "C1'"  A 26 URI "C1'"  . 5IEM ? 
+158 ? . 26 26 U "C2'"  C 13 75.93  0.50 ? ? ? ? . A 26 U "C2'"  A 26 URI "C2'"  . 5IEM ? 
+159 ? . 27 27 U H3     H 1  11.11  0.05 ? ? ? ? . A 27 U H3     A 27 URI H3     . 5IEM ? 
+160 ? . 27 27 U H5     H 1  5.85   0.05 ? ? ? ? . A 27 U H5     A 27 URI H5     . 5IEM ? 
+161 ? . 27 27 U H6     H 1  8.03   0.05 ? ? ? ? . A 27 U H6     A 27 URI H6     . 5IEM ? 
+162 ? . 27 27 U "H1'"  H 1  6.09   0.05 ? ? ? ? . A 27 U "H1'"  A 27 URI "H1'"  . 5IEM ? 
+163 ? . 27 27 U "H2'"  H 1  4.00   0.05 ? ? ? ? . A 27 U "H2'"  A 27 URI "H2'"  . 5IEM ? 
+164 ? . 27 27 U "H3'"  H 1  4.67   0.05 ? ? ? ? . A 27 U "H3'"  A 27 URI "H3'"  . 5IEM ? 
+165 ? . 27 27 U "H4'"  H 1  4.46   0.05 ? ? ? ? . A 27 U "H4'"  A 27 URI "H4'"  . 5IEM ? 
+166 ? . 27 27 U "H5'"  H 1  4.04   0.05 ? ? ? ? . A 27 U "H5'"  A 27 URI "H5'"  . 5IEM ? 
+167 ? . 27 27 U "H5''" H 1  4.23   0.05 ? ? ? ? . A 27 U "H5''" A 27 URI "H5''" . 5IEM ? 
+168 ? . 27 27 U C5     C 13 105.44 0.50 ? ? ? ? . A 27 U C5     A 27 URI C5     . 5IEM ? 
+169 ? . 27 27 U C6     C 13 144.81 0.50 ? ? ? ? . A 27 U C6     A 27 URI C6     . 5IEM ? 
+170 ? . 27 27 U "C1'"  C 13 89.25  0.50 ? ? ? ? . A 27 U "C1'"  A 27 URI "C1'"  . 5IEM ? 
+171 ? . 27 27 U "C4'"  C 13 86.93  0.50 ? ? ? ? . A 27 U "C4'"  A 27 URI "C4'"  . 5IEM ? 
+172 ? . 28 28 C H41    H 1  6.12   0.05 ? ? ? ? . A 28 C H41    A 28 CYT H41    . 5IEM ? 
+173 ? . 28 28 C H42    H 1  6.87   0.05 ? ? ? ? . A 28 C H42    A 28 CYT H42    . 5IEM ? 
+174 ? . 28 28 C H5     H 1  6.13   0.05 ? ? ? ? . A 28 C H5     A 28 CYT H5     . 5IEM ? 
+175 ? . 28 28 C H6     H 1  7.68   0.05 ? ? ? ? . A 28 C H6     A 28 CYT H6     . 5IEM ? 
+176 ? . 28 28 C "H1'"  H 1  5.95   0.05 ? ? ? ? . A 28 C "H1'"  A 28 CYT "H1'"  . 5IEM ? 
+177 ? . 28 28 C "H2'"  H 1  4.09   0.05 ? ? ? ? . A 28 C "H2'"  A 28 CYT "H2'"  . 5IEM ? 
+178 ? . 28 28 C "H3'"  H 1  4.47   0.05 ? ? ? ? . A 28 C "H3'"  A 28 CYT "H3'"  . 5IEM ? 
+179 ? . 28 28 C "H4'"  H 1  3.77   0.05 ? ? ? ? . A 28 C "H4'"  A 28 CYT "H4'"  . 5IEM ? 
+180 ? . 28 28 C "H5'"  H 1  2.72   0.05 ? ? ? ? . A 28 C "H5'"  A 28 CYT "H5'"  . 5IEM ? 
+181 ? . 28 28 C "H5''" H 1  3.60   0.05 ? ? ? ? . A 28 C "H5''" A 28 CYT "H5''" . 5IEM ? 
+182 ? . 29 29 G H1     H 1  9.58   0.05 ? ? ? ? . A 29 G H1     A 29 GUA H1     . 5IEM ? 
+183 ? . 29 29 G H8     H 1  7.84   0.05 ? ? ? ? . A 29 G H8     A 29 GUA H8     . 5IEM ? 
+184 ? . 29 29 G "H1'"  H 1  5.94   0.05 ? ? ? ? . A 29 G "H1'"  A 29 GUA "H1'"  . 5IEM ? 
+185 ? . 29 29 G "H2'"  H 1  4.86   0.05 ? ? ? ? . A 29 G "H2'"  A 29 GUA "H2'"  . 5IEM ? 
+186 ? . 29 29 G "H3'"  H 1  5.62   0.05 ? ? ? ? . A 29 G "H3'"  A 29 GUA "H3'"  . 5IEM ? 
+187 ? . 29 29 G "H4'"  H 1  4.39   0.05 ? ? ? ? . A 29 G "H4'"  A 29 GUA "H4'"  . 5IEM ? 
+188 ? . 29 29 G "H5'"  H 1  4.17   0.05 ? ? ? ? . A 29 G "H5'"  A 29 GUA "H5'"  . 5IEM ? 
+189 ? . 29 29 G "H5''" H 1  4.39   0.05 ? ? ? ? . A 29 G "H5''" A 29 GUA "H5''" . 5IEM ? 
+190 ? . 29 29 G C8     C 13 142.94 0.50 ? ? ? ? . A 29 G C8     A 29 GUA C8     . 5IEM ? 
+191 ? . 29 29 G "C1'"  C 13 94.62  0.50 ? ? ? ? . A 29 G "C1'"  A 29 GUA "C1'"  . 5IEM ? 
+192 ? . 29 29 G "C3'"  C 13 75.95  0.50 ? ? ? ? . A 29 G "C3'"  A 29 GUA "C3'"  . 5IEM ? 
+193 ? . 29 29 G "C5'"  C 13 69.08  0.50 ? ? ? ? . A 29 G "C5'"  A 29 GUA "C5'"  . 5IEM ? 
+194 ? . 29 29 G N1     N 15 143.35 0.50 ? ? ? ? . A 29 G N1     A 29 GUA N1     . 5IEM ? 
+195 ? . 30 30 G H1     H 1  12.63  0.05 ? ? ? ? . A 30 G H1     A 30 GUA H1     . 5IEM ? 
+196 ? . 30 30 G H8     H 1  8.28   0.05 ? ? ? ? . A 30 G H8     A 30 GUA H8     . 5IEM ? 
+197 ? . 30 30 G "H1'"  H 1  4.48   0.05 ? ? ? ? . A 30 G "H1'"  A 30 GUA "H1'"  . 5IEM ? 
+198 ? . 30 30 G "H2'"  H 1  4.39   0.05 ? ? ? ? . A 30 G "H2'"  A 30 GUA "H2'"  . 5IEM ? 
+199 ? . 30 30 G "H3'"  H 1  4.29   0.05 ? ? ? ? . A 30 G "H3'"  A 30 GUA "H3'"  . 5IEM ? 
+200 ? . 30 30 G "H4'"  H 1  4.59   0.05 ? ? ? ? . A 30 G "H4'"  A 30 GUA "H4'"  . 5IEM ? 
+201 ? . 30 30 G "H5'"  H 1  4.25   0.05 ? ? ? ? . A 30 G "H5'"  A 30 GUA "H5'"  . 5IEM ? 
+202 ? . 30 30 G "H5''" H 1  4.51   0.05 ? ? ? ? . A 30 G "H5''" A 30 GUA "H5''" . 5IEM ? 
+203 ? . 30 30 G C8     C 13 138.80 0.50 ? ? ? ? . A 30 G C8     A 30 GUA C8     . 5IEM ? 
+204 ? . 30 30 G "C1'"  C 13 92.97  0.50 ? ? ? ? . A 30 G "C1'"  A 30 GUA "C1'"  . 5IEM ? 
+205 ? . 30 30 G "C5'"  C 13 69.66  0.50 ? ? ? ? . A 30 G "C5'"  A 30 GUA "C5'"  . 5IEM ? 
+206 ? . 30 30 G N1     N 15 147.44 0.50 ? ? ? ? . A 30 G N1     A 30 GUA N1     . 5IEM ? 
+207 ? . 31 31 G H1     H 1  12.92  0.05 ? ? ? ? . A 31 G H1     A 31 GUA H1     . 5IEM ? 
+208 ? . 31 31 G H8     H 1  7.20   0.05 ? ? ? ? . A 31 G H8     A 31 GUA H8     . 5IEM ? 
+209 ? . 31 31 G "H1'"  H 1  5.77   0.05 ? ? ? ? . A 31 G "H1'"  A 31 GUA "H1'"  . 5IEM ? 
+210 ? . 31 31 G "H2'"  H 1  4.45   0.05 ? ? ? ? . A 31 G "H2'"  A 31 GUA "H2'"  . 5IEM ? 
+211 ? . 31 31 G "H4'"  H 1  4.39   0.05 ? ? ? ? . A 31 G "H4'"  A 31 GUA "H4'"  . 5IEM ? 
+212 ? . 31 31 G "H5'"  H 1  4.00   0.05 ? ? ? ? . A 31 G "H5'"  A 31 GUA "H5'"  . 5IEM ? 
+213 ? . 31 31 G "H5''" H 1  4.44   0.05 ? ? ? ? . A 31 G "H5''" A 31 GUA "H5''" . 5IEM ? 
+214 ? . 31 31 G C8     C 13 136.15 0.50 ? ? ? ? . A 31 G C8     A 31 GUA C8     . 5IEM ? 
+215 ? . 31 31 G N1     N 15 148.55 0.50 ? ? ? ? . A 31 G N1     A 31 GUA N1     . 5IEM ? 
+216 ? . 32 32 C H41    H 1  6.63   0.05 ? ? ? ? . A 32 C H41    A 32 CYT H41    . 5IEM ? 
+217 ? . 32 32 C H42    H 1  8.03   0.05 ? ? ? ? . A 32 C H42    A 32 CYT H42    . 5IEM ? 
+218 ? . 32 32 C H5     H 1  5.20   0.05 ? ? ? ? . A 32 C H5     A 32 CYT H5     . 5IEM ? 
+219 ? . 32 32 C H6     H 1  7.68   0.05 ? ? ? ? . A 32 C H6     A 32 CYT H6     . 5IEM ? 
+220 ? . 32 32 C "H1'"  H 1  5.78   0.05 ? ? ? ? . A 32 C "H1'"  A 32 CYT "H1'"  . 5IEM ? 
+221 ? . 32 32 C "H2'"  H 1  4.31   0.05 ? ? ? ? . A 32 C "H2'"  A 32 CYT "H2'"  . 5IEM ? 
+222 ? . 32 32 C "H4'"  H 1  4.40   0.05 ? ? ? ? . A 32 C "H4'"  A 32 CYT "H4'"  . 5IEM ? 
+223 ? . 33 33 U H3     H 1  9.45   0.05 ? ? ? ? . A 33 U H3     A 33 URI H3     . 5IEM ? 
+224 ? . 33 33 U H5     H 1  5.83   0.05 ? ? ? ? . A 33 U H5     A 33 URI H5     . 5IEM ? 
+225 ? . 33 33 U H6     H 1  7.86   0.05 ? ? ? ? . A 33 U H6     A 33 URI H6     . 5IEM ? 
+226 ? . 33 33 U "H1'"  H 1  5.89   0.05 ? ? ? ? . A 33 U "H1'"  A 33 URI "H1'"  . 5IEM ? 
+227 ? . 33 33 U C5     C 13 105.03 0.50 ? ? ? ? . A 33 U C5     A 33 URI C5     . 5IEM ? 
+228 ? . 33 33 U C6     C 13 143.90 0.50 ? ? ? ? . A 33 U C6     A 33 URI C6     . 5IEM ? 
+229 ? . 33 33 U "C1'"  C 13 91.55  0.50 ? ? ? ? . A 33 U "C1'"  A 33 URI "C1'"  . 5IEM ? 
+230 ? . 34 34 G H1     H 1  12.10  0.05 ? ? ? ? . A 34 G H1     A 34 GUA H1     . 5IEM ? 
+231 ? . 34 34 G H8     H 1  7.82   0.05 ? ? ? ? . A 34 G H8     A 34 GUA H8     . 5IEM ? 
+232 ? . 34 34 G "H1'"  H 1  5.78   0.05 ? ? ? ? . A 34 G "H1'"  A 34 GUA "H1'"  . 5IEM ? 
+233 ? . 34 34 G "H2'"  H 1  4.90   0.05 ? ? ? ? . A 34 G "H2'"  A 34 GUA "H2'"  . 5IEM ? 
+234 ? . 34 34 G "H4'"  H 1  4.56   0.05 ? ? ? ? . A 34 G "H4'"  A 34 GUA "H4'"  . 5IEM ? 
+235 ? . 34 34 G C8     C 13 137.97 0.50 ? ? ? ? . A 34 G C8     A 34 GUA C8     . 5IEM ? 
+236 ? . 34 34 G N1     N 15 147.02 0.50 ? ? ? ? . A 34 G N1     A 34 GUA N1     . 5IEM ? 
+237 ? . 35 35 A H2     H 1  7.81   0.05 ? ? ? ? . A 35 A H2     A 35 ADE H2     . 5IEM ? 
+238 ? . 35 35 A H8     H 1  7.96   0.05 ? ? ? ? . A 35 A H8     A 35 ADE H8     . 5IEM ? 
+239 ? . 35 35 A "H1'"  H 1  6.02   0.05 ? ? ? ? . A 35 A "H1'"  A 35 ADE "H1'"  . 5IEM ? 
+240 ? . 35 35 A "H4'"  H 1  4.56   0.05 ? ? ? ? . A 35 A "H4'"  A 35 ADE "H4'"  . 5IEM ? 
+241 ? . 35 35 A C2     C 13 153.84 0.50 ? ? ? ? . A 35 A C2     A 35 ADE C2     . 5IEM ? 
+242 ? . 35 35 A C8     C 13 140.32 0.50 ? ? ? ? . A 35 A C8     A 35 ADE C8     . 5IEM ? 
+243 ? . 36 36 U H3     H 1  13.81  0.05 ? ? ? ? . A 36 U H3     A 36 URI H3     . 5IEM ? 
+244 ? . 36 36 U H5     H 1  4.97   0.05 ? ? ? ? . A 36 U H5     A 36 URI H5     . 5IEM ? 
+245 ? . 36 36 U H6     H 1  7.60   0.05 ? ? ? ? . A 36 U H6     A 36 URI H6     . 5IEM ? 
+246 ? . 36 36 U "H1'"  H 1  5.55   0.05 ? ? ? ? . A 36 U "H1'"  A 36 URI "H1'"  . 5IEM ? 
+247 ? . 36 36 U C5     C 13 102.53 0.50 ? ? ? ? . A 36 U C5     A 36 URI C5     . 5IEM ? 
+248 ? . 36 36 U C6     C 13 141.65 0.50 ? ? ? ? . A 36 U C6     A 36 URI C6     . 5IEM ? 
+249 ? . 36 36 U "C1'"  C 13 93.34  0.50 ? ? ? ? . A 36 U "C1'"  A 36 URI "C1'"  . 5IEM ? 
+250 ? . 36 36 U N3     N 15 162.29 0.50 ? ? ? ? . A 36 U N3     A 36 URI N3     . 5IEM ? 
+251 ? . 37 37 C H41    H 1  6.63   0.05 ? ? ? ? . A 37 C H41    A 37 CYT H41    . 5IEM ? 
+252 ? . 37 37 C H42    H 1  8.00   0.05 ? ? ? ? . A 37 C H42    A 37 CYT H42    . 5IEM ? 
+253 ? . 37 37 C H5     H 1  5.51   0.05 ? ? ? ? . A 37 C H5     A 37 CYT H5     . 5IEM ? 
+254 ? . 37 37 C H6     H 1  7.64   0.05 ? ? ? ? . A 37 C H6     A 37 CYT H6     . 5IEM ? 
+255 ? . 37 37 C "H1'"  H 1  5.67   0.05 ? ? ? ? . A 37 C "H1'"  A 37 CYT "H1'"  . 5IEM ? 
+256 ? . 38 38 U H5     H 1  5.53   0.05 ? ? ? ? . A 38 U H5     A 38 URI H5     . 5IEM ? 
+257 ? . 38 38 U H6     H 1  7.74   0.05 ? ? ? ? . A 38 U H6     A 38 URI H6     . 5IEM ? 
+258 ? . 38 38 U "H1'"  H 1  5.63   0.05 ? ? ? ? . A 38 U "H1'"  A 38 URI "H1'"  . 5IEM ? 
+259 ? . 38 38 U C6     C 13 141.28 0.50 ? ? ? ? . A 38 U C6     A 38 URI C6     . 5IEM ? 
+260 ? . 38 38 U "C1'"  C 13 93.04  0.50 ? ? ? ? . A 38 U "C1'"  A 38 URI "C1'"  . 5IEM ? 
+261 ? . 39 39 G H1     H 1  11.86  0.05 ? ? ? ? . A 39 G H1     A 39 GUA H1     . 5IEM ? 
+262 ? . 39 39 G H8     H 1  7.82   0.05 ? ? ? ? . A 39 G H8     A 39 GUA H8     . 5IEM ? 
+263 ? . 39 39 G "H1'"  H 1  5.73   0.05 ? ? ? ? . A 39 G "H1'"  A 39 GUA "H1'"  . 5IEM ? 
+264 ? . 39 39 G C8     C 13 137.70 0.50 ? ? ? ? . A 39 G C8     A 39 GUA C8     . 5IEM ? 
+265 ? . 39 39 G N1     N 15 147.02 0.50 ? ? ? ? . A 39 G N1     A 39 GUA N1     . 5IEM ? 
+266 ? . 40 40 G H1     H 1  12.48  0.05 ? ? ? ? . A 40 G H1     A 40 GUA H1     . 5IEM ? 
+267 ? . 40 40 G H8     H 1  7.40   0.05 ? ? ? ? . A 40 G H8     A 40 GUA H8     . 5IEM ? 
+268 ? . 40 40 G "H1'"  H 1  5.86   0.05 ? ? ? ? . A 40 G "H1'"  A 40 GUA "H1'"  . 5IEM ? 
+269 ? . 40 40 G C8     C 13 137.27 0.50 ? ? ? ? . A 40 G C8     A 40 GUA C8     . 5IEM ? 
+270 ? . 40 40 G N1     N 15 147.66 0.50 ? ? ? ? . A 40 G N1     A 40 GUA N1     . 5IEM ? 
+271 ? . 41 41 C H5     H 1  5.97   0.05 ? ? ? ? . A 41 C H5     A 41 CYT H5     . 5IEM ? 
+272 ? . 41 41 C H6     H 1  7.76   0.05 ? ? ? ? . A 41 C H6     A 41 CYT H6     . 5IEM ? 
+273 ? . 41 41 C "H1'"  H 1  5.90   0.05 ? ? ? ? . A 41 C "H1'"  A 41 CYT "H1'"  . 5IEM ? 
+274 ? . 42 42 U H5     H 1  5.72   0.05 ? ? ? ? . A 42 U H5     A 42 URI H5     . 5IEM ? 
+275 ? . 42 42 U H6     H 1  7.79   0.05 ? ? ? ? . A 42 U H6     A 42 URI H6     . 5IEM ? 
+276 ? . 42 42 U "H1'"  H 1  5.75   0.05 ? ? ? ? . A 42 U "H1'"  A 42 URI "H1'"  . 5IEM ? 
+277 ? . 42 42 U "C1'"  C 13 92.10  0.50 ? ? ? ? . A 42 U "C1'"  A 42 URI "C1'"  . 5IEM ? 
+278 ? . 43 43 G H1     H 1  12.30  0.05 ? ? ? ? . A 43 G H1     A 43 GUA H1     . 5IEM ? 
+279 ? . 43 43 G H8     H 1  7.55   0.05 ? ? ? ? . A 43 G H8     A 43 GUA H8     . 5IEM ? 
+280 ? . 43 43 G "H1'"  H 1  5.81   0.05 ? ? ? ? . A 43 G "H1'"  A 43 GUA "H1'"  . 5IEM ? 
+281 ? . 43 43 G C8     C 13 138.49 0.50 ? ? ? ? . A 43 G C8     A 43 GUA C8     . 5IEM ? 
+282 ? . 43 43 G N1     N 15 147.52 0.50 ? ? ? ? . A 43 G N1     A 43 GUA N1     . 5IEM ? 
+283 ? . 44 44 G H1     H 1  12.98  0.05 ? ? ? ? . A 44 G H1     A 44 GUA H1     . 5IEM ? 
+284 ? . 44 44 G H8     H 1  7.59   0.05 ? ? ? ? . A 44 G H8     A 44 GUA H8     . 5IEM ? 
+285 ? . 44 44 G "H1'"  H 1  5.90   0.05 ? ? ? ? . A 44 G "H1'"  A 44 GUA "H1'"  . 5IEM ? 
+286 ? . 44 44 G C8     C 13 137.75 0.50 ? ? ? ? . A 44 G C8     A 44 GUA C8     . 5IEM ? 
+287 ? . 44 44 G N1     N 15 148.55 0.50 ? ? ? ? . A 44 G N1     A 44 GUA N1     . 5IEM ? 
+288 ? . 45 45 C H5     H 1  5.76   0.05 ? ? ? ? . A 45 C H5     A 45 CYT H5     . 5IEM ? 
+289 ? . 45 45 C H6     H 1  7.79   0.05 ? ? ? ? . A 45 C H6     A 45 CYT H6     . 5IEM ? 
+290 ? . 45 45 C "H1'"  H 1  5.83   0.05 ? ? ? ? . A 45 C "H1'"  A 45 CYT "H1'"  . 5IEM ? 
+291 ? . 46 46 U H5     H 1  5.57   0.05 ? ? ? ? . A 46 U H5     A 46 URI H5     . 5IEM ? 
+292 ? . 46 46 U H6     H 1  7.68   0.05 ? ? ? ? . A 46 U H6     A 46 URI H6     . 5IEM ? 
+293 ? . 46 46 U "H1'"  H 1  5.95   0.05 ? ? ? ? . A 46 U "H1'"  A 46 URI "H1'"  . 5IEM ? 
+294 ? . 47 47 A H2     H 1  8.12   0.05 ? ? ? ? . A 47 A H2     A 47 ADE H2     . 5IEM ? 
+295 ? . 47 47 A H8     H 1  8.34   0.05 ? ? ? ? . A 47 A H8     A 47 ADE H8     . 5IEM ? 
+296 ? . 47 47 A "H1'"  H 1  6.09   0.05 ? ? ? ? . A 47 A "H1'"  A 47 ADE "H1'"  . 5IEM ? 
+297 ? . 47 47 A C2     C 13 154.87 0.50 ? ? ? ? . A 47 A C2     A 47 ADE C2     . 5IEM ? 
+298 ? . 47 47 A C8     C 13 141.90 0.50 ? ? ? ? . A 47 A C8     A 47 ADE C8     . 5IEM ? 
+299 ? . 48 48 G H1     H 1  12.12  0.05 ? ? ? ? . A 48 G H1     A 48 GUA H1     . 5IEM ? 
+300 ? . 48 48 G H8     H 1  7.86   0.05 ? ? ? ? . A 48 G H8     A 48 GUA H8     . 5IEM ? 
+301 ? . 48 48 G "H1'"  H 1  5.61   0.05 ? ? ? ? . A 48 G "H1'"  A 48 GUA "H1'"  . 5IEM ? 
+302 ? . 48 48 G C8     C 13 137.72 0.50 ? ? ? ? . A 48 G C8     A 48 GUA C8     . 5IEM ? 
+303 ? . 48 48 G N1     N 15 147.98 0.50 ? ? ? ? . A 48 G N1     A 48 GUA N1     . 5IEM ? 
+304 ? . 49 49 G H1     H 1  11.11  0.05 ? ? ? ? . A 49 G H1     A 49 GUA H1     . 5IEM ? 
+305 ? . 49 49 G H8     H 1  7.29   0.05 ? ? ? ? . A 49 G H8     A 49 GUA H8     . 5IEM ? 
+306 ? . 49 49 G "H1'"  H 1  5.79   0.05 ? ? ? ? . A 49 G "H1'"  A 49 GUA "H1'"  . 5IEM ? 
+307 ? . 49 49 G C8     C 13 137.00 0.50 ? ? ? ? . A 49 G C8     A 49 GUA C8     . 5IEM ? 
+308 ? . 49 49 G N1     N 15 145.00 0.50 ? ? ? ? . A 49 G N1     A 49 GUA N1     . 5IEM ? 
+309 ? . 50 50 C H41    H 1  6.63   0.05 ? ? ? ? . A 50 C H41    A 50 CYT H41    . 5IEM ? 
+310 ? . 50 50 C H42    H 1  8.05   0.05 ? ? ? ? . A 50 C H42    A 50 CYT H42    . 5IEM ? 
+311 ? . 50 50 C H5     H 1  5.31   0.05 ? ? ? ? . A 50 C H5     A 50 CYT H5     . 5IEM ? 
+312 ? . 50 50 C H6     H 1  7.58   0.05 ? ? ? ? . A 50 C H6     A 50 CYT H6     . 5IEM ? 
+313 ? . 50 50 C "H1'"  H 1  5.60   0.05 ? ? ? ? . A 50 C "H1'"  A 50 CYT "H1'"  . 5IEM ? 
+314 ? . 51 51 G H1     H 1  10.08  0.05 ? ? ? ? . A 51 G H1     A 51 GUA H1     . 5IEM ? 
+315 ? . 51 51 G H8     H 1  7.44   0.05 ? ? ? ? . A 51 G H8     A 51 GUA H8     . 5IEM ? 
+316 ? . 51 51 G "H1'"  H 1  5.74   0.05 ? ? ? ? . A 51 G "H1'"  A 51 GUA "H1'"  . 5IEM ? 
+317 ? . 51 51 G C8     C 13 137.27 0.50 ? ? ? ? . A 51 G C8     A 51 GUA C8     . 5IEM ? 
+318 ? . 51 51 G N1     N 15 142.79 0.50 ? ? ? ? . A 51 G N1     A 51 GUA N1     . 5IEM ? 
+319 ? . 52 52 G H1     H 1  12.48  0.05 ? ? ? ? . A 52 G H1     A 52 GUA H1     . 5IEM ? 
+320 ? . 52 52 G H8     H 1  7.29   0.05 ? ? ? ? . A 52 G H8     A 52 GUA H8     . 5IEM ? 
+321 ? . 52 52 G "H1'"  H 1  5.77   0.05 ? ? ? ? . A 52 G "H1'"  A 52 GUA "H1'"  . 5IEM ? 
+322 ? . 52 52 G C8     C 13 136.48 0.50 ? ? ? ? . A 52 G C8     A 52 GUA C8     . 5IEM ? 
+323 ? . 52 52 G N1     N 15 147.66 0.50 ? ? ? ? . A 52 G N1     A 52 GUA N1     . 5IEM ? 
+324 ? . 53 53 G H1     H 1  11.25  0.05 ? ? ? ? . A 53 G H1     A 53 GUA H1     . 5IEM ? 
+325 ? . 53 53 G H8     H 1  7.16   0.05 ? ? ? ? . A 53 G H8     A 53 GUA H8     . 5IEM ? 
+326 ? . 53 53 G "H1'"  H 1  5.78   0.05 ? ? ? ? . A 53 G "H1'"  A 53 GUA "H1'"  . 5IEM ? 
+327 ? . 53 53 G C8     C 13 136.93 0.50 ? ? ? ? . A 53 G C8     A 53 GUA C8     . 5IEM ? 
+328 ? . 53 53 G N1     N 15 144.80 0.50 ? ? ? ? . A 53 G N1     A 53 GUA N1     . 5IEM ? 
+329 ? . 54 54 U H3     H 1  14.17  0.05 ? ? ? ? . A 54 U H3     A 54 URI H3     . 5IEM ? 
+330 ? . 54 54 U H5     H 1  5.18   0.05 ? ? ? ? . A 54 U H5     A 54 URI H5     . 5IEM ? 
+331 ? . 54 54 U H6     H 1  7.58   0.05 ? ? ? ? . A 54 U H6     A 54 URI H6     . 5IEM ? 
+332 ? . 54 54 U "H1'"  H 1  5.57   0.05 ? ? ? ? . A 54 U "H1'"  A 54 URI "H1'"  . 5IEM ? 
+333 ? . 54 54 U C5     C 13 102.91 0.50 ? ? ? ? . A 54 U C5     A 54 URI C5     . 5IEM ? 
+334 ? . 54 54 U N3     N 15 163.03 0.50 ? ? ? ? . A 54 U N3     A 54 URI N3     . 5IEM ? 
+335 ? . 55 55 C H41    H 1  6.77   0.05 ? ? ? ? . A 55 C H41    A 55 CYT H41    . 5IEM ? 
+336 ? . 55 55 C H42    H 1  8.14   0.05 ? ? ? ? . A 55 C H42    A 55 CYT H42    . 5IEM ? 
+337 ? . 55 55 C H5     H 1  5.63   0.05 ? ? ? ? . A 55 C H5     A 55 CYT H5     . 5IEM ? 
+338 ? . 55 55 C H6     H 1  7.92   0.05 ? ? ? ? . A 55 C H6     A 55 CYT H6     . 5IEM ? 
+339 ? . 55 55 C "H1'"  H 1  5.58   0.05 ? ? ? ? . A 55 C "H1'"  A 55 CYT "H1'"  . 5IEM ? 
+340 ? . 56 56 C H41    H 1  6.82   0.05 ? ? ? ? . A 56 C H41    A 56 CYT H41    . 5IEM ? 
+341 ? . 56 56 C H42    H 1  8.15   0.05 ? ? ? ? . A 56 C H42    A 56 CYT H42    . 5IEM ? 
+342 ? . 56 56 C H5     H 1  5.49   0.05 ? ? ? ? . A 56 C H5     A 56 CYT H5     . 5IEM ? 
+343 ? . 56 56 C H6     H 1  7.78   0.05 ? ? ? ? . A 56 C H6     A 56 CYT H6     . 5IEM ? 
+344 ? . 56 56 C "H1'"  H 1  5.49   0.05 ? ? ? ? . A 56 C "H1'"  A 56 CYT "H1'"  . 5IEM ? 
+345 ? . 57 57 C H5     H 1  5.53   0.05 ? ? ? ? . A 57 C H5     A 57 CYT H5     . 5IEM ? 
+346 ? . 57 57 C H6     H 1  7.72   0.05 ? ? ? ? . A 57 C H6     A 57 CYT H6     . 5IEM ? 
+347 ? . 57 57 C "H1'"  H 1  5.77   0.05 ? ? ? ? . A 57 C "H1'"  A 57 CYT "H1'"  . 5IEM ? 
+stop_
+save_

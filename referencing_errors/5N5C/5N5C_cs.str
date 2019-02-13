@@ -1,0 +1,300 @@
+data_5n5c
+
+save_entry_information
+# 
+_Entry.ID                 5N5C 
+_Entry.Assigned_BMRB_ID   34100 
+# 
+loop_
+_Audit.Revision_ID 
+_Audit.Creation_date 
+_Audit.Update_record 
+_Audit.Creation_method 
+_Audit.Entry_ID 
+1 2017-02-14 'Nomenclature checked and updated' . 5N5C 
+2 2017-02-14 'Preliminary version'              . 5N5C 
+3 2018-01-08 'Nomenclature checked'             . 5N5C 
+4 2018-03-14 'Initial release'                  . 5N5C 
+stop_
+save_
+save_reference
+# 
+_Chem_shift_reference.Sf_category    chem_shift_reference 
+_Chem_shift_reference.Sf_framecode   reference 
+_Chem_shift_reference.Entry_ID       5N5C 
+_Chem_shift_reference.ID             1 
+# 
+loop_
+_Chem_shift_ref.Atom_type 
+_Chem_shift_ref.Atom_isotope_number 
+_Chem_shift_ref.Mol_common_name 
+_Chem_shift_ref.Atom_group 
+_Chem_shift_ref.Concentration_val 
+_Chem_shift_ref.Concentration_units 
+_Chem_shift_ref.Solvent 
+_Chem_shift_ref.Rank 
+_Chem_shift_ref.Chem_shift_units 
+_Chem_shift_ref.Chem_shift_val 
+_Chem_shift_ref.Ref_method 
+_Chem_shift_ref.Ref_type 
+_Chem_shift_ref.Indirect_shift_ratio 
+_Chem_shift_ref.Entry_ID 
+_Chem_shift_ref.Chem_shift_reference_ID 
+H 1  water protons ? ? ? ? ppm 4.7 internal direct   1.0        5N5C 1 
+C 13 water protons ? ? ? ? ppm 4.7 internal indirect 0.25144953 5N5C 1 
+N 15 water protons ? ? ? ? ppm 4.7 internal indirect 0.10132912 5N5C 1 
+stop_
+save_
+save_bmrb.tbl
+# 
+loop_
+_Atom_chem_shift.ID 
+_Atom_chem_shift.Entity_assembly_ID 
+_Atom_chem_shift.Entity_ID 
+_Atom_chem_shift.Comp_index_ID 
+_Atom_chem_shift.Seq_ID 
+_Atom_chem_shift.Comp_ID 
+_Atom_chem_shift.Atom_ID 
+_Atom_chem_shift.Atom_type 
+_Atom_chem_shift.Atom_isotope_number 
+_Atom_chem_shift.Val 
+_Atom_chem_shift.Val_err 
+_Atom_chem_shift.Assign_fig_of_merit 
+_Atom_chem_shift.Ambiguity_code 
+_Atom_chem_shift.Occupancy 
+_Atom_chem_shift.Resonance_ID 
+_Atom_chem_shift.Auth_entity_assembly_ID 
+_Atom_chem_shift.Auth_asym_ID 
+_Atom_chem_shift.Auth_seq_ID 
+_Atom_chem_shift.Auth_comp_ID 
+_Atom_chem_shift.Auth_atom_ID 
+_Atom_chem_shift.Original_PDB_strand_ID 
+_Atom_chem_shift.Original_PDB_residue_no 
+_Atom_chem_shift.Original_PDB_residue_name 
+_Atom_chem_shift.Original_PDB_atom_name 
+_Atom_chem_shift.Details 
+_Atom_chem_shift.Entry_ID 
+_Atom_chem_shift.Assigned_chem_shift_list_ID 
+1   ? . 1  ? A "H1'"  H ? 5.96  0.02 ? 1 ? ? . A 1  A "H1'"  A 1  A "H1'"  . 5N5C ? 
+2   ? . 1  ? A "H2'"  H ? 4.83  0.02 ? 1 ? ? . A 1  A "H2'"  A 1  A "H2'"  . 5N5C ? 
+3   ? . 1  ? A "H3'"  H ? 4.62  0.02 ? 1 ? ? . A 1  A "H3'"  A 1  A "H3'"  . 5N5C ? 
+4   ? . 1  ? A "H4'"  H ? 4.38  0.02 ? 1 ? ? . A 1  A "H4'"  A 1  A "H4'"  . 5N5C ? 
+5   ? . 1  ? A "H5'"  H ? 3.95  0.02 ? 2 ? ? . A 1  A "H5'"  A 1  A "H5'"  . 5N5C ? 
+6   ? . 1  ? A "H5''" H ? 3.84  0.02 ? 2 ? ? . A 1  A "H5''" A 1  A "H5''" . 5N5C ? 
+7   ? . 1  ? A H2     H ? 8.10  0.02 ? 1 ? ? . A 1  A H2     A 1  A H2     . 5N5C ? 
+8   ? . 1  ? A H8     H ? 8.25  0.02 ? 1 ? ? . A 1  A H8     A 1  A H8     . 5N5C ? 
+9   ? . 1  ? A "C1'"  C ? 89.3  0.10 ? 1 ? ? . A 1  A "C1'"  A 1  A "C1'"  . 5N5C ? 
+10  ? . 1  ? A "C2'"  C ? 73.1  0.10 ? 1 ? ? . A 1  A "C2'"  A 1  A "C2'"  . 5N5C ? 
+11  ? . 1  ? A "C3'"  C ? 73.2  0.10 ? 1 ? ? . A 1  A "C3'"  A 1  A "C3'"  . 5N5C ? 
+12  ? . 1  ? A "C4'"  C ? 83.8  0.10 ? 1 ? ? . A 1  A "C4'"  A 1  A "C4'"  . 5N5C ? 
+13  ? . 1  ? A "C5'"  C ? 60.5  0.10 ? 1 ? ? . A 1  A "C5'"  A 1  A "C5'"  . 5N5C ? 
+14  ? . 1  ? A C2     C ? 152.2 0.10 ? 1 ? ? . A 1  A C2     A 1  A C2     . 5N5C ? 
+15  ? . 1  ? A C8     C ? 139.9 0.10 ? 1 ? ? . A 1  A C8     A 1  A C8     . 5N5C ? 
+16  ? . 2  ? U "H1'"  H ? 5.79  0.02 ? 1 ? ? . A 2  U "H1'"  A 2  U "H1'"  . 5N5C ? 
+17  ? . 2  ? U "H2'"  H ? 4.34  0.02 ? 1 ? ? . A 2  U "H2'"  A 2  U "H2'"  . 5N5C ? 
+18  ? . 2  ? U "H3'"  H ? 4.63  0.02 ? 1 ? ? . A 2  U "H3'"  A 2  U "H3'"  . 5N5C ? 
+19  ? . 2  ? U "H4'"  H ? 4.49  0.02 ? 1 ? ? . A 2  U "H4'"  A 2  U "H4'"  . 5N5C ? 
+20  ? . 2  ? U "H5'"  H ? 4.13  0.02 ? 2 ? ? . A 2  U "H5'"  A 2  U "H5'"  . 5N5C ? 
+21  ? . 2  ? U "H5''" H ? 4.13  0.02 ? 2 ? ? . A 2  U "H5''" A 2  U "H5''" . 5N5C ? 
+22  ? . 2  ? U H5     H ? 5.66  0.02 ? 1 ? ? . A 2  U H5     A 2  U H5     . 5N5C ? 
+23  ? . 2  ? U H6     H ? 7.81  0.02 ? 1 ? ? . A 2  U H6     A 2  U H6     . 5N5C ? 
+24  ? . 3  ? U "H1'"  H ? 5.51  0.02 ? 1 ? ? . A 3  U "H1'"  A 3  U "H1'"  . 5N5C ? 
+25  ? . 3  ? U "H2'"  H ? 4.54  0.02 ? 1 ? ? . A 3  U "H2'"  A 3  U "H2'"  . 5N5C ? 
+26  ? . 3  ? U "H3'"  H ? 4.43  0.02 ? 1 ? ? . A 3  U "H3'"  A 3  U "H3'"  . 5N5C ? 
+27  ? . 3  ? U "H5'"  H ? 4.15  0.02 ? 2 ? ? . A 3  U "H5'"  A 3  U "H5'"  . 5N5C ? 
+28  ? . 3  ? U "H5''" H ? 4.15  0.02 ? 2 ? ? . A 3  U "H5''" A 3  U "H5''" . 5N5C ? 
+29  ? . 3  ? U H5     H ? 5.80  0.02 ? 1 ? ? . A 3  U H5     A 3  U H5     . 5N5C ? 
+30  ? . 3  ? U H6     H ? 8.04  0.02 ? 1 ? ? . A 3  U H6     A 3  U H6     . 5N5C ? 
+31  ? . 3  ? U "C1'"  C ? 90.8  0.10 ? 1 ? ? . A 3  U "C1'"  A 3  U "C1'"  . 5N5C ? 
+32  ? . 3  ? U C5     C ? 101.3 0.10 ? 1 ? ? . A 3  U C5     A 3  U C5     . 5N5C ? 
+33  ? . 4  ? C "H1'"  H ? 5.56  0.02 ? 1 ? ? . A 4  C "H1'"  A 4  C "H1'"  . 5N5C ? 
+34  ? . 4  ? C "H2'"  H ? 4.36  0.02 ? 1 ? ? . A 4  C "H2'"  A 4  C "H2'"  . 5N5C ? 
+35  ? . 4  ? C "H3'"  H ? 4.44  0.02 ? 1 ? ? . A 4  C "H3'"  A 4  C "H3'"  . 5N5C ? 
+36  ? . 4  ? C "H5'"  H ? 4.13  0.02 ? 2 ? ? . A 4  C "H5'"  A 4  C "H5'"  . 5N5C ? 
+37  ? . 4  ? C "H5''" H ? 4.13  0.02 ? 2 ? ? . A 4  C "H5''" A 4  C "H5''" . 5N5C ? 
+38  ? . 4  ? C H5     H ? 5.72  0.02 ? 1 ? ? . A 4  C H5     A 4  C H5     . 5N5C ? 
+39  ? . 4  ? C H6     H ? 7.89  0.02 ? 1 ? ? . A 4  C H6     A 4  C H6     . 5N5C ? 
+40  ? . 4  ? C H41    H ? 8.16  0.02 ? 2 ? ? . A 4  C H41    A 4  C H41    . 5N5C ? 
+41  ? . 4  ? C H42    H ? 6.76  0.02 ? 2 ? ? . A 4  C H42    A 4  C H42    . 5N5C ? 
+42  ? . 4  ? C "C1'"  C ? 91.5  0.10 ? 1 ? ? . A 4  C "C1'"  A 4  C "C1'"  . 5N5C ? 
+43  ? . 5  ? C "H1'"  H ? 5.40  0.02 ? 1 ? ? . A 5  C "H1'"  A 5  C "H1'"  . 5N5C ? 
+44  ? . 5  ? C "H2'"  H ? 4.30  0.02 ? 1 ? ? . A 5  C "H2'"  A 5  C "H2'"  . 5N5C ? 
+45  ? . 5  ? C "H3'"  H ? 4.43  0.02 ? 1 ? ? . A 5  C "H3'"  A 5  C "H3'"  . 5N5C ? 
+46  ? . 5  ? C "H5'"  H ? 4.04  0.02 ? 2 ? ? . A 5  C "H5'"  A 5  C "H5'"  . 5N5C ? 
+47  ? . 5  ? C "H5''" H ? 4.04  0.02 ? 2 ? ? . A 5  C "H5''" A 5  C "H5''" . 5N5C ? 
+48  ? . 5  ? C H5     H ? 5.47  0.02 ? 1 ? ? . A 5  C H5     A 5  C H5     . 5N5C ? 
+49  ? . 5  ? C H6     H ? 7.76  0.02 ? 1 ? ? . A 5  C H6     A 5  C H6     . 5N5C ? 
+50  ? . 5  ? C H41    H ? 8.12  0.02 ? 2 ? ? . A 5  C H41    A 5  C H41    . 5N5C ? 
+51  ? . 5  ? C H42    H ? 6.64  0.02 ? 2 ? ? . A 5  C H42    A 5  C H42    . 5N5C ? 
+52  ? . 5  ? C "C1'"  C ? 91.6  0.10 ? 1 ? ? . A 5  C "C1'"  A 5  C "C1'"  . 5N5C ? 
+53  ? . 6  ? U "H1'"  H ? 5.44  0.02 ? 1 ? ? . A 6  U "H1'"  A 6  U "H1'"  . 5N5C ? 
+54  ? . 6  ? U "H2'"  H ? 4.32  0.02 ? 1 ? ? . A 6  U "H2'"  A 6  U "H2'"  . 5N5C ? 
+55  ? . 6  ? U "H5'"  H ? 4.03  0.02 ? 2 ? ? . A 6  U "H5'"  A 6  U "H5'"  . 5N5C ? 
+56  ? . 6  ? U "H5''" H ? 4.03  0.02 ? 2 ? ? . A 6  U "H5''" A 6  U "H5''" . 5N5C ? 
+57  ? . 6  ? U H5     H ? 5.32  0.02 ? 1 ? ? . A 6  U H5     A 6  U H5     . 5N5C ? 
+58  ? . 6  ? U H6     H ? 7.82  0.02 ? 1 ? ? . A 6  U H6     A 6  U H6     . 5N5C ? 
+59  ? . 6  ? U H3     H ? 13.64 0.02 ? 1 ? ? . A 6  U H3     A 6  U H3     . 5N5C ? 
+60  ? . 6  ? U N3     N ? 161.9 0.10 ? 1 ? ? . A 6  U N3     A 6  U N3     . 5N5C ? 
+61  ? . 6  ? U "C1'"  C ? 91.3  0.10 ? 1 ? ? . A 6  U "C1'"  A 6  U "C1'"  . 5N5C ? 
+62  ? . 7  ? U "H1'"  H ? 5.55  0.02 ? 1 ? ? . A 7  U "H1'"  A 7  U "H1'"  . 5N5C ? 
+63  ? . 7  ? U "H2'"  H ? 4.37  0.02 ? 1 ? ? . A 7  U "H2'"  A 7  U "H2'"  . 5N5C ? 
+64  ? . 7  ? U "H3'"  H ? 4.53  0.02 ? 1 ? ? . A 7  U "H3'"  A 7  U "H3'"  . 5N5C ? 
+65  ? . 7  ? U H5     H ? 5.50  0.02 ? 1 ? ? . A 7  U H5     A 7  U H5     . 5N5C ? 
+66  ? . 7  ? U H6     H ? 7.84  0.02 ? 1 ? ? . A 7  U H6     A 7  U H6     . 5N5C ? 
+67  ? . 7  ? U H3     H ? 12.59 0.02 ? 1 ? ? . A 7  U H3     A 7  U H3     . 5N5C ? 
+68  ? . 7  ? U N3     N ? 161.0 0.10 ? 1 ? ? . A 7  U N3     A 7  U N3     . 5N5C ? 
+69  ? . 7  ? U "C1'"  C ? 90.6  0.10 ? 1 ? ? . A 7  U "C1'"  A 7  U "C1'"  . 5N5C ? 
+70  ? . 7  ? U C5     C ? 100.9 0.10 ? 1 ? ? . A 7  U C5     A 7  U C5     . 5N5C ? 
+71  ? . 7  ? U C6     C ? 140.8 0.10 ? 1 ? ? . A 7  U C6     A 7  U C6     . 5N5C ? 
+72  ? . 8  ? A "H1'"  H ? 5.71  0.02 ? 1 ? ? . A 8  A "H1'"  A 8  A "H1'"  . 5N5C ? 
+73  ? . 8  ? A "H2'"  H ? 4.52  0.02 ? 1 ? ? . A 8  A "H2'"  A 8  A "H2'"  . 5N5C ? 
+74  ? . 8  ? A "H3'"  H ? 4.49  0.02 ? 1 ? ? . A 8  A "H3'"  A 8  A "H3'"  . 5N5C ? 
+75  ? . 8  ? A "H4'"  H ? 4.44  0.02 ? 1 ? ? . A 8  A "H4'"  A 8  A "H4'"  . 5N5C ? 
+76  ? . 8  ? A "H5'"  H ? 4.37  0.02 ? 2 ? ? . A 8  A "H5'"  A 8  A "H5'"  . 5N5C ? 
+77  ? . 8  ? A "H5''" H ? 4.11  0.02 ? 2 ? ? . A 8  A "H5''" A 8  A "H5''" . 5N5C ? 
+78  ? . 8  ? A H2     H ? 6.85  0.02 ? 1 ? ? . A 8  A H2     A 8  A H2     . 5N5C ? 
+79  ? . 8  ? A H8     H ? 7.95  0.02 ? 1 ? ? . A 8  A H8     A 8  A H8     . 5N5C ? 
+80  ? . 8  ? A "C1'"  C ? 89.7  0.10 ? 1 ? ? . A 8  A "C1'"  A 8  A "C1'"  . 5N5C ? 
+81  ? . 8  ? A "C2'"  C ? 73.1  0.10 ? 1 ? ? . A 8  A "C2'"  A 8  A "C2'"  . 5N5C ? 
+82  ? . 8  ? A "C3'"  C ? 71.5  0.10 ? 1 ? ? . A 8  A "C3'"  A 8  A "C3'"  . 5N5C ? 
+83  ? . 8  ? A "C4'"  C ? 80.2  0.10 ? 1 ? ? . A 8  A "C4'"  A 8  A "C4'"  . 5N5C ? 
+84  ? . 8  ? A "C5'"  C ? 63.7  0.10 ? 1 ? ? . A 8  A "C5'"  A 8  A "C5'"  . 5N5C ? 
+85  ? . 8  ? A C2     C ? 150.5 0.10 ? 1 ? ? . A 8  A C2     A 8  A C2     . 5N5C ? 
+86  ? . 8  ? A C8     C ? 137.1 0.10 ? 1 ? ? . A 8  A C8     A 8  A C8     . 5N5C ? 
+87  ? . 9  ? A "H1'"  H ? 5.25  0.02 ? 1 ? ? . A 9  A "H1'"  A 9  A "H1'"  . 5N5C ? 
+88  ? . 9  ? A "H2'"  H ? 4.41  0.02 ? 1 ? ? . A 9  A "H2'"  A 9  A "H2'"  . 5N5C ? 
+89  ? . 9  ? A "H3'"  H ? 4.36  0.02 ? 1 ? ? . A 9  A "H3'"  A 9  A "H3'"  . 5N5C ? 
+90  ? . 9  ? A "H4'"  H ? 4.25  0.02 ? 1 ? ? . A 9  A "H4'"  A 9  A "H4'"  . 5N5C ? 
+91  ? . 9  ? A "H5'"  H ? 4.19  0.02 ? 2 ? ? . A 9  A "H5'"  A 9  A "H5'"  . 5N5C ? 
+92  ? . 9  ? A "H5''" H ? 3.95  0.02 ? 2 ? ? . A 9  A "H5''" A 9  A "H5''" . 5N5C ? 
+93  ? . 9  ? A H2     H ? 7.94  0.02 ? 1 ? ? . A 9  A H2     A 9  A H2     . 5N5C ? 
+94  ? . 9  ? A H8     H ? 7.63  0.02 ? 1 ? ? . A 9  A H8     A 9  A H8     . 5N5C ? 
+95  ? . 9  ? A "C1'"  C ? 88.9  0.10 ? 1 ? ? . A 9  A "C1'"  A 9  A "C1'"  . 5N5C ? 
+96  ? . 9  ? A "C2'"  C ? 72.8  0.10 ? 1 ? ? . A 9  A "C2'"  A 9  A "C2'"  . 5N5C ? 
+97  ? . 9  ? A "C3'"  C ? 72.8  0.10 ? 1 ? ? . A 9  A "C3'"  A 9  A "C3'"  . 5N5C ? 
+98  ? . 9  ? A "C4'"  C ? 81.2  0.10 ? 1 ? ? . A 9  A "C4'"  A 9  A "C4'"  . 5N5C ? 
+99  ? . 9  ? A "C5'"  C ? 63.8  0.10 ? 1 ? ? . A 9  A "C5'"  A 9  A "C5'"  . 5N5C ? 
+100 ? . 9  ? A C2     C ? 152.5 0.10 ? 1 ? ? . A 9  A C2     A 9  A C2     . 5N5C ? 
+101 ? . 9  ? A C8     C ? 137.4 0.10 ? 1 ? ? . A 9  A C8     A 9  A C8     . 5N5C ? 
+102 ? . 10 ? A "H1'"  H ? 5.66  0.02 ? 1 ? ? . A 10 A "H1'"  A 10 A "H1'"  . 5N5C ? 
+103 ? . 10 ? A "H2'"  H ? 4.42  0.02 ? 1 ? ? . A 10 A "H2'"  A 10 A "H2'"  . 5N5C ? 
+104 ? . 10 ? A "H3'"  H ? 4.57  0.02 ? 1 ? ? . A 10 A "H3'"  A 10 A "H3'"  . 5N5C ? 
+105 ? . 10 ? A "H4'"  H ? 4.40  0.02 ? 1 ? ? . A 10 A "H4'"  A 10 A "H4'"  . 5N5C ? 
+106 ? . 10 ? A "H5'"  H ? 4.13  0.02 ? 2 ? ? . A 10 A "H5'"  A 10 A "H5'"  . 5N5C ? 
+107 ? . 10 ? A "H5''" H ? 3.92  0.02 ? 2 ? ? . A 10 A "H5''" A 10 A "H5''" . 5N5C ? 
+108 ? . 10 ? A H2     H ? 7.60  0.02 ? 1 ? ? . A 10 A H2     A 10 A H2     . 5N5C ? 
+109 ? . 10 ? A H8     H ? 8.00  0.02 ? 1 ? ? . A 10 A H8     A 10 A H8     . 5N5C ? 
+110 ? . 10 ? A H61    H ? 5.67  0.02 ? 2 ? ? . A 10 A H61    A 10 A H61    . 5N5C ? 
+111 ? . 10 ? A H62    H ? 5.67  0.02 ? 2 ? ? . A 10 A H62    A 10 A H62    . 5N5C ? 
+112 ? . 10 ? A "C1'"  C ? 86.7  0.10 ? 1 ? ? . A 10 A "C1'"  A 10 A "C1'"  . 5N5C ? 
+113 ? . 10 ? A "C2'"  C ? 74.9  0.10 ? 1 ? ? . A 10 A "C2'"  A 10 A "C2'"  . 5N5C ? 
+114 ? . 10 ? A "C3'"  C ? 76.0  0.10 ? 1 ? ? . A 10 A "C3'"  A 10 A "C3'"  . 5N5C ? 
+115 ? . 10 ? A "C4'"  C ? 83.2  0.10 ? 1 ? ? . A 10 A "C4'"  A 10 A "C4'"  . 5N5C ? 
+116 ? . 10 ? A "C5'"  C ? 64.8  0.10 ? 1 ? ? . A 10 A "C5'"  A 10 A "C5'"  . 5N5C ? 
+117 ? . 10 ? A C2     C ? 151.9 0.10 ? 1 ? ? . A 10 A C2     A 10 A C2     . 5N5C ? 
+118 ? . 10 ? A C8     C ? 138.6 0.10 ? 1 ? ? . A 10 A C8     A 10 A C8     . 5N5C ? 
+119 ? . 11 ? U "H1'"  H ? 5.96  0.02 ? 1 ? ? . A 11 U "H1'"  A 11 U "H1'"  . 5N5C ? 
+120 ? . 11 ? U "H2'"  H ? 4.35  0.02 ? 1 ? ? . A 11 U "H2'"  A 11 U "H2'"  . 5N5C ? 
+121 ? . 11 ? U "H3'"  H ? 4.68  0.02 ? 1 ? ? . A 11 U "H3'"  A 11 U "H3'"  . 5N5C ? 
+122 ? . 11 ? U "H4'"  H ? 4.48  0.02 ? 1 ? ? . A 11 U "H4'"  A 11 U "H4'"  . 5N5C ? 
+123 ? . 11 ? U "H5'"  H ? 4.11  0.02 ? 2 ? ? . A 11 U "H5'"  A 11 U "H5'"  . 5N5C ? 
+124 ? . 11 ? U "H5''" H ? 4.09  0.02 ? 2 ? ? . A 11 U "H5''" A 11 U "H5''" . 5N5C ? 
+125 ? . 11 ? U H5     H ? 5.82  0.02 ? 1 ? ? . A 11 U H5     A 11 U H5     . 5N5C ? 
+126 ? . 11 ? U H6     H ? 7.74  0.02 ? 1 ? ? . A 11 U H6     A 11 U H6     . 5N5C ? 
+127 ? . 11 ? U C5     C ? 103.2 0.10 ? 1 ? ? . A 11 U C5     A 11 U C5     . 5N5C ? 
+128 ? . 12 ? U "H1'"  H ? 5.82  0.02 ? 1 ? ? . A 12 U "H1'"  A 12 U "H1'"  . 5N5C ? 
+129 ? . 12 ? U "H2'"  H ? 4.55  0.02 ? 1 ? ? . A 12 U "H2'"  A 12 U "H2'"  . 5N5C ? 
+130 ? . 12 ? U "H3'"  H ? 4.54  0.02 ? 1 ? ? . A 12 U "H3'"  A 12 U "H3'"  . 5N5C ? 
+131 ? . 12 ? U "H4'"  H ? 4.50  0.02 ? 1 ? ? . A 12 U "H4'"  A 12 U "H4'"  . 5N5C ? 
+132 ? . 12 ? U "H5'"  H ? 4.23  0.02 ? 2 ? ? . A 12 U "H5'"  A 12 U "H5'"  . 5N5C ? 
+133 ? . 12 ? U "H5''" H ? 4.20  0.02 ? 2 ? ? . A 12 U "H5''" A 12 U "H5''" . 5N5C ? 
+134 ? . 12 ? U H5     H ? 5.89  0.02 ? 1 ? ? . A 12 U H5     A 12 U H5     . 5N5C ? 
+135 ? . 12 ? U H6     H ? 7.84  0.02 ? 1 ? ? . A 12 U H6     A 12 U H6     . 5N5C ? 
+136 ? . 12 ? U C6     C ? 139.4 0.10 ? 1 ? ? . A 12 U C6     A 12 U C6     . 5N5C ? 
+137 ? . 13 ? A "H1'"  H ? 5.88  0.02 ? 1 ? ? . A 13 A "H1'"  A 13 A "H1'"  . 5N5C ? 
+138 ? . 13 ? A "H2'"  H ? 4.59  0.02 ? 1 ? ? . A 13 A "H2'"  A 13 A "H2'"  . 5N5C ? 
+139 ? . 13 ? A "H3'"  H ? 4.58  0.02 ? 1 ? ? . A 13 A "H3'"  A 13 A "H3'"  . 5N5C ? 
+140 ? . 13 ? A "H4'"  H ? 4.54  0.02 ? 1 ? ? . A 13 A "H4'"  A 13 A "H4'"  . 5N5C ? 
+141 ? . 13 ? A "H5'"  H ? 4.39  0.02 ? 2 ? ? . A 13 A "H5'"  A 13 A "H5'"  . 5N5C ? 
+142 ? . 13 ? A "H5''" H ? 4.30  0.02 ? 2 ? ? . A 13 A "H5''" A 13 A "H5''" . 5N5C ? 
+143 ? . 13 ? A H2     H ? 6.59  0.02 ? 1 ? ? . A 13 A H2     A 13 A H2     . 5N5C ? 
+144 ? . 13 ? A H8     H ? 8.18  0.02 ? 1 ? ? . A 13 A H8     A 13 A H8     . 5N5C ? 
+145 ? . 13 ? A H61    H ? 7.11  0.02 ? 2 ? ? . A 13 A H61    A 13 A H61    . 5N5C ? 
+146 ? . 13 ? A H62    H ? 7.11  0.02 ? 2 ? ? . A 13 A H62    A 13 A H62    . 5N5C ? 
+147 ? . 13 ? A "C1'"  C ? 89.8  0.10 ? 1 ? ? . A 13 A "C1'"  A 13 A "C1'"  . 5N5C ? 
+148 ? . 13 ? A "C2'"  C ? 71.5  0.10 ? 1 ? ? . A 13 A "C2'"  A 13 A "C2'"  . 5N5C ? 
+149 ? . 13 ? A "C3'"  C ? 72.7  0.10 ? 1 ? ? . A 13 A "C3'"  A 13 A "C3'"  . 5N5C ? 
+150 ? . 13 ? A "C4'"  C ? 80.3  0.10 ? 1 ? ? . A 13 A "C4'"  A 13 A "C4'"  . 5N5C ? 
+151 ? . 13 ? A "C5'"  C ? 64.9  0.10 ? 1 ? ? . A 13 A "C5'"  A 13 A "C5'"  . 5N5C ? 
+152 ? . 13 ? A C2     C ? 149.5 0.10 ? 1 ? ? . A 13 A C2     A 13 A C2     . 5N5C ? 
+153 ? . 13 ? A C8     C ? 138.1 0.10 ? 1 ? ? . A 13 A C8     A 13 A C8     . 5N5C ? 
+154 ? . 14 ? A "H1'"  H ? 5.83  0.02 ? 1 ? ? . A 14 A "H1'"  A 14 A "H1'"  . 5N5C ? 
+155 ? . 14 ? A "H2'"  H ? 4.52  0.02 ? 1 ? ? . A 14 A "H2'"  A 14 A "H2'"  . 5N5C ? 
+156 ? . 14 ? A "H3'"  H ? 4.57  0.02 ? 1 ? ? . A 14 A "H3'"  A 14 A "H3'"  . 5N5C ? 
+157 ? . 14 ? A "H4'"  H ? 4.44  0.02 ? 1 ? ? . A 14 A "H4'"  A 14 A "H4'"  . 5N5C ? 
+158 ? . 14 ? A "H5'"  H ? 4.50  0.02 ? 2 ? ? . A 14 A "H5'"  A 14 A "H5'"  . 5N5C ? 
+159 ? . 14 ? A "H5''" H ? 4.13  0.02 ? 2 ? ? . A 14 A "H5''" A 14 A "H5''" . 5N5C ? 
+160 ? . 14 ? A H2     H ? 7.32  0.02 ? 1 ? ? . A 14 A H2     A 14 A H2     . 5N5C ? 
+161 ? . 14 ? A H8     H ? 7.73  0.02 ? 1 ? ? . A 14 A H8     A 14 A H8     . 5N5C ? 
+162 ? . 14 ? A H61    H ? 7.50  0.02 ? 2 ? ? . A 14 A H61    A 14 A H61    . 5N5C ? 
+163 ? . 14 ? A H62    H ? 6.16  0.02 ? 2 ? ? . A 14 A H62    A 14 A H62    . 5N5C ? 
+164 ? . 14 ? A "C1'"  C ? 89.6  0.10 ? 1 ? ? . A 14 A "C1'"  A 14 A "C1'"  . 5N5C ? 
+165 ? . 14 ? A "C2'"  C ? 73.0  0.10 ? 1 ? ? . A 14 A "C2'"  A 14 A "C2'"  . 5N5C ? 
+166 ? . 14 ? A "C3'"  C ? 70.1  0.10 ? 1 ? ? . A 14 A "C3'"  A 14 A "C3'"  . 5N5C ? 
+167 ? . 14 ? A "C4'"  C ? 79.3  0.10 ? 1 ? ? . A 14 A "C4'"  A 14 A "C4'"  . 5N5C ? 
+168 ? . 14 ? A "C5'"  C ? 62.7  0.10 ? 1 ? ? . A 14 A "C5'"  A 14 A "C5'"  . 5N5C ? 
+169 ? . 14 ? A C2     C ? 150.4 0.10 ? 1 ? ? . A 14 A C2     A 14 A C2     . 5N5C ? 
+170 ? . 14 ? A C8     C ? 136.5 0.10 ? 1 ? ? . A 14 A C8     A 14 A C8     . 5N5C ? 
+171 ? . 15 ? G "H1'"  H ? 5.48  0.02 ? 1 ? ? . A 15 G "H1'"  A 15 G "H1'"  . 5N5C ? 
+172 ? . 15 ? G "H2'"  H ? 4.40  0.02 ? 1 ? ? . A 15 G "H2'"  A 15 G "H2'"  . 5N5C ? 
+173 ? . 15 ? G "H3'"  H ? 3.98  0.02 ? 1 ? ? . A 15 G "H3'"  A 15 G "H3'"  . 5N5C ? 
+174 ? . 15 ? G H8     H ? 6.95  0.02 ? 1 ? ? . A 15 G H8     A 15 G H8     . 5N5C ? 
+175 ? . 15 ? G H1     H ? 12.51 0.02 ? 1 ? ? . A 15 G H1     A 15 G H1     . 5N5C ? 
+176 ? . 15 ? G H21    H ? 7.96  0.02 ? 2 ? ? . A 15 G H21    A 15 G H21    . 5N5C ? 
+177 ? . 15 ? G H22    H ? 5.77  0.02 ? 2 ? ? . A 15 G H22    A 15 G H22    . 5N5C ? 
+178 ? . 15 ? G N1     N ? 147.1 0.10 ? 1 ? ? . A 15 G N1     A 15 G N1     . 5N5C ? 
+179 ? . 15 ? G "C1'"  C ? 89.6  0.10 ? 1 ? ? . A 15 G "C1'"  A 15 G "C1'"  . 5N5C ? 
+180 ? . 16 ? G "H1'"  H ? 5.62  0.02 ? 1 ? ? . A 16 G "H1'"  A 16 G "H1'"  . 5N5C ? 
+181 ? . 16 ? G "H2'"  H ? 4.50  0.02 ? 1 ? ? . A 16 G "H2'"  A 16 G "H2'"  . 5N5C ? 
+182 ? . 16 ? G "H3'"  H ? 4.43  0.02 ? 1 ? ? . A 16 G "H3'"  A 16 G "H3'"  . 5N5C ? 
+183 ? . 16 ? G H8     H ? 7.03  0.02 ? 1 ? ? . A 16 G H8     A 16 G H8     . 5N5C ? 
+184 ? . 16 ? G H1     H ? 12.05 0.02 ? 1 ? ? . A 16 G H1     A 16 G H1     . 5N5C ? 
+185 ? . 16 ? G H21    H ? 7.70  0.02 ? 2 ? ? . A 16 G H21    A 16 G H21    . 5N5C ? 
+186 ? . 16 ? G H22    H ? 7.70  0.02 ? 2 ? ? . A 16 G H22    A 16 G H22    . 5N5C ? 
+187 ? . 16 ? G N1     N ? 146.9 0.10 ? 1 ? ? . A 16 G N1     A 16 G N1     . 5N5C ? 
+188 ? . 16 ? G "C1'"  C ? 90.1  0.10 ? 1 ? ? . A 16 G "C1'"  A 16 G "C1'"  . 5N5C ? 
+189 ? . 17 ? A "H1'"  H ? 5.89  0.02 ? 1 ? ? . A 17 A "H1'"  A 17 A "H1'"  . 5N5C ? 
+190 ? . 17 ? A "H2'"  H ? 4.56  0.02 ? 1 ? ? . A 17 A "H2'"  A 17 A "H2'"  . 5N5C ? 
+191 ? . 17 ? A "H3'"  H ? 4.45  0.02 ? 1 ? ? . A 17 A "H3'"  A 17 A "H3'"  . 5N5C ? 
+192 ? . 17 ? A "H4'"  H ? 4.40  0.02 ? 1 ? ? . A 17 A "H4'"  A 17 A "H4'"  . 5N5C ? 
+193 ? . 17 ? A "H5'"  H ? 4.43  0.02 ? 2 ? ? . A 17 A "H5'"  A 17 A "H5'"  . 5N5C ? 
+194 ? . 17 ? A "H5''" H ? 4.02  0.02 ? 2 ? ? . A 17 A "H5''" A 17 A "H5''" . 5N5C ? 
+195 ? . 17 ? A H2     H ? 7.60  0.02 ? 1 ? ? . A 17 A H2     A 17 A H2     . 5N5C ? 
+196 ? . 17 ? A H8     H ? 7.50  0.02 ? 1 ? ? . A 17 A H8     A 17 A H8     . 5N5C ? 
+197 ? . 17 ? A "C1'"  C ? 90.2  0.10 ? 1 ? ? . A 17 A "C1'"  A 17 A "C1'"  . 5N5C ? 
+198 ? . 17 ? A "C2'"  C ? 73.1  0.10 ? 1 ? ? . A 17 A "C2'"  A 17 A "C2'"  . 5N5C ? 
+199 ? . 17 ? A "C3'"  C ? 70.3  0.10 ? 1 ? ? . A 17 A "C3'"  A 17 A "C3'"  . 5N5C ? 
+200 ? . 17 ? A "C4'"  C ? 79.4  0.10 ? 1 ? ? . A 17 A "C4'"  A 17 A "C4'"  . 5N5C ? 
+201 ? . 17 ? A "C5'"  C ? 62.6  0.10 ? 1 ? ? . A 17 A "C5'"  A 17 A "C5'"  . 5N5C ? 
+202 ? . 17 ? A C2     C ? 151.0 0.10 ? 1 ? ? . A 17 A C2     A 17 A C2     . 5N5C ? 
+203 ? . 17 ? A C8     C ? 136.4 0.10 ? 1 ? ? . A 17 A C8     A 17 A C8     . 5N5C ? 
+204 ? . 18 ? G "H1'"  H ? 5.46  0.02 ? 1 ? ? . A 18 G "H1'"  A 18 G "H1'"  . 5N5C ? 
+205 ? . 18 ? G "H2'"  H ? 4.31  0.02 ? 1 ? ? . A 18 G "H2'"  A 18 G "H2'"  . 5N5C ? 
+206 ? . 18 ? G "H3'"  H ? 3.96  0.02 ? 1 ? ? . A 18 G "H3'"  A 18 G "H3'"  . 5N5C ? 
+207 ? . 18 ? G H8     H ? 7.17  0.02 ? 1 ? ? . A 18 G H8     A 18 G H8     . 5N5C ? 
+208 ? . 18 ? G "C1'"  C ? 89.3  0.10 ? 1 ? ? . A 18 G "C1'"  A 18 G "C1'"  . 5N5C ? 
+209 ? . 18 ? G C8     C ? 134.3 0.10 ? 1 ? ? . A 18 G C8     A 18 G C8     . 5N5C ? 
+210 ? . 19 ? U "H1'"  H ? 5.62  0.02 ? 1 ? ? . A 19 U "H1'"  A 19 U "H1'"  . 5N5C ? 
+211 ? . 19 ? U "H2'"  H ? 3.98  0.02 ? 1 ? ? . A 19 U "H2'"  A 19 U "H2'"  . 5N5C ? 
+212 ? . 19 ? U "H3'"  H ? 4.09  0.02 ? 1 ? ? . A 19 U "H3'"  A 19 U "H3'"  . 5N5C ? 
+213 ? . 19 ? U "H4'"  H ? 4.06  0.02 ? 1 ? ? . A 19 U "H4'"  A 19 U "H4'"  . 5N5C ? 
+214 ? . 19 ? U "H5'"  H ? 4.21  0.02 ? 2 ? ? . A 19 U "H5'"  A 19 U "H5'"  . 5N5C ? 
+215 ? . 19 ? U "H5''" H ? 4.21  0.02 ? 2 ? ? . A 19 U "H5''" A 19 U "H5''" . 5N5C ? 
+216 ? . 19 ? U H5     H ? 5.26  0.02 ? 1 ? ? . A 19 U H5     A 19 U H5     . 5N5C ? 
+217 ? . 19 ? U H6     H ? 7.52  0.02 ? 1 ? ? . A 19 U H6     A 19 U H6     . 5N5C ? 
+218 ? . 19 ? U "C1'"  C ? 89.0  0.10 ? 1 ? ? . A 19 U "C1'"  A 19 U "C1'"  . 5N5C ? 
+219 ? . 19 ? U "C4'"  C ? 82.1  0.10 ? 1 ? ? . A 19 U "C4'"  A 19 U "C4'"  . 5N5C ? 
+220 ? . 19 ? U C5     C ? 101.4 0.10 ? 1 ? ? . A 19 U C5     A 19 U C5     . 5N5C ? 
+221 ? . 19 ? U C6     C ? 139.8 0.10 ? 1 ? ? . A 19 U C6     A 19 U C6     . 5N5C ? 
+stop_
+save_
