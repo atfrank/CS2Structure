@@ -16,9 +16,9 @@ option_list = list(
                 help = "training set after imputation"),
     make_option(c("-ss1","--ss_table_1"), type = "character", default = "data/ss_table_1.txt",
                 help = "training set after adding neighboring information"),
-    make_option(c("-p","--program"), type = "character", default = "impute",
-                help = "impute, cs2bps or csfold"),
-    make_option(c("-o","--output"), type = "character", default = "output/imputed_cs.txt",
+    make_option(c("-p","--program"), type = "character", default = "cs2bps",
+                help = "impute, cs2bps"),
+    make_option(c("-o","--output"), type = "character", default = "output/cs2bps.txt",
                 help = "name of output file"),
     make_option(c("-w","--whole_set_prediction"), type = "logical", default = "TRUE",
                 help = "whether to output predictions from all classifiers")
@@ -34,8 +34,7 @@ if(length(arguments$args) != 1) {
   print_help(parser)
   stop()
 } else {
-  cat("cs2bps -- predict base pairing probability conditioned on chemical shifts\n")
-  cat("Kexin Zhang\n")
+  cat("Author: Aaron T. Frank\n")
 
   # get arguments
   cs_file_path = arguments$args[1]
