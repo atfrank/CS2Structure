@@ -3,14 +3,14 @@ Chemical Shift to Base Pairing Status predictions
 
 ## Installation
 
-#set up a conda environment for running CS2BPS
+set up a conda environment for running CS2BPS
 
 ```bash
 conda create -n r-tf pip python=3.6
 source activate r-tf
 ```
 
-#install python tensorflow (CPU version) and keras
+install python tensorflow (CPU version) and keras
 
 ```bash
 conda install -c anaconda tensorflow

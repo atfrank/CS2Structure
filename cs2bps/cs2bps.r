@@ -34,6 +34,8 @@ if(length(arguments$args) != 1) {
   print_help(parser)
   stop()
 } else {
+  cat("cs2bps -- Chemical Shift to Base Pairing Status predictions\n")
+  cat("Author: Kexin Zhang\n")
   cat("Author: Aaron T. Frank\n")
 
   # get arguments
