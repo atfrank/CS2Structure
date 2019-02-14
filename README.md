@@ -1,5 +1,6 @@
-# CS2SS: Predicting Secondary Structure from NMR Chemical Shifts
+# C2Structure: Extracting Structural Information Directly From Chemical
   
-- CS2SS is implemented as an R script
+- cs2bps: R script to predict base-pairing status from chemical shifts
+- referencing_errors: R script to identify systematic chemical shift errors in observed chemical shifts
 
 
