@@ -1,11 +1,7 @@
 # user functions
 source("functions.r")
-packages <- c("optparse", "mice", "caret", "keras", "bcv", "plyr")
+packages <- c("optparse", "mice", "caret", "keras", "plyr")
 suppressPackageStartupMessages(ipak(packages))
-suppressPackageStartupMessages(library("optparse"))
-suppressPackageStartupMessages(library("mice"))
-suppressPackageStartupMessages(library("caret"))
-suppressPackageStartupMessages(library("keras"))
 
 option_list = list(
     make_option(c("-i","--id"), type = "character", default = "test",
@@ -20,8 +16,10 @@ option_list = list(
                 help = "impute, cs2bps"),
     make_option(c("-o","--output"), type = "character", default = "output/cs2bps.txt",
                 help = "name of output file"),
-    make_option(c("-w","--whole_set_prediction"), type = "logical", default = "TRUE",
-                help = "whether to output predictions from all classifiers")
+    make_option(c("-w","--whole_set_prediction"), action = "store_true", default = FALSE,
+                help = "whether to output predictions from all classifiers"),
+    make_option(c("-b","--binary_output"), action = "store_true", default = FALSE,
+                help = "whether to output binary predictions")
 )
 
 parser = OptionParser(usage = "%prog [options] path_to_chemical_shift_file",
@@ -33,7 +31,7 @@ if(length(arguments$args) != 1) {
   cat("Incorrect number of required positional arguments\n\n")
   print_help(parser)
   stop()
-} else {
+  } else {
   cat("cs2bps -- Chemical Shift to Base Pairing Status predictions\n")
   cat("Author: Kexin Zhang\n")
   cat("Author: Aaron T. Frank\n")
@@ -49,6 +47,7 @@ if(length(arguments$args) != 1) {
   whole_set = opt$whole_set_prediction
   ss_table_0 = opt$ss_table_0
   ss_table_1 = opt$ss_table_1
+  binary_output = opt$binary_output
 
    # load and impute cs
   cs = load_cs_data(cs_file_path, train=F)
@@ -73,6 +72,10 @@ if(length(arguments$args) != 1) {
     if(whole_set){
       write.table(pred, file = output, row.names = F, col.names = F, quote = F)
     } else {
+      if(binary_output){
+        pred$pred_binary = ifelse(pred[,c(1, ncol(pred))]>0.6, 1, 0)
+        write.table(pred[1,c(1,"pred_binary")], file = output, row.names = F, col.names = F, quote = F)
+      }
       write.table(pred[,c(1, ncol(pred))], file = output, row.names = F, col.names = F, quote = F)
     }
     cat("-------------------------------------------------------------------------------------\n")
