@@ -17,7 +17,7 @@ residuewise_shifts <- function(tmp, nuclei=c("C1'","C2'","C3'","C4'","C5'","C2",
 load_cs_data <- function(cs_file, train = TRUE){
   # function to read in chemical shift data and convert the table into a matrix where each row corresponds to data for a single residue
   suppressPackageStartupMessages(require(plyr))
-  suppressPackageStartupMessages(require(bcv))
+  #suppressPackageStartupMessages(require(bcv))
   nuclei_names <- c("C1p","C2p","C3p","C4p","C5p","C2","C5","C6","C8","H1p","H2p","H3p","H4p","H2","H5","H5p","H5pp","H6","H8")
   nuclei_rna <- c("C1'","C2'","C3'","C4'","C5'","C2","C5","C6","C8","H1'","H2'","H3'","H4'","H2","H5","H5'","H5''","H6","H8")
   ifelse (train, names <- c("id", "resid", "resname", nuclei_names), names <- c("resid", "resname", nuclei_names))
