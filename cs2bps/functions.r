@@ -1,9 +1,13 @@
 ipak <- function(pkg){
-    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
-    if (length(new.pkg))
-        install.packages(new.pkg, repos = "http://cran.us.r-project.org")
-    sapply(pkg, require, character.only = TRUE, quietly = TRUE)
+	# helper function to check and install packages
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)){
+    install.packages(new.pkg, dependencies = TRUE, repos = "http://cran.us.r-project.org")
+  }
+  # load all required packages
+  sapply(pkg, require, character.only = TRUE, quietly = TRUE)
 }
+
 
 residuewise_shifts <- function(tmp, nuclei=c("C1'","C2'","C3'","C4'","C5'","C2","C5","C6","C8","H1'","H2'","H3'","H4'","H2","H5","H5'","H5''","H6","H8")){
   # helper function used to output residue-wise chemical shifts
@@ -17,7 +21,7 @@ residuewise_shifts <- function(tmp, nuclei=c("C1'","C2'","C3'","C4'","C5'","C2",
 load_cs_data <- function(cs_file, train = TRUE){
   # function to read in chemical shift data and convert the table into a matrix where each row corresponds to data for a single residue
   suppressPackageStartupMessages(require(plyr))
-  #suppressPackageStartupMessages(require(bcv))
+  suppressPackageStartupMessages(require(bcv))
   nuclei_names <- c("C1p","C2p","C3p","C4p","C5p","C2","C5","C6","C8","H1p","H2p","H3p","H4p","H2","H5","H5p","H5pp","H6","H8")
   nuclei_rna <- c("C1'","C2'","C3'","C4'","C5'","C2","C5","C6","C8","H1'","H2'","H3'","H4'","H2","H5","H5'","H5''","H6","H8")
   ifelse (train, names <- c("id", "resid", "resname", nuclei_names), names <- c("resid", "resname", nuclei_names))
@@ -203,7 +207,8 @@ combine_neighbors_1 <- function(sub_rna,nuclei){
   return(comb_res)
 }
 
-impute_cs_data <- function(data, id ="test", droplist = "id", speed="slow", ss_table = ss_table) {
+impute_cs_data <- function(cs, id ="test", droplist = c("id","resid"), speed="slow", ss_table = ss_table){ 
+  # function that performs MICE imputation using only residue name and chemical shifts
   if(speed=="slow"){
     m = 1
     maxit = 50
@@ -211,12 +216,16 @@ impute_cs_data <- function(data, id ="test", droplist = "id", speed="slow", ss_t
     m = 1
     maxit = 10
   }
-  cs_train = get(load(ss_table))
+  len_test = nrow(cs)
+  #### Sep 10
+  cs_train = read.table(ss_table, col.names = c("id","resid","resname","C1p","C2p","C3p","C4p","C5p","C2","C5","C6","C8","H1p","H2p","H3p","H4p","H2","H5","H5p","H5pp","H6","H8","class")) # ss_table_0.txt has no column names
   cs_train = cs_train[, -c(ncol(cs_train))] # delete 'class' column
-  data$id = id
+  cs$id = id
   cnames = colnames(cs_train)
-  data = data[,cnames]
-  cs = rbind(data, cs_train)
+  cs = cs[,cnames]
+  cs = rbind(cs, cs_train)
+  
+  # To match training script, I drop "id" and "resid"
   if (length(intersect(names(cs), droplist)) < length(droplist)) {
     stop("Droplist variables not found in data set")
   }
@@ -226,10 +235,10 @@ impute_cs_data <- function(data, id ="test", droplist = "id", speed="slow", ss_t
     predictorMatrix[, drop.index] <- 0
   }
   mids.out <- mice(cs, m = m, maxit = maxit, method = "pmm", seed = 500,
-                   predictorMatrix = predictorMatrix, print=FALSE)
-  cs_test = complete(mids.out,1)  # 'tidyr' also contains a function called 'complete'
+                   predictorMatrix = predictorMatrix)
+  cs_test = mice::complete(mids.out,1)  # 'tidyr' also contains a function called 'complete'
 
-  return(cs_test[1:nrow(data),])
+  return(cs_test[1:len_test,])
 }
 
 normalize_test <- function(test, ss_table_1){
@@ -238,7 +247,7 @@ normalize_test <- function(test, ss_table_1){
           "C1p.1","C2p.1","C3p.1","C4p.1","C5p.1","C2.1","C5.1","C6.1","C8.1","H1p.1","H2p.1","H3p.1","H4p.1","H2.1","H5.1","H5p.1","H5pp.1","H6.1","H8.1",
           "C1p.2","C2p.2","C3p.2","C4p.2","C5p.2","C2.2","C5.2","C6.2","C8.2","H1p.2","H2p.2","H3p.2","H4p.2","H2.2","H5.2","H5p.2","H5pp.2","H6.2","H8.2")
 
-  train = read.table(ss_table_1)
+  train = read.table(ss_table_1) # all ss_table txt files have no colnames
 
   colnames(train) = c("id","resid","resname_before","resname","resname_after",cols,"class")
   colnames(test) = c("id","resid","resname_before","resname","resname_after",cols)
@@ -250,40 +259,154 @@ normalize_test <- function(test, ss_table_1){
   resnames_test <- data.frame(predict(dmy, newdata = test[resnames]))
 
   # scale data
-  scalar = preProcess(train[cols])
+  scalar = preProcess(train[cols], method = c("center", "scale")) # no need to add center and scale
   cs_test = predict(scalar, test[cols])
   cs_final = as.matrix(data.frame(cs_test, resnames_test))
   return(cs_final)
 }
 
-format_cs_file <- function(data, nuclei){
+format_cs_file <- function(data, nuclei, id = FALSE){
+  # update: named vector for converting nuclei names
+  ## UPDATE: add id
   total = NULL
-  colnames(data) = c("id","resid","resname",nuclei)
-  for(nucleus in nuclei){
-    tmp = data[,c("resname","resid",nucleus)]
-    tmp$nucleus = nucleus
-    names(tmp) = c("resname","resid","cs","nucleus")
-    tmp = tmp[,c("resname","resid","nucleus","cs")]
-    if(is.null(total)){
-      total = tmp
+  
+  if(!id){
+    # not including RNA names
+    for(nucleus in gsub("\'","p",nuclei)){
+      tmp = data[,c("resname","resid",nucleus)]
+      tmp$nucleus = nucleus
+      colnames(tmp) = c("resname","resid","cs","nucleus")
+      tmp = tmp[,c("resname","resid","nucleus","cs")]
+      if(is.null(total)){
+        total = tmp
       } else {
-      total = rbind(total,tmp)
+        total = rbind(total,tmp)
       }
-  }
-  print(total)
+    }
+    total$error = "."
+    total = total[,c("resname","resid","nucleus","cs","error")]
+  } else {
+    for(nucleus in nuclei){
+      tmp = data[,c("resname","resid",nucleus,"id")]
+      tmp$nucleus = nucleus
+      colnames(tmp) = c("resname","resid","cs","id","nucleus")
+      tmp = tmp[,c("resname","resid","nucleus","cs","id")]
+      if(is.null(total)){
+        total = tmp
+      } else {
+        total = rbind(total,tmp)
+      }
+    }
   total$error = "."
+  total = total[,c("resname","resid","nucleus","cs","error","id")]
+  }
+  total$nucleus = gsub("p","\'",total$nucleus)
   return(total)
 }
 
-load_and_predict <- function(resid = resid, test = test){
-  data = as.data.frame(resid)
+fold_secondary_structures_using_RNAstructure <- function(path_to_fasta, pred, id){
+  # function that use CS2BPS predictions to fold candidate structures
+  # use avg value of CS2BPS probabilities
+  write.table(pred[,c(1,ncol(pred))], file = paste0("run/avg_prob_", id, ".txt"), row.names = F, col.names = F, quote = F)
+  
+  # fold with cs2bps predictions 
+  system(paste0("partition ",fasta," run/test_",id,".pfs -sm 1.8 -si -0.6 -sh run/avg_prob_",id,".txt"))
+  system(paste0("Fold ",fasta," run/FLpr_",id,".ct -sm 1.8 -si -0.6 -sh run/avg_prob_",id,".txt"))
+  system(paste0("MaxExpect run/test_",id,".pfs run/MEpr_",id,".ct"))
+  system(paste0("ProbKnot run/test_",id,".pfs run/PKpr_",id,".ct"))
+  
+  # fold without cs2bps predictions
+  system(paste0("Fold ",fasta," run/FL_",id,".ct"))
+  system(paste0("MaxExpect --sequence ",fasta," run/ME_",id,".ct"))
+  system(paste0("ProbKnot --sequence ",fasta," run/PK_",id,".ct"))
+  
+  # calculate folding energy
+  system(paste0("efn2 run/FLpr_",id,".ct run/energy_FLpr_",id,".txt"))
+  system(paste0("efn2 run/MEpr_",id,".ct run/energy_MEpr_",id,".txt"))
+  system(paste0("efn2 run/PKpr_",id,".ct run/energy_PKpr_",id,".txt"))
+  system(paste0("efn2 run/FL_",id,".ct run/energy_FL_",id,".txt"))
+  system(paste0("efn2 run/ME_",id,".ct run/energy_ME_",id,".txt"))
+  system(paste0("efn2 run/PK_",id,".ct run/energy_PK_",id,".txt"))
+}
+
+select_heuristic_secondary_structure <- function(pred, id, output,currentDate){
+  # function that selects the candidate structure which has the highest BP consistency with avg BP prediction
+  
+  # use only mean prediction
+  pred = pred[,c(1,ncol(pred))] 
+  
+  # three candidate structure: folded with cs
+  data = matrix(NA, 6, 3)
+  methods = c("FLpr","MEpr","PKpr","FL","ME","PK")
+  
+  # UPDATE: six candidate structures, to match the training process
   for(i in 1:6){
-    model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
-    pred = as.vector(predict_proba(model, test))
-    data = cbind(data, pred)
+    data[i, 1] = methods[i]
+    eng = read.table(paste0("run/energy_", methods[i],"_",id,".txt"), stringsAsFactors = F)
+    data[i, 2] = calculate_base_pairing_consistency(pred, paste0("run/",methods[i],"_",id,".ct"))
+    data[i, 3] = eng[1,5]
   }
-  colnames(data) = c("resid","r1","r2","r3","r4","r5","r6")
-  data$mean = rowMeans(data[,2:7])
-  data[,2:8]=format(round(data[,2:8], 4), nsmall = 4)
-  return(data)
+  data = as.data.frame(data)
+  data[, 2] = as.numeric(as.character(data[,2]))
+  data[, 3] = as.numeric(as.character(data[,3]))
+  
+  # highest consistency -> lowest energy
+  data = data[order(-data[,2], data[,3]),]
+  print(data)
+  model = data[1,1]
+  
+  # copy model to output
+  system(paste0("cp run/",model,"_",id,".ct ",output,currentDate,"_",id,"_","csfolding.ct")) 
+  for(method in methods){
+    system(paste0("cp run/",method,"_",id,".ct ",output,currentDate,"_",id,"_",method,".ct"))
+  }
+  # delete temporary files
+  system(paste0("rm run/*_",id,".txt"))
+  system(paste0("rm run/*_",id,".ct"))
+  system(paste0("rm run/*_",id,".pfs"))
+}
+
+calculate_base_pairing_consistency <- function(bps_pred, path_to_ss){
+  # function that calculates the base-pairing consistency of structure
+  
+  # predictions is the averaged probability
+  colnames(bps_pred) = c("resid","prob")  
+  
+  # 0.6 as threshold
+  bps_pred$bp = ifelse(bps_pred$prob>0.6, 1, 0)
+  
+  ss_pred = read.table(path_to_ss,fill=T,header=F,skip=1,col.names=c("resid","resname","before","after","bp_pred","resid2"))
+  
+  if(length(which(ss_pred$resname=="ENERGY"))!=0){
+    # several structures, use lowest energy structure
+    ss_pred <- ss_pred[1:(which(ss_pred$resname=="ENERGY")[1]-1),]
+  }
+  merged = merge(ss_pred, bps_pred, by = "resid")
+  
+  # bp_pred is candidate secondary structure paired residue, bp is CS2BPS bp
+  merged$pred = ifelse(merged$bp_pred==0, 1, 0)
+  # pred is secondary structure bp
+  return(sum(merged$bp==merged$pred)/nrow(merged))
+}
+
+load_and_predict <- function(resid = resid, test = test, model_path = "../data/", rna){
+  df = as.data.frame(resid)
+  for(i in 1:6){
+    # debug
+    #print(paste0(model_path, "run_", i, "/nn_model_", rna, "_", i, ".h5"))
+    # models generated from leave-one-out, can be used for noise analysis
+    #model = load_model_hdf5(paste0(model_path, "run_", i, "/nn_model_", rna, "_", i, ".h5"))
+    
+    # models generated using whole training set
+    model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
+    
+    # models generated when not using 5KH8 in train
+    #model = load_model_hdf5(paste0("models/nn_model_whole_remove_5KH8_",i,".h5"))
+    pred = as.vector(predict_proba(model, test))
+    df = cbind(df, pred)
+  }
+  colnames(df) = c("resid","r1","r2","r3","r4","r5","r6")
+  df$mean = rowMeans(df[,2:7])
+  df[,2:8]=format(round(df[,2:8], 4), nsmall = 4)
+  return(df)
 }

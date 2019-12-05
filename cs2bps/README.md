@@ -33,10 +33,10 @@ source activate r-tf
 Rscript cs2bps.r --help
 
 # impute only
-Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p impute -o test_miR20b/2N7X_imputed_cs.txt
+Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p impute -o output/
 
 # impute and run cs2bps
-Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p cs2pbs -o test_miR20b/2N7X_cs2bps.txt
+Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p cs2pbs -o output/
 ```
 
 ## License
