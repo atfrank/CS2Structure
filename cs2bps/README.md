@@ -31,16 +31,16 @@ conda install -c conda-forge r-mice
 conda activate r-environment
 
 # Print help message
-Rscript cs2bps.r --help
+Rscript cs2bps.r --help # this will automatically detect and install necessary libraries
 
-# Make output folder
+# Creat directory to store output files
 mkdir output
 
 # Impute only
-Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p impute -o output/
+Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p impute -o output/
 
 # Impute and then run cs2bps
-Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p cs2pbs -o output/
+Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p cs2pbs -o output/
 ```
 
 ## License
