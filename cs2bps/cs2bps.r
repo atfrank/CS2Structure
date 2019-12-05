@@ -77,6 +77,19 @@ if(length(arguments$args) != 1) {
       pred = pred[,c(1,ncol(pred))]
     }
     write.table(pred, file = paste0(output,currentDate, "_", id, "_cs2bps.txt"), row.names = F, col.names = F, quote = F)
+    cat("-------------------------------------------------------------------------------------\n")
+    cat("CS2BPS prediction done!\n")
+    cat("-------------------------------------------------------------------------------------\n")
+    cat("Instruction on folding secondary structure using RNAstructure with CS2BPS constraint:\n")
+    cat("-------------------------------------------------------------------------------------\n")
+    cat("Fold test-sequence.fasta test-structure.ct -sh test-cs2bps.txt\n\n")
+    cat("OR\n\n")
+    cat("partition test-sequence.fasta test-parition.pfs -sh test-cs2bps.txt\n")
+    cat("MaxExpect test-partition.pfs test-structure.ct\n\n")
+    cat("OR\n\n")
+    cat("partition test-sequence.fasta test-parition.pfs -sh test-cs2bps.txt\n")
+    cat("ProbKnot test-partition.pfs test-structure.ct\n")
+    cat("-------------------------------------------------------------------------------------\n")
   }
 }
 
