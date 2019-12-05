@@ -8,9 +8,9 @@ option_list = list(
                 help = "ID tag of the test RNA"),
     make_option(c("-s","--speed"), type = "character", default = "slow",
                 help = "whether to perform fast or slow imputation"),
-    make_option(c("-ss0","--ss_table_0"), type = "character", default = "data/ss_table_0.txt",
+    make_option(c("--ss_table_0"), type = "character", default = "data/ss_table_0.txt",
                 help = "training set after imputation"),
-    make_option(c("-ss1","--ss_table_1"), type = "character", default = "data/ss_table_1.txt",
+    make_option(c("--ss_table_1"), type = "character", default = "data/ss_table_1.txt",
                 help = "training set after adding neighboring information"),
     make_option(c("-p","--program"), type = "character", default = "impute",
                 help = "impute, cs2bps or csfold"),
@@ -57,10 +57,10 @@ if(length(arguments$args) != 1) {
   cs_imp = impute_cs_data(cs = cs, id = id, speed = speed, ss_table = ss_table_0)
 
   # whether predict or impute chemical shifts
+  # add time stamp
+  currentDate <- Sys.Date()
   if(program == "impute"){
     cs_final = format_cs_file(cs_imp, nuclei)
-    # add time stamp
-    currentDate <- Sys.Date()
     write.table(cs_final, file = paste0(output,currentDate, "_", id, "_impute.dat"), row.names = F, col.names = F, quote = F)
   } else {
     # add neighboring information and normalize based on train data

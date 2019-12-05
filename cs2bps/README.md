@@ -6,8 +6,8 @@ Chemical Shift to Base Pairing Status predictions
 set up a conda environment for running CS2BPS
 
 ```bash
-conda create -n r-tf pip python=3.6
-source activate r-tf
+conda create -n r-environment r-essentials r-base
+conda activate r-environment
 ```
 
 install python tensorflow (CPU version) and keras
@@ -17,25 +17,29 @@ conda install -c anaconda tensorflow
 conda install -c conda-forge keras
 ```
 
-install r-tensorflow using conda
+install r-tensorflow and r-mice using conda
 
 ```
-conda install -c r r-tensorflow --name r-tf
+conda install -c r r-tensorflow 
+conda install -c conda-forge r-mice 
 ```
 
 ## Usage
 
 ```bash
 # load environment
-source activate r-tf
+conda activate r-environment
 
 # Print help message
 Rscript cs2bps.r --help
 
-# impute only
+# Make output folder
+mkdir output
+
+# Impute only
 Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p impute -o output/
 
-# impute and run cs2bps
+# Impute and then run cs2bps
 Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -p cs2pbs -o output/
 ```
 
