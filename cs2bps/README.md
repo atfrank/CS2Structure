@@ -33,9 +33,6 @@ conda activate r-environment
 # Print help message
 Rscript cs2bps.r --help # this will automatically detect and install necessary libraries
 
-# Creat directory to store output files
-mkdir output
-
 # Impute only
 Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p impute -o test_miR20b/
 
