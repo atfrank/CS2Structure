@@ -79,7 +79,7 @@ if(length(arguments$args) != 1) {
     cat("-------------------------------------------------------------------------------------\n")
     cat("CS2BPS prediction done!\n")
     cat("-------------------------------------------------------------------------------------\n")
-    cat("Instruction on folding secondary structure using RNAstructure with CS2BPS constraint:\n")
+    cat("Instruction on folding secondary structure using RNAstructure with CS2BPS as restraints:\n")
     cat("-------------------------------------------------------------------------------------\n")
     cat("Fold test-sequence.fasta test-structure.ct -sh test-cs2bps.txt\n\n")
     cat("OR\n\n")
