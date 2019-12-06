@@ -210,11 +210,11 @@ combine_neighbors_1 <- function(sub_rna,nuclei){
 impute_cs_data <- function(cs, id ="test", droplist = c("id","resid"), speed="slow", ss_table = ss_table){ 
   # function that performs MICE imputation using only residue name and chemical shifts
   if(speed=="slow"){
-    m = 1
-    maxit = 50
+    m = 5
+    maxit = 100
   } else {
     m = 1
-    maxit = 10
+    maxit = 50
   }
   len_test = nrow(cs)
   #### Sep 10
@@ -236,9 +236,33 @@ impute_cs_data <- function(cs, id ="test", droplist = c("id","resid"), speed="sl
   }
   mids.out <- mice(cs, m = m, maxit = maxit, method = "pmm", seed = 500,
                    predictorMatrix = predictorMatrix)
-  cs_test = mice::complete(mids.out,1)  # 'tidyr' also contains a function called 'complete'
-
-  return(cs_test[1:len_test,])
+  #cs_test = mice::complete(mids.out,1)  # 'tidyr' also contains a function called 'complete'
+  
+  # more stable - 5 cycles
+  cs_test_1 = mice::complete(mids.out,1)
+  cs_test_2 = mice::complete(mids.out,2)
+  cs_test_3 = mice::complete(mids.out,3)
+	cs_test_4 = mice::complete(mids.out,4)
+	cs_test_5 = mice::complete(mids.out,5)
+	#cs_test_6 = mice::complete(mids.out,6)
+  #cs_test_7 = mice::complete(mids.out,7)
+  #cs_test_8 = mice::complete(mids.out,8)
+	#cs_test_9 = mice::complete(mids.out,9)
+	#cs_test_10 = mice::complete(mids.out,10)
+	
+	cs_test_final = cs_test_1[,1:3]
+	
+	for(j in 4:22){
+	  x = cbind(cs_test_1[,j], cs_test_2[,j],cs_test_3[,j],cs_test_4[,j],cs_test_5[,j]) #,cs_test_6[,j], cs_test_7[,j],cs_test_8[,j],cs_test_9[,j],cs_test_10[,j])
+	  enVal = apply(x, 1, median)
+	  # enVal = rowMeans(x)
+	  cs_test_final = cbind(cs_test_final, enVal)
+	}
+	
+  
+  colnames(cs_test_final) = colnames(cs_test_1)
+  #return(cs_test[1:len_test,])
+  return(cs_test_final[1:len_test,])
 }
 
 normalize_test <- function(test, ss_table_1){
@@ -266,7 +290,6 @@ normalize_test <- function(test, ss_table_1){
 }
 
 format_cs_file <- function(data, nuclei, id = FALSE){
-  # update: named vector for converting nuclei names
   ## UPDATE: add id
   total = NULL
   
@@ -398,10 +421,11 @@ load_and_predict <- function(resid = resid, test = test, model_path = "../data/"
     #model = load_model_hdf5(paste0(model_path, "run_", i, "/nn_model_", rna, "_", i, ".h5"))
     
     # models generated using whole training set
-    model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
+    #model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
     
     # models generated when not using 5KH8 in train
-    #model = load_model_hdf5(paste0("models/nn_model_whole_remove_5KH8_",i,".h5"))
+    # model = load_model_hdf5(paste0("models/nn_model_whole_remove_5KH8_",i,".h5"))
+    model = load_model_hdf5(paste0("models/nn_model_5KH8_",i,".h5"))
     pred = as.vector(predict_proba(model, test))
     df = cbind(df, pred)
   }

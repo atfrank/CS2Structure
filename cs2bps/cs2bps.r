@@ -13,13 +13,11 @@ option_list = list(
     make_option(c("--ss_table_1"), type = "character", default = "data/ss_table_1.txt",
                 help = "training set after adding neighboring information"),
     make_option(c("-p","--program"), type = "character", default = "impute",
-                help = "impute, cs2bps or csfold"),
+                help = "impute or cs2bps"),
     make_option(c("-o","--output"), type = "character", default = "output/",
                 help = "name of output file"),
     make_option(c("-w","--whole_set_prediction"), type = "logical", default = "FALSE",
-                help = "whether to output predictions from all classifiers"),
-    make_option(c("-f","--fasta"), type = "character", default = "test.fasta",
-                help = "sequence file")
+                help = "whether to output predictions from all classifiers")
 )
 
 parser = OptionParser(usage = "%prog [options] path_to_chemical_shift_file",
@@ -32,8 +30,9 @@ if(length(arguments$args) != 1) {
   print_help(parser)
   stop()
 } else {
-  cat("Package checking done!\n")
-  cat("-------------------------------------------------------------------------------------\n")
+  cat("cs2bps -- Chemical Shift to Base Pairing Status predictions\n")
+  cat("Author: Kexin Zhang\n")
+  cat("Author: Aaron T. Frank\n")
 
   # get arguments
   cs_file_path = arguments$args[1]
