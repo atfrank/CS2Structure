@@ -421,11 +421,11 @@ load_and_predict <- function(resid = resid, test = test, model_path = "../data/"
     #model = load_model_hdf5(paste0(model_path, "run_", i, "/nn_model_", rna, "_", i, ".h5"))
     
     # models generated using whole training set
-    #model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
+    model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
     
     # models generated when not using 5KH8 in train
-    # model = load_model_hdf5(paste0("models/nn_model_whole_remove_5KH8_",i,".h5"))
-    model = load_model_hdf5(paste0("models/nn_model_5KH8_",i,".h5"))
+    #model = load_model_hdf5(paste0("models/nn_model_whole_remove_5KH8_",i,".h5"))
+    #model = load_model_hdf5(paste0("models/nn_model_5KH8_",i,".h5"))
     pred = as.vector(predict_proba(model, test))
     df = cbind(df, pred)
   }
