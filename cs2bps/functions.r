@@ -214,7 +214,7 @@ impute_cs_data <- function(cs, id ="test", droplist = c("id","resid"), speed="sl
   # function that performs MICE imputation using only residue name and chemical shifts
   if(speed=="slow"){
     m = 5
-    maxit = 100
+    maxit = 200
   } else {
     m = 1
     maxit = 50
@@ -425,15 +425,17 @@ load_and_predict <- function(resid = resid, test = test, model_path = "../data/"
     
     # models generated using whole training set
     model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
-    
     # models generated when not using 5KH8 in train
     #model = load_model_hdf5(paste0("models/nn_model_whole_remove_5KH8_",i,".h5"))
     #model = load_model_hdf5(paste0("models/nn_model_5KH8_",i,".h5"))
     pred = as.vector(predict_proba(model, test))
     df = cbind(df, pred)
   }
-  colnames(df) = c("resid","r1","r2","r3","r4","r5","r6")
+  
+  colnames(df) = c("resid","CS2BPS-1","CS2BPS-2","CS2BPS-3","CS2BPS-4","CS2BPS-5","CS2BPS-6")
   df$mean = rowMeans(df[,2:7])
   df[,2:8]=format(round(df[,2:8], 4), nsmall = 4)
+  df$binary = "o"
+  df$binary[df$mean > 0.6] = "."
   return(df)
 }

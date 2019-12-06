@@ -6,8 +6,6 @@ suppressPackageStartupMessages(ipak(packages))
 option_list = list(
     make_option(c("-i","--id"), type = "character", default = "test",
                 help = "ID tag of the test RNA"),
-    make_option(c("-s","--speed"), type = "character", default = "slow",
-                help = "whether to perform fast or slow imputation"),
     make_option(c("--ss_table_0"), type = "character", default = "data/ss_table_0.txt",
                 help = "training set after imputation"),
     make_option(c("--ss_table_1"), type = "character", default = "data/ss_table_1.txt",
@@ -38,7 +36,6 @@ if(length(arguments$args) != 1) {
   cs_file_path = arguments$args[1]
 
   # get options
-  speed = opt$speed
   output = opt$output
   id = opt$id
   program = opt$program
@@ -53,7 +50,7 @@ if(length(arguments$args) != 1) {
   nuclei = cs$nuclei
   cs = cs$cs
   cat("Imputation...\n")
-  cs_imp = impute_cs_data(cs = cs, id = id, speed = speed, ss_table = ss_table_0)
+  cs_imp = impute_cs_data(cs = cs, id = id, speed = "slow", ss_table = ss_table_0)
 
   # whether predict or impute chemical shifts
   # add time stamp
@@ -71,7 +68,7 @@ if(length(arguments$args) != 1) {
     cat("-------------------------------------------------------------------------------------\n")
     cat("Load model and predict...\n")
     pred = load_and_predict(cs_imp['resid'], test_normalized, rna=id) # pred is ensemble of predictions
-    
+    print(pred)
     if(!whole_set){
       pred = pred[,c(1,ncol(pred))]
     }
