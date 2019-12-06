@@ -1,6 +1,6 @@
 # user functions
 source("functions.r")
-packages <- c("optparse", "mice", "caret", "keras", "bcv", "plyr")
+packages <- c("optparse", "mice", "caret", "reticulate", "tensorflow", "keras", "bcv", "plyr")
 suppressPackageStartupMessages(ipak(packages))
 
 option_list = list(

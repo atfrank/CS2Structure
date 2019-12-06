@@ -3,6 +3,9 @@ ipak <- function(pkg){
   new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
   if (length(new.pkg)){
     install.packages(new.pkg, dependencies = TRUE, repos = "http://cran.us.r-project.org")
+    if ("keras" %in% new.pkg){
+        keras::install_keras()
+    }
   }
   # load all required packages
   sapply(pkg, require, character.only = TRUE, quietly = TRUE)
