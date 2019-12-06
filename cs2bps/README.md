@@ -37,10 +37,10 @@ Rscript cs2bps.r --help # this will automatically detect and install necessary l
 mkdir output
 
 # Impute only
-Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p impute -o output/
+Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p impute -o test_miR20b/
 
 # Impute and then run cs2bps
-Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p cs2pbs -o output/
+Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p cs2pbs -o test_miR20b/
 ```
 
 ## License
