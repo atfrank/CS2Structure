@@ -28,7 +28,7 @@ if(length(arguments$args) != 1) {
   print_help(parser)
   stop()
 } else {
-  cat("cs2bps -- Chemical Shift to Base Pairing Status predictions\n")
+  cat("CS2BPS -- Chemical Shift to Base Pairing Status Predictions\n")
   cat("Author: Kexin Zhang\n")
   cat("Author: Aaron T. Frank\n")
 
@@ -65,9 +65,11 @@ if(length(arguments$args) != 1) {
     test_normalized = normalize_test(test_add_neighbor_cs_and_resnames, ss_table_1 = ss_table_1)
     
     # load model and make predictions
+    cat("\n")
     cat("-------------------------------------------------------------------------------------\n")
     cat("Load model and predict...\n")
     pred = load_and_predict(cs_imp['resid'], test_normalized, rna=id) # pred is ensemble of predictions
+    cat("-------------------------------------------------------------------------------------\n")
     print(pred)
     if(!whole_set){
       pred = pred[,c(1,ncol(pred))]
@@ -75,6 +77,8 @@ if(length(arguments$args) != 1) {
     write.table(pred, file = paste0(output,currentDate, "_", id, "_cs2bps.txt"), row.names = F, col.names = F, quote = F)
     cat("-------------------------------------------------------------------------------------\n")
     cat("CS2BPS prediction done!\n")
+    cat("-------------------------------------------------------------------------------------\n")
+    cat("\n")
     cat("-------------------------------------------------------------------------------------\n")
     cat("Instruction on folding secondary structure using RNAstructure with CS2BPS as restraints:\n")
     cat("-------------------------------------------------------------------------------------\n")

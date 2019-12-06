@@ -10,18 +10,10 @@ conda create -n r-environment r-essentials r-base
 conda activate r-environment
 ```
 
-install python tensorflow (CPU version) and keras
+install MICE (for imputation)
 
 ```bash
-conda install -c anaconda tensorflow
-conda install -c conda-forge keras
-```
-
-install r-tensorflow and r-mice using conda
-
-```
-conda install -c r r-tensorflow 
-conda install -c conda-forge r-mice 
+conda install  -y -c conda-forge r-mice 
 ```
 
 ## Usage
@@ -43,7 +35,7 @@ Rscript cs2bps.r test_miR20b/measured_shifts_2N7X.dat -i 2N7X -p cs2pbs -o test_
 ## License
 MIT License
 
-Copyright (c) 2019 Aaron Frank
+Copyright (c) 2019 Aaron T. Frank
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
