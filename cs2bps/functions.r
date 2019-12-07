@@ -214,7 +214,7 @@ impute_cs_data <- function(cs, id ="test", droplist = c("id","resid"), speed="sl
   # function that performs MICE imputation using only residue name and chemical shifts
   if(speed=="slow"){
     m = 5
-    maxit = 200
+    maxit = 100
   } else {
     m = 1
     maxit = 50
