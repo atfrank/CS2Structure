@@ -1,0 +1,19 @@
+#!/bin/bash
+if [[ $# -ne 1 ]]
+then
+    echo "`basename $0`: retrives a set of PDBIDs"
+    echo "usage: `basename $0` <PDBIDs>"
+else
+        source ~/.bashrc
+        PDBS=$1
+        for PDB in $PDBS
+        do
+                rm -rf ${PDB}_cs.str.gz ${PDB}_cs.str
+                # attempt to download   (assuming it is not an obsolete PDB)
+                #curl https://files.rcsb.org/download/${PDB}_cs.str.gz -o ${PDB}_cs.str.gz
+		curl https://files.rcsb.org/download/${PDB}_cs.str -o ${PDB}_cs.str
+                #gzip -d ${PDB}_cs.str.gz
+                sed -n '/Assigned_chem_shift_list_ID/,/stop_/p' ${PDB}_cs.str | grep -v Assign | grep -v stop_ | awk '{print $6, $4, $7, $10, "."}' | awk '{if ($1=="C") $1="CYT"; if($1=="G") $1="GUA"; if($1=="A") $1="ADE"; if($1=="U") $1="URA"; print}' | sed 's/"//'g
+  done
+fi
+
