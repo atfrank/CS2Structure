@@ -292,41 +292,27 @@ normalize_test <- function(test, ss_table_1){
   return(cs_final)
 }
 
-format_cs_file <- function(data, nuclei, id = FALSE){
-  ## UPDATE: add id
+format_cs_file <- function(cs, id = FALSE){
   total = NULL
+  nuclei = c("C1p","C2p","C3p","C4p","C5p","C2","C5","C6","C8",
+  					 "H1p","H2p","H3p","H4p","H2","H5","H5p","H5pp","H6","H8")
   
-  if(!id){
-    # not including RNA names
-    for(nucleus in gsub("\'","p",nuclei)){
-      tmp = data[,c("resname","resid",nucleus)]
-      tmp$nucleus = nucleus
-      colnames(tmp) = c("resname","resid","cs","nucleus")
-      tmp = tmp[,c("resname","resid","nucleus","cs")]
-      if(is.null(total)){
-        total = tmp
-      } else {
-        total = rbind(total,tmp)
-      }
+  for(nucleus in nuclei){
+    tmp = cs[, c("resname","resid",nucleus)]
+    tmp$nucleus = nucleus
+    colnames(tmp) = c("resname","resid","cs","nucleus")
+    tmp = tmp[,c("resname","resid","nucleus","cs")]
+    if(is.null(total)){
+      total = tmp
+    } else {
+      total = rbind(total,tmp)
     }
-    total$error = "."
-    total = total[,c("resname","resid","nucleus","cs","error")]
-  } else {
-    for(nucleus in nuclei){
-      tmp = data[,c("resname","resid",nucleus,"id")]
-      tmp$nucleus = nucleus
-      colnames(tmp) = c("resname","resid","cs","id","nucleus")
-      tmp = tmp[,c("resname","resid","nucleus","cs","id")]
-      if(is.null(total)){
-        total = tmp
-      } else {
-        total = rbind(total,tmp)
-      }
-    }
-  total$error = "."
-  total = total[,c("resname","resid","nucleus","cs","error","id")]
   }
+  total$error = "."
   total$nucleus = gsub("p","\'",total$nucleus)
+  if(id){
+    total$id = cs$id
+  }
   return(total)
 }
 

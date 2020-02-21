@@ -56,7 +56,7 @@ if(length(arguments$args) != 1) {
   # add time stamp
   currentDate <- Sys.Date()
   if(program == "impute"){
-    cs_final = format_cs_file(cs_imp, nuclei)
+    cs_final = format_cs_file(cs=cs_imp)
     write.table(cs_final, file = paste0(output,currentDate, "_", id, "_impute.dat"), row.names = F, col.names = F, quote = F)
   } else {
     # add neighboring information and normalize based on train data
