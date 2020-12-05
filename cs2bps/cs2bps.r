@@ -12,7 +12,9 @@ option_list = list(
                 help = "training set after adding neighboring information"),
     make_option(c("-p","--program"), type = "character", default = "impute",
                 help = "impute or cs2bps"),
-    make_option(c("-o","--output"), type = "character", default = "output/",
+    make_option(c("-f","--fasta"), type = "character", default = NULL,
+                help = "path to fasta file"),                
+    make_option(c("-o","--output"), type = "character", default = "./",
                 help = "name of output file"),
     make_option(c("-w","--whole_set_prediction"), type = "logical", default = "FALSE",
                 help = "whether to output predictions from all classifiers")
@@ -44,7 +46,7 @@ if(length(arguments$args) != 1) {
   ss_table_1 = opt$ss_table_1
   fasta = opt$fasta
 
-   # load and impute cs
+  # load and impute cs
   cat("Running CS2BPS for RNA:",id,"\n")
   cs = load_cs_data(cs_file_path, train=F)
   nuclei = cs$nuclei
@@ -56,9 +58,11 @@ if(length(arguments$args) != 1) {
   # add time stamp
   currentDate <- Sys.Date()
   if(program == "impute"){
-    cs_final = format_cs_file(cs=cs_imp)
-    write.table(cs_final, file = paste0(output,currentDate, "_", id, "_impute.dat"), row.names = F, col.names = F, quote = F)
+    cs_final = format_cs_file(cs_imp)
+    write.table(cs_final, file = paste0(output, "Imputed_CS.txt"), row.names = F, col.names = F, quote = F)
   } else {
+    cs_final = format_cs_file(cs_imp)
+    write.table(cs_final, file = paste0(output, "Imputed_CS.txt"), row.names = F, col.names = F, quote = F)  
     # add neighboring information and normalize based on train data
     test_add_neighbor_cs = add_neighboring_residues(cs_imp, rna=id, single=T, train=F, i=1)
     test_add_neighbor_cs_and_resnames = add_neighboring_resnames(test_add_neighbor_cs)
@@ -69,27 +73,17 @@ if(length(arguments$args) != 1) {
     cat("-------------------------------------------------------------------------------------\n")
     cat("Load model and predict...\n")
     pred = load_and_predict(cs_imp['resid'], test_normalized, rna=id) # pred is ensemble of predictions
+    if (!is.null(fasta)){
+    	fold_secondary_structures_using_RNAstructure(fasta, pred, id)
+    	select_heuristic_secondary_structure(pred, id, output, currentDate)
+    }
+    
     cat("-------------------------------------------------------------------------------------\n")
     print(pred)
     if(!whole_set){
       pred = pred[,c(1,ncol(pred))]
     }
-    write.table(pred, file = paste0(output,currentDate, "_", id, "_cs2bps.txt"), row.names = F, col.names = F, quote = F)
-    cat("-------------------------------------------------------------------------------------\n")
-    cat("CS2BPS prediction done!\n")
-    cat("-------------------------------------------------------------------------------------\n")
-    cat("\n")
-    cat("-------------------------------------------------------------------------------------\n")
-    cat("Instruction on folding secondary structure using RNAstructure with CS2BPS as restraints:\n")
-    cat("-------------------------------------------------------------------------------------\n")
-    cat("Fold test-sequence.fasta test-structure.ct -sh test-cs2bps.txt\n\n")
-    cat("OR\n\n")
-    cat("partition test-sequence.fasta test-parition.pfs -sh test-cs2bps.txt\n")
-    cat("MaxExpect test-partition.pfs test-structure.ct\n\n")
-    cat("OR\n\n")
-    cat("partition test-sequence.fasta test-parition.pfs -sh test-cs2bps.txt\n")
-    cat("ProbKnot test-partition.pfs test-structure.ct\n")
-    cat("-------------------------------------------------------------------------------------\n")
+    write.table(pred, file = paste0(output, "CS2BPS.txt"), row.names = F, col.names = F, quote = F)
   }
 }
 

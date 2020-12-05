@@ -214,10 +214,10 @@ impute_cs_data <- function(cs, id ="test", droplist = c("id","resid"), speed="sl
   # function that performs MICE imputation using only residue name and chemical shifts
   if(speed=="slow"){
     m = 5
-    maxit = 100
+    maxit = 250
   } else {
-    m = 1
-    maxit = 50
+    m = 5
+    maxit = 1
   }
   len_test = nrow(cs)
   #### Sep 10
@@ -245,12 +245,12 @@ impute_cs_data <- function(cs, id ="test", droplist = c("id","resid"), speed="sl
   cs_test_1 = mice::complete(mids.out,1)
   cs_test_2 = mice::complete(mids.out,2)
   cs_test_3 = mice::complete(mids.out,3)
-	cs_test_4 = mice::complete(mids.out,4)
-	cs_test_5 = mice::complete(mids.out,5)
-	#cs_test_6 = mice::complete(mids.out,6)
+  cs_test_4 = mice::complete(mids.out,4)
+  cs_test_5 = mice::complete(mids.out,5)
+  #cs_test_6 = mice::complete(mids.out,6)
   #cs_test_7 = mice::complete(mids.out,7)
   #cs_test_8 = mice::complete(mids.out,8)
-	#cs_test_9 = mice::complete(mids.out,9)
+    #cs_test_9 = mice::complete(mids.out,9)
 	#cs_test_10 = mice::complete(mids.out,10)
 	
 	cs_test_final = cs_test_1[,1:3]
@@ -292,27 +292,41 @@ normalize_test <- function(test, ss_table_1){
   return(cs_final)
 }
 
-format_cs_file <- function(cs, id = FALSE){
+format_cs_file <- function(data, nuclei = c("C1'","C2'","C3'","C4'","C5'","C2","C5","C6","C8","H1'","H2'","H3'","H4'","H2","H5","H5'","H5''","H6","H8"), id = FALSE){
+  ## UPDATE: add id
   total = NULL
-  nuclei = c("C1p","C2p","C3p","C4p","C5p","C2","C5","C6","C8",
-  					 "H1p","H2p","H3p","H4p","H2","H5","H5p","H5pp","H6","H8")
   
-  for(nucleus in nuclei){
-    tmp = cs[, c("resname","resid",nucleus)]
-    tmp$nucleus = nucleus
-    colnames(tmp) = c("resname","resid","cs","nucleus")
-    tmp = tmp[,c("resname","resid","nucleus","cs")]
-    if(is.null(total)){
-      total = tmp
-    } else {
-      total = rbind(total,tmp)
+  if(!id){
+    # not including RNA names
+    for(nucleus in gsub("\'","p",nuclei)){
+      tmp = data[,c("resname","resid",nucleus)]
+      tmp$nucleus = nucleus
+      colnames(tmp) = c("resname","resid","cs","nucleus")
+      tmp = tmp[,c("resname","resid","nucleus","cs")]
+      if(is.null(total)){
+        total = tmp
+      } else {
+        total = rbind(total,tmp)
+      }
     }
-  }
+    total$error = "."
+    total = total[,c("resname","resid","nucleus","cs","error")]
+  } else {
+    for(nucleus in nuclei){
+      tmp = data[,c("resname","resid",nucleus,"id")]
+      tmp$nucleus = nucleus
+      colnames(tmp) = c("resname","resid","cs","id","nucleus")
+      tmp = tmp[,c("resname","resid","nucleus","cs","id")]
+      if(is.null(total)){
+        total = tmp
+      } else {
+        total = rbind(total,tmp)
+      }
+    }
   total$error = "."
-  total$nucleus = gsub("p","\'",total$nucleus)
-  if(id){
-    total$id = cs$id
+  total = total[, c("resname","resid","nucleus","cs","error","id")]
   }
+  total$nucleus = gsub("p","\'",total$nucleus)
   return(total)
 }
 
@@ -341,7 +355,7 @@ fold_secondary_structures_using_RNAstructure <- function(path_to_fasta, pred, id
   system(paste0("efn2 run/PK_",id,".ct run/energy_PK_",id,".txt"))
 }
 
-select_heuristic_secondary_structure <- function(pred, id, output,currentDate){
+select_heuristic_secondary_structure <- function(pred, id, output, currentDate){
   # function that selects the candidate structure which has the highest BP consistency with avg BP prediction
   
   # use only mean prediction
@@ -368,9 +382,11 @@ select_heuristic_secondary_structure <- function(pred, id, output,currentDate){
   model = data[1,1]
   
   # copy model to output
-  system(paste0("cp run/",model,"_",id,".ct ",output,currentDate,"_",id,"_","csfolding.ct")) 
+  #system(paste0("cp run/",model,"_",id,".ct ",output,currentDate,"_",id,"_","csfolding.ct")) 
+  system(sprintf("cp run/%s_%s.ct %s/CS-Fold.ct", model, id, output, id))
+  system(sprintf("ct2dot run/%s_%s.ct 1 %s/CS-Fold.dot", model, id, output, id))  
   for(method in methods){
-    system(paste0("cp run/",method,"_",id,".ct ",output,currentDate,"_",id,"_",method,".ct"))
+    system(paste0("cp run/",method,"_",id,".ct ",output, method,".ct"))
   }
   # delete temporary files
   system(paste0("rm run/*_",id,".txt"))
@@ -411,9 +427,6 @@ load_and_predict <- function(resid = resid, test = test, model_path = "../data/"
     
     # models generated using whole training set
     model = load_model_hdf5(paste0("models/nn_model_whole_",i,".h5"))
-    # models generated when not using 5KH8 in train
-    #model = load_model_hdf5(paste0("models/nn_model_whole_remove_5KH8_",i,".h5"))
-    #model = load_model_hdf5(paste0("models/nn_model_5KH8_",i,".h5"))
     pred = as.vector(predict_proba(model, test))
     df = cbind(df, pred)
   }
